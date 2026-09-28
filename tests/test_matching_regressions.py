@@ -100,15 +100,15 @@ class MatchingRegressions(unittest.TestCase):
 
     def test_valid_helpers_do_not_block_normal_win(self):
         self.check('612D', '扫描线 + 排序 + 差分', 'correct')
-        self.check('612D', '排序', 'partial')
+        self.check('612D', '排序', 'wrong')
 
     def test_normal_single_core_methods_can_be_combined(self):
         self.check('961B', '前缀和 + 滑动窗口', 'correct')
         self.check('632B', '前缀和 + 枚举 + 动态规划', 'correct')
         self.check('961B', '前缀和 + 贪心', 'partial')
 
-    def test_composite_solutions_are_not_flattened(self):
-        self.check('888C', '二分', 'partial')
+    def test_normal_core_and_hard_complete_combination(self):
+        self.check('888C', '二分', 'correct')
         self.check('888C', '二分 + 滑动窗口', 'correct')
         self.check('808G', 'DP + 贪心 + KMP', 'partial')
 
@@ -210,6 +210,8 @@ class GameplayRegressions(unittest.TestCase):
         state = self.engine.active(self.umo)
         state['card'].update(version=1, solutions=[['sort', 'fenwick'], ['sort', 'segment']],
                              optional=[])
+        state['card'].pop('solution_rules', None)
+        state['card'].pop('method_aliases', None)
         self.engine.save(self.umo, state)
         self.engine.close()
         self.engine = self.make()

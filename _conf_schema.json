@@ -5,6 +5,8 @@
   "guess_cooldown": {"description": "每人提交答案的间隔秒数", "type": "int", "default": 2},
   "hint_cooldown": {"description": "全群索取提示的间隔秒数", "type": "int", "default": 3},
   "recent_window": {"description": "避免重复最近多少题，题库不足时逐步放宽", "type": "int", "default": 30},
+  "draw_strategy": {"description": "抽题方式", "hint": "question：候选题等概率（默认）；category：先均匀抽算法类别，再抽该类别中的题，会提高小类别中单道题的出现概率。", "type": "string", "options": ["question", "category"], "default": "question"},
+  "timeout_concurrency": {"description": "同时发送超时结算的会话数", "hint": "默认 3，上限 8。同一会话仍按顺序发送。", "type": "int", "default": 3},
   "require_wake": {"description": "群聊需要 @机器人或使用 AstrBot 唤醒方式", "type": "bool", "default": true},
   "wake_prefixes": {"description": "兼容的文字唤醒前缀", "type": "list", "default": ["菲比", "啾比"]},
   "proactive_timeout": {"description": "尝试主动发送超时结算", "hint": "仅真实 QQ 官方群路由尝试；权限不足或回执不明时保存结算，下次游戏交互展示。", "type": "bool", "default": true}

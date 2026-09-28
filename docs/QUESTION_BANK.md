@@ -1,16 +1,16 @@
 # 当前题库：200 道 Educational 题卡
 
-普通150道、困难50道。下表含答案，游戏中请勿提前查阅。
+普通150道、困难50道。下表含答案，游戏中请勿提前查阅。普通版列出的核心任选一个；困难版同一套核心必须一次猜齐。辅助步骤不单独算核心。
 
-| 题目 | 模式 | CF rating | 已收录答案 |
+| 题目 | 模式 | CF rating | 已收录核心（各套之间用“或”分隔） |
 | --- | --- | --- | --- |
 | [961B · 课堂清醒时间](https://codeforces.com/contest/961/problem/B) | 普通 | 1200 | 前缀和；或：滑动窗口；或：双指针 |
-| [1354B · 三种字符](https://codeforces.com/contest/1354/problem/B) | 普通 | 1200 | 滑动窗口；或：双指针；或：最近出现位置；或：动态规划；或：二分答案 + 前缀和 |
+| [1354B · 三种字符](https://codeforces.com/contest/1354/problem/B) | 普通 | 1200 | 滑动窗口；或：双指针；或：最近出现位置；或：动态规划；或：二分答案（辅助：前缀和） |
 | [1167C · 消息传播](https://codeforces.com/contest/1167/problem/C) | 普通 | 1400 | 并查集；或：深度优先搜索；或：广度优先搜索；或：连通分量 |
 | [893C · 传闻的代价](https://codeforces.com/contest/893/problem/C) | 普通 | 1300 | 并查集；或：深度优先搜索；或：广度优先搜索；或：连通分量 |
-| [762A · 第 k 小约数](https://codeforces.com/contest/762/problem/A) | 普通 | 1400 | 约数枚举；或：枚举；或：质因数分解 + 枚举 |
+| [762A · 第 k 小约数](https://codeforces.com/contest/762/problem/A) | 普通 | 1400 | 约数枚举；或：枚举；或：质因数分解（辅助：枚举） |
 | [808B · 连续时段平均和](https://codeforces.com/contest/808/problem/B) | 普通 | 1300 | 前缀和；或：滑动窗口；或：双指针；或：贡献法 |
-| [888C · 支配字符](https://codeforces.com/contest/888/problem/C) | 普通 | 1400 | 最大间隔；或：枚举；或：二分答案 + 滑动窗口 |
+| [888C · 支配字符](https://codeforces.com/contest/888/problem/C) | 普通 | 1400 | 最大间隔；或：枚举；或：二分答案（辅助：滑动窗口） |
 | [903B · 战斗与治疗](https://codeforces.com/contest/903/problem/B) | 普通 | 1200 | 贪心 |
 | [903C · 套盒子](https://codeforces.com/contest/903/problem/C) | 普通 | 1200 | 计数；或：贪心；或：排序 |
 | [1000A · 衣服尺码清单](https://codeforces.com/contest/1000/problem/A) | 普通 | 1200 | 计数；或：贪心 |
@@ -23,7 +23,7 @@
 | [600A · 提取整数](https://codeforces.com/contest/600/problem/A) | 普通 | 1600 | 模拟 |
 | [652B · 交错排列](https://codeforces.com/contest/652/problem/B) | 普通 | 1000 | 排序；或：贪心；或：构造 |
 | [792A · 最近城市](https://codeforces.com/contest/792/problem/A) | 普通 | 1100 | 排序 |
-| [961C · 修复棋盘](https://codeforces.com/contest/961/problem/C) | 普通 | 1400 | 枚举；或：排序 + 贪心 |
+| [961C · 修复棋盘](https://codeforces.com/contest/961/problem/C) | 普通 | 1400 | 枚举；或：排序 / 贪心 |
 | [665E · 美丽子数组](https://codeforces.com/contest/665/problem/E) | 困难 | 2100 | 前缀异或 + 01字典树；或：前缀异或 + 分治 |
 | [808G · 填补字符串](https://codeforces.com/contest/808/problem/G) | 困难 | 2300 | kmp + 动态规划 |
 | [846D · 损坏的显示器](https://codeforces.com/contest/846/problem/D) | 困难 | 1900 | 二分答案 + 二维前缀和；或：滑动窗口 + 单调队列 |
@@ -39,7 +39,7 @@
 | [598C · 方向最接近的向量](https://codeforces.com/contest/598/problem/C) | 困难 | 2300 | 计算几何 + 排序 |
 | [598D · 博物馆画作](https://codeforces.com/contest/598/problem/D) | 普通 | 1700 | 连通分量；或：深度优先搜索；或：广度优先搜索 |
 | [598E · 巧克力切割](https://codeforces.com/contest/598/problem/E) | 困难 | 2000 | 动态规划 + 枚举 |
-| [600B · 不大于查询值的数量](https://codeforces.com/contest/600/problem/B) | 普通 | 1300 | 二分查找；或：排序 + 双指针 |
+| [600B · 不大于查询值的数量](https://codeforces.com/contest/600/problem/B) | 普通 | 1300 | 二分查找；或：双指针（辅助：排序） |
 | [600C · 最小改动回文](https://codeforces.com/contest/600/problem/C) | 普通 | 1800 | 贪心 |
 | [600E · 子树众数颜色和](https://codeforces.com/contest/600/problem/E) | 困难 | 2300 | 深度优先搜索 + 启发式合并；或：DFS序 + 树上启发式合并 |
 | [609A · 最少U盘](https://codeforces.com/contest/609/problem/A) | 普通 | 800 | 贪心；或：排序 |
@@ -50,7 +50,7 @@
 | [612A · 按两种长度切串](https://codeforces.com/contest/612/problem/A) | 普通 | 1300 | 枚举；或：动态规划 |
 | [612B · 磁头读文件](https://codeforces.com/contest/612/problem/B) | 普通 | 1200 | 模拟 |
 | [612C · 修正括号种类](https://codeforces.com/contest/612/problem/C) | 普通 | 1400 | 栈 |
-| [612D · 至少覆盖k次的区间](https://codeforces.com/contest/612/problem/D) | 普通 | 1800 | 扫描线；或：排序 + 差分 |
+| [612D · 至少覆盖k次的区间](https://codeforces.com/contest/612/problem/D) | 普通 | 1800 | 扫描线；或：差分（辅助：排序） |
 | [616A · 超长整数比较](https://codeforces.com/contest/616/problem/A) | 普通 | 900 | 模拟 |
 | [616C · 拆墙后的连通区域](https://codeforces.com/contest/616/problem/C) | 普通 | 1600 | 连通分量；或：深度优先搜索；或：广度优先搜索；或：并查集 |
 | [616D · 最多k种数的最长段](https://codeforces.com/contest/616/problem/D) | 普通 | 1600 | 滑动窗口；或：双指针 |
@@ -88,7 +88,7 @@
 | [691D · 交换后的最大排列](https://codeforces.com/contest/691/problem/D) | 困难 | 1700 | 连通分量 + 排序；或：并查集 + 排序；或：深度优先搜索 + 排序 |
 | [691E · 异或相邻序列](https://codeforces.com/contest/691/problem/E) | 普通 | 1900 | 矩阵快速幂；或：快速幂 |
 | [702A · 最长连续递增段](https://codeforces.com/contest/702/problem/A) | 普通 | 800 | 动态规划；或：模拟；或：双指针 |
-| [702B · 和为二的幂](https://codeforces.com/contest/702/problem/B) | 普通 | 1500 | 计数；或：枚举 + 二分查找 |
+| [702B · 和为二的幂](https://codeforces.com/contest/702/problem/B) | 普通 | 1500 | 计数；或：枚举 / 二分查找 |
 | [702C · 基站最小半径](https://codeforces.com/contest/702/problem/C) | 普通 | 1500 | 二分查找；或：双指针 |
 | [702D · 开车还是步行](https://codeforces.com/contest/702/problem/D) | 普通 | 1900 | 贪心；或：公式推导 |
 | [702E · 函数图长途统计](https://codeforces.com/contest/702/problem/E) | 普通 | 2100 | 倍增 |
@@ -98,7 +98,7 @@
 | [710E · 生成重复字符串](https://codeforces.com/contest/710/problem/E) | 普通 | 2000 | 动态规划 |
 | [762C · 删除一段后成为子序列](https://codeforces.com/contest/762/problem/C) | 困难 | 2100 | 子序列匹配 + 双指针；或：子序列匹配 + 二分查找 |
 | [792B · 报数淘汰](https://codeforces.com/contest/792/problem/B) | 普通 | 1300 | 模拟 |
-| [792C · 删位得到三的倍数](https://codeforces.com/contest/792/problem/C) | 普通 | 2000 | 动态规划；或：贪心 + 模运算 |
+| [792C · 删位得到三的倍数](https://codeforces.com/contest/792/problem/C) | 普通 | 2000 | 动态规划；或：贪心（辅助：模运算） |
 | [792D · 巨大完全二叉树移动](https://codeforces.com/contest/792/problem/D) | 普通 | 1900 | 位运算；或：模拟 |
 | [797A · 拆成k个因子](https://codeforces.com/contest/797/problem/A) | 普通 | 1100 | 质因数分解；或：约数枚举 |
 | [797B · 最大奇数子序列和](https://codeforces.com/contest/797/problem/B) | 普通 | 1400 | 贪心；或：动态规划 |
@@ -115,7 +115,7 @@
 | [808C · 公平分茶](https://codeforces.com/contest/808/problem/C) | 普通 | 1400 | 贪心；或：排序 |
 | [808D · 移动一个元素再平分](https://codeforces.com/contest/808/problem/D) | 困难 | 1900 | 前缀和 + 计数；或：前缀和 + 有序集合 |
 | [813A · 等待提交窗口](https://codeforces.com/contest/813/problem/A) | 普通 | 1100 | 模拟；或：贪心 |
-| [813B · 最长幸运年份段](https://codeforces.com/contest/813/problem/B) | 普通 | 1800 | 枚举；或：枚举 + 排序；或：枚举 + 最大间隔 |
+| [813B · 最长幸运年份段](https://codeforces.com/contest/813/problem/B) | 普通 | 1800 | 枚举；或：枚举（辅助：排序）；或：枚举（辅助：最大间隔） |
 | [813C · 树上追逐](https://codeforces.com/contest/813/problem/C) | 普通 | 1700 | 广度优先搜索；或：深度优先搜索 |
 | [817A · 固定对角跳跃](https://codeforces.com/contest/817/problem/A) | 普通 | 1200 | 奇偶分析；或：模运算 |
 | [817B · 最小乘积三元组](https://codeforces.com/contest/817/problem/B) | 普通 | 1500 | 组合计数；或：计数 |
@@ -163,7 +163,7 @@
 | [893B · 特殊二进制约数](https://codeforces.com/contest/893/problem/B) | 普通 | 1000 | 枚举；或：约数枚举；或：位运算 |
 | [893D · 最少银行存款次数](https://codeforces.com/contest/893/problem/D) | 普通 | 1900 | 贪心 |
 | [903A · 三块与七块套餐](https://codeforces.com/contest/903/problem/A) | 普通 | 900 | 枚举；或：动态规划 |
-| [990C · 拼接成合法括号的数对](https://codeforces.com/contest/990/problem/C) | 普通 | 1500 | 计数；或：栈；或：前缀和 + 计数 |
+| [990C · 拼接成合法括号的数对](https://codeforces.com/contest/990/problem/C) | 普通 | 1500 | 计数；或：栈；或：前缀和（辅助：计数） |
 | [911A · 最近的两个最小值](https://codeforces.com/contest/911/problem/A) | 普通 | 1100 | 最近出现位置；或：模拟；或：贪心；或：双指针 |
 | [911B · 两种蛋糕分盘](https://codeforces.com/contest/911/problem/B) | 普通 | 1200 | 枚举；或：二分答案 |
 | [911C · 三串灯覆盖所有时刻](https://codeforces.com/contest/911/problem/C) | 普通 | 1400 | 分类讨论；或：公式推导 |
@@ -175,7 +175,7 @@
 | [920A · 花园扩散浇水](https://codeforces.com/contest/920/problem/A) | 普通 | 1000 | 枚举；或：广度优先搜索 |
 | [920B · 排队取茶](https://codeforces.com/contest/920/problem/B) | 普通 | 1200 | 模拟；或：贪心 |
 | [920C · 允许相邻交换的排序](https://codeforces.com/contest/920/problem/C) | 普通 | 1400 | 连通分量；或：并查集；或：排序 |
-| [920E · 以缺失边给出的图](https://codeforces.com/contest/920/problem/E) | 普通 | 2100 | 广度优先搜索；或：深度优先搜索；或：广度优先搜索 + 有序集合；或：深度优先搜索 + 有序集合 |
+| [920E · 以缺失边给出的图](https://codeforces.com/contest/920/problem/E) | 普通 | 2100 | 广度优先搜索；或：深度优先搜索；或：广度优先搜索（辅助：有序集合）；或：深度优先搜索（辅助：有序集合） |
 | [938A · 压缩相邻元音](https://codeforces.com/contest/938/problem/A) | 普通 | 800 | 模拟；或：双指针 |
 | [938B · 两端合作取奖品](https://codeforces.com/contest/938/problem/B) | 普通 | 1100 | 贪心；或：公式推导 |
 | [938C · 反构造限制全一方阵](https://codeforces.com/contest/938/problem/C) | 普通 | 1700 | 约数枚举；或：枚举 |

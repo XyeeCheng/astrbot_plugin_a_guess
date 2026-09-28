@@ -42,7 +42,7 @@ ALIASES = {
     'bridges': ('桥', '割边', 'tarjan求桥', '边双连通分量', '桥缩点', '求桥'),
     'diameter': ('树的直径', '树直径', 'tree diameter', '直径'),
     'expectation': ('期望', '期望线性性', '概率期望', '线性期望', 'expectation'),
-    'merge': ('归并排序', '归并计数', 'merge sort'),
+    'merge': ('归并排序', '归并计数', '归并', 'merge sort'),
     'bipartite': ('二分图', '二分图染色', '二染色', 'bipartite coloring'),
     'knapsack': ('背包', '01背包', '0/1背包', '背包dp', 'knapsack'),
     'fast_power': ('快速幂', 'fast power', 'binary exponentiation'),
@@ -56,7 +56,7 @@ ALIASES = {
     'lca': ('最近公共祖先', 'lca', '倍增lca'),
     'hld': ('树链剖分', '重链剖分', 'hld', 'heavy light decomposition'),
     'stack': ('栈', 'stack', '括号栈'),
-    'sweep': ('扫描线', 'sweep line', '事件扫描', 'scanline', 'scan line', '离线扫描'),
+    'sweep': ('扫描线', 'sweep line', '事件扫描', 'scanline', 'scan line', '离线扫描', '扫面线'),
     'quotient_group': ('整除分块', '数论分块', '整除商分块', 'division blocking'),
     'euler': ('DFS序', 'dfn', 'dfs order', '子树展开', '欧拉序'),
     'modular': ('模运算', '取模', '余数分析', '整除性质', 'modular arithmetic'),
@@ -81,6 +81,13 @@ ALIASES = {
     'backtracking': ('回溯', '回溯搜索', 'backtracking'),
     'gcd': ('欧几里得算法', '辗转相除', '辗转相除法', 'gcd', 'euclidean algorithm'),
     'bitmask': ('子集枚举', '二进制枚举', '枚举子集', 'bitmask enumeration'),
+    'discretize': ('离散化', '坐标压缩', 'coordinate compression'),
+    'tree_dp': ('树形DP', '树上DP', '树形动态规划', 'tree dp'),
+    'interval_dp': ('区间DP', '区间动态规划', 'interval dp'),
+    'memo': ('记忆化搜索', '记忆化', 'memoization', 'memoisation'),
+    'shortest_path': ('最短路', '最短路径', 'shortest path'),
+    'trie': ('字典树', 'trie', '前缀树'),
+    'group_knapsack': ('分组背包', '分组背包DP', 'group knapsack'),
 }
 
 
@@ -90,7 +97,7 @@ def normalize(text):
 
 
 LOOKUP = {normalize(alias): key for key, aliases in ALIASES.items() for alias in aliases}
-AMBIGUOUS = {'树', '搜索', '图论', '数据结构', '数学', '优化', 'trie', '字典树', 'tarjan'}
+AMBIGUOUS = {'树', '搜索', '图论', '数据结构', '数学', '优化', 'tarjan'}
 
 # This game accepts the binary-search family at either level of specificity.
 # Keep the original IDs for card explanations and existing database snapshots.
@@ -98,13 +105,29 @@ AMBIGUOUS = {'树', '搜索', '图论', '数据结构', '数学', '优化', 'tri
 FAMILIES = {'binary_answer': 'binary', 'binary_search': 'binary'}
 
 
-def canonical(methods):
-    return frozenset(FAMILIES.get(k, k) for k in methods)
+def canonical(methods, card=None):
+    aliases = (card or {}).get('method_aliases', {})
+    return frozenset(FAMILIES.get(aliases.get(k, k), aliases.get(k, k)) for k in methods)
 
 
-def answer_key(methods):
-    """Same semantic key for judging and dedupe, independent of the hidden card."""
-    return '|'.join(sorted(canonical(methods)))
+def answer_key(methods, card=None):
+    """Apply the same reviewed normalization to judging and duplicate answers."""
+    return '|'.join(sorted(canonical(methods, card)))
+
+
+def solution_rules(card):
+    return card.get('solution_rules') or [
+        {'core': s, 'helpers': []} for s in card['solutions']]
+
+
+def edit_distance(a, b):
+    row = list(range(len(b) + 1))
+    for i, x in enumerate(a, 1):
+        nxt = [i]
+        for j, y in enumerate(b, 1):
+            nxt.append(min(nxt[-1] + 1, row[j] + 1, row[j-1] + (x != y)))
+        row = nxt
+    return row[-1]
 
 
 def label(key):
@@ -136,10 +159,12 @@ def _split_natural(part):
 
 def parse(text):
     """Return a canonical set or a clarification, without spending an attempt."""
-    text = unicodedata.normalize('NFKC', text).strip()
+    text = unicodedata.normalize('NFKC', text).strip().strip('。.!！?？;；').strip()
     if not text or len(text) > 180:
         return None, '请提交简短算法名，例如：a猜 前缀和。'
-    if re.search(r'或者|(?<!异)或|还是|\bor\b|不是|不要|排除|不选', text, re.I):
+    if re.search(r'或者|(?<!异)或|还是|不是|不要|不用|不使用|不考虑|不选|不能|无需|排除|非'
+                 r'|\b(?:or|not|no|without|except|exclude|neither|nor|cannot)\b|n[\x27’]t\b'
+                 r'|\b(?:no|not)(?=[a-z])', text, re.I):
         return None, '一次请明确提交一套解法，用 + 连接，不要列备选或否定句。'
     parts = re.split(r'\s*(?:\+|＋|、|，|,|以及|然后|配合|结合|搭配)\s*', text)
     # Do not split a canonical algorithm name such as 前缀和 or 组合数学.
@@ -157,9 +182,10 @@ def parse(text):
         if token in AMBIGUOUS:
             return None, f'“{part}”较宽泛，请写具体方法；本次不扣次数。'
         # Short acronyms (BFS/DFS/BIT/DP) are deliberately never fuzzy corrected.
-        if len(token) >= 5:
+        if len(token) >= 5 and re.fullmatch(r'[a-z][a-z0-9 ]*', part.casefold().strip()):
             matches = [(difflib.SequenceMatcher(None, token, a).ratio(), k)
-                       for a, k in LOOKUP.items() if len(a) >= 5]
+                       for a, k in LOOKUP.items() if len(a) >= 5
+                       and abs(len(a) - len(token)) <= 2 and edit_distance(token, a) <= 2]
             matches.sort(reverse=True)
             if matches and matches[0][0] >= .86:
                 candidates = {k for score, k in matches if score >= matches[0][0] - .035}
@@ -194,20 +220,24 @@ class Verdict:
 
 
 def assess(card, answer):
-    answer = canonical(answer)
-    allowed = canonical(card.get('optional', []))
+    answer = canonical(answer, card)
+    allowed = canonical(card.get('optional', []), card)
+    rules = solution_rules(card)
+    normal = card.get('mode') == '普通' and 'solution_rules' in card
     if card.get('mode') == '普通':
-        # Combining independently accepted single core methods is legitimate.
-        # Do not flatten composite solutions: that would remove required steps.
-        allowed |= canonical(s[0] for s in card['solutions'] if len(s) == 1)
+        # Only explicitly reviewed cores are eligible for single-method wins.
+        allowed |= canonical((k for r in rules if normal or len(r['core']) == 1 for k in r['core']), card)
     candidates = []
-    for solution in card['solutions']:
-        required = canonical(solution)
+    for rule in rules:
+        required = canonical(rule['core'], card)
         matched = required & answer
-        extra = len(answer - required - allowed)
-        status = ('correct' if matched == required and not extra
+        extra = len(answer - required - allowed - canonical(rule.get('helpers', []), card))
+        complete = bool(matched) if normal else matched == required
+        status = ('correct' if complete and not extra
                   else 'partial' if matched else 'wrong')
-        candidates.append(Verdict(status, matched, len(required), extra))
+        if normal:
+            matched = frozenset(sorted(matched)[:1])
+        candidates.append(Verdict(status, matched, 1 if normal else len(required), extra))
     return max(candidates, key=lambda v: (v.status == 'correct', len(v.matched),
                                          -v.extra, -v.total))
 

@@ -52,5 +52,11 @@ class DeliveryTests(unittest.IsolatedAsyncioTestCase):
         self.context.get_platform_inst=lambda _:None
         self.assertEqual(await send_timeout(self.context,self.route,'text'),'blocked')
 
+    async def test_empty_metadata_never_attempts_send(self):
+        for metadata in (None, SimpleNamespace(), {'name': 'qq_official'}):
+            self.platform.meta=lambda: metadata
+            self.assertEqual(await send_timeout(self.context,self.route,'text'),'blocked')
+        self.api.post_group_message.assert_not_awaited()
+
 
 if __name__ == '__main__': unittest.main()

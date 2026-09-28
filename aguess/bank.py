@@ -28,6 +28,25 @@ def load_bank(path=None):
                 raise ValueError(f'Repeated algorithm family in solution: {pid}')
         if not set(card.get('optional', [])) <= ALIASES.keys():
             raise ValueError(f'Unknown optional algorithm: {pid}')
+        aliases = card.get('method_aliases', {})
+        if not isinstance(aliases, dict) or not set(aliases) <= ALIASES.keys() or not set(aliases.values()) <= ALIASES.keys():
+            raise ValueError(f'Invalid method aliases: {pid}')
+        if any(target in aliases for target in aliases.values()):
+            raise ValueError(f'Chained method aliases: {pid}')
+        rules = card.get('solution_rules')
+        if rules is not None:
+            if len(rules) != len(card['solutions']):
+                raise ValueError(f'Rules/solutions mismatch: {pid}')
+            for rule, solution in zip(rules, card['solutions']):
+                core, helpers = rule['core'], rule.get('helpers', [])
+                if not core or set(core) & set(helpers) or set(core + helpers) != set(solution):
+                    raise ValueError(f'Invalid core/helpers: {pid}')
+                if len(canonical(core, card)) != len(core):
+                    raise ValueError(f'Repeated core concept: {pid}')
+                if card['mode'] == '困难' and len(core) < 2:
+                    raise ValueError(f'Hard rules need multiple cores: {pid}')
+        if card.get('draw_group', card['solutions'][0][0]) not in ALIASES:
+            raise ValueError(f'Invalid draw group: {pid}')
         for field in ('statement_zh', 'explanation', 'complexity', 'example', 'source', 'round'):
             if not card.get(field):
                 raise ValueError(f'Missing {field}: {pid}')

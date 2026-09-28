@@ -18,17 +18,13 @@ async def send_timeout(context, route, text):
     try:
         platform = context.get_platform_inst(route.get('platform_id', ''))
         meta = platform.meta() if platform is not None else None
+        if platform is None or getattr(meta, 'name', None) != 'qq_official' or getattr(meta, 'id', None) != route.get('platform_id'):
+            return 'blocked'
+        api = getattr(getattr(platform, 'client', None), 'api', None)
+        if not api or not callable(getattr(api, 'post_group_message', None)) or not route.get('session_id'):
+            return 'blocked'
     except Exception:
         # Adapter lookup failed before any network request was attempted.
-        return 'blocked'
-    if platform is None:
-        return 'blocked'
-    if meta.name != 'qq_official' or meta.id != route['platform_id']:
-        return 'blocked'
-    api = getattr(getattr(platform, 'client', None), 'api', None)
-    if not api or not callable(getattr(api, 'post_group_message', None)):
-        return 'blocked'
-    if not route.get('session_id'):
         return 'blocked'
     # No cached/forged msg_id. QQ permissions are enforced by QQ's own API.
     try:

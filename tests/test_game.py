@@ -30,7 +30,10 @@ class GameTests(unittest.TestCase):
 
     def act(self, action, arg='', sender='owner', umo='qq:GroupMessage:AbC_12', event=None, admin=False):
         self.seq += 1
-        return self.engine.handle(umo, sender, event or str(self.seq), action, arg, admin)
+        replies = self.engine.handle(umo, sender, event or str(self.seq), action, arg, admin)
+        for reply in replies:
+            self.engine.reply_result(reply, 'event_reply')
+        return replies
 
     def start(self, pid='961B'):
         self.act('一把', next(c['mode'] for c in self.cards if c['id'] == pid))

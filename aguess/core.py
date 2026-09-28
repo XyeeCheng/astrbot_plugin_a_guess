@@ -9,24 +9,41 @@ import uuid
 from contextlib import contextmanager
 from pathlib import Path
 
-from .matcher import label, parse, assess, answer_key
+from .matcher import label, parse, assess, answer_key, solution_rules
+from .version import PLUGIN_VERSION, MATCHER_VERSION, BANK_VERSION
 
 HELP = ('a一把：普通模式；a一把 困难：猜算法组合。\n'
         'a猜 算法 + 算法｜a提示｜a进度｜a结束｜a再来\n'
-        'a题意｜a题解｜a申诉 说明｜a帮助\n'
+        'a题意｜a题解｜a上局｜a申诉 说明｜a帮助\n'
+        '管理员：a题库状态｜a申诉列表｜a处理申诉 编号 状态 理由\n'
         '全群共享十次有效答案；主动提示不扣次数；重复答案不扣次数。')
-COMMANDS = ('一把', '猜', '提示', '进度', '结束', '再来', '题意', '题解', '申诉', '帮助', '题库状态')
+COMMANDS = ('一把', '猜', '提示', '进度', '结束', '再来', '题意', '题解', '申诉', '帮助', '题库状态', '上局', '申诉列表', '处理申诉')
+
+
+class Settlement(str):
+    """A string reply carrying its durable settlement ID until send completes."""
+    def __new__(cls, text, game_id):
+        obj = super().__new__(cls, text)
+        obj.game_id = game_id
+        return obj
 
 
 def command(text, wake_prefixes=()):
     text = unicodedata.normalize('NFKC', text).strip()
     for prefix in sorted(wake_prefixes, key=len, reverse=True):
         if prefix and text.startswith(prefix):
-            text = text[len(prefix):].lstrip()
+            text = text[len(prefix):].lstrip(' ,，:：')
             break
     text = text.lstrip('/').strip()
-    m = re.fullmatch(r'[aA](' + '|'.join(COMMANDS) + r')(?:\s+(.*))?', text, re.S)
-    return (m[1], (m[2] or '').strip()) if m else None
+    names = '|'.join(sorted(COMMANDS, key=len, reverse=True))
+    m = re.fullmatch(r'[aA](' + names + r')(?:\s+(.*))?', text, re.S)
+    if m:
+        return m[1], (m[2] or '').strip()
+    # Compact forms are limited to commands that actually take arguments.
+    m = re.fullmatch(r'[aA](猜)(.+)|[aA](一把|再来)(普通|困难)', text, re.S)
+    if m:
+        return (m[1], m[2].strip()) if m[1] else (m[3], m[4])
+    return None
 
 
 def config_values(config):
@@ -42,12 +59,15 @@ def config_values(config):
         'guess_cooldown': bounded('guess_cooldown', 2, 0, 30),
         'hint_cooldown': bounded('hint_cooldown', 3, 0, 30),
         'recent_window': bounded('recent_window', 30, 0, 500),
+        'timeout_concurrency': bounded('timeout_concurrency', 3, 1, 8),
+        'draw_strategy': config.get('draw_strategy') if config.get('draw_strategy') in ('question', 'category') else 'question',
     }
 
 
 def reveal(state):
     c = state['card']
-    answers = '；或：'.join(' + '.join(label(k) for k in s) for s in c['solutions'])
+    separator = ' / ' if c['mode'] == '普通' and 'solution_rules' in c else ' + '
+    answers = '；或：'.join(dict.fromkeys(separator.join(label(k) for k in r['core']) for r in solution_rules(c)))
     status = {'win': '答对啦！', 'loss': '十次机会用完啦。', 'stop': '本局已结束。',
               'timeout': '本局已超时。'}[state['result']]
     text = (f"【a一把结算】{status}\n{state['mode']}｜猜测 {state['attempts']}/10｜线索 {state['hint']}/9\n"
@@ -87,13 +107,21 @@ class Engine:
             CREATE INDEX IF NOT EXISTS history_session ON history(umo, ended);
             CREATE TABLE IF NOT EXISTS seen(umo TEXT, event TEXT, created REAL,
                 PRIMARY KEY(umo,event));
+            CREATE INDEX IF NOT EXISTS seen_created ON seen(created);
             CREATE TABLE IF NOT EXISTS appeals(id INTEGER PRIMARY KEY, umo TEXT,
                 sender TEXT, card_id TEXT, note TEXT, created REAL);
         ''')
         # A process could have died after making a network request.
-        self.db.execute("UPDATE history SET delivery='unknown' WHERE delivery='sending'")
+        columns = {r[1] for r in self.db.execute('PRAGMA table_info(appeals)')}
+        for name, definition in (('status', "TEXT NOT NULL DEFAULT '待处理'"),
+                                 ('resolution', "TEXT NOT NULL DEFAULT ''")):
+            if name not in columns:
+                self.db.execute(f'ALTER TABLE appeals ADD COLUMN {name} {definition}')
+        self.db.execute('CREATE INDEX IF NOT EXISTS appeals_session ON appeals(umo, status, id)')
+        self.db.execute("UPDATE history SET delivery='unknown' WHERE delivery IN ('sending','event_pending')")
         self.cards, self.config = cards, config_values(config or {})
         self.clock, self.rng = clock, rng or random.SystemRandom()
+        self.last_cleanup = 0
 
     def close(self):
         self.db.close()
@@ -122,10 +150,28 @@ class Engine:
 
     def finish(self, umo, state, result, delivery='pending'):
         state['result'] = result
+        if delivery == 'event_reply':
+            delivery = 'event_pending'
         self.db.execute('INSERT OR IGNORE INTO history VALUES(?,?,?,?,?)',
                         (state['id'], umo, self.clock(), json.dumps(state, ensure_ascii=False), delivery))
         self.db.execute('DELETE FROM games WHERE umo=?', (umo,))
-        return reveal(state)
+        return Settlement(reveal(state), state['id'])
+
+    def offer(self, state, prefix=''):
+        self.delivery_result(state['id'], 'event_pending')
+        return Settlement(prefix + reveal(state), state['id'])
+
+    def reply_result(self, reply, outcome):
+        if isinstance(reply, Settlement):
+            self.db.execute("UPDATE history SET delivery=? WHERE id=? AND delivery='event_pending'",
+                            (outcome, reply.game_id))
+
+    def audit_guess(self, state, raw, answer, status, charged=False):
+        entries = state.setdefault('input_audit', [])
+        entries.append({'raw': raw[:180], 'parsed': sorted(answer or []), 'status': status,
+                        'charged': charged, 'at': self.clock(), 'matcher_version': MATCHER_VERSION,
+                        'card_version': state['card'].get('version', 1)})
+        del entries[:-30]
 
     def expired(self, state, now):
         return now >= min(state['deadline'], state['last_activity'] + state['idle_seconds'])
@@ -138,7 +184,7 @@ class Engine:
                     self.finish(row['umo'], state, 'timeout')
 
     def pending(self):
-        return [dict(r) for r in self.db.execute("SELECT * FROM history WHERE delivery='pending'")]
+        return [dict(r) for r in self.db.execute("SELECT * FROM history WHERE delivery='pending' ORDER BY ended,rowid LIMIT 100")]
 
     def claim_delivery(self, game_id):
         return self.db.execute("UPDATE history SET delivery='sending' WHERE id=? AND delivery='pending'", (game_id,)).rowcount == 1
@@ -153,7 +199,9 @@ class Engine:
                 inserted = self.db.execute('INSERT OR IGNORE INTO seen VALUES(?,?,?)', (umo, event_id, now)).rowcount
                 if not inserted:
                     return []
-                self.db.execute('DELETE FROM seen WHERE created<?', (now - 86400,))
+                if now - self.last_cleanup >= 300:
+                    self.db.execute('DELETE FROM seen WHERE created<?', (now - 86400,))
+                    self.last_cleanup = now
             state = self.active(umo)
             prefix = []
             if state and self.expired(state, now):
@@ -162,11 +210,10 @@ class Engine:
                 if action not in ('一把', '再来', '帮助', '题库状态'):
                     return prefix
             # An offline/unknown timer result is made available at the next game interaction.
-            if not state and not prefix:
-                row = self.db.execute("SELECT id,state FROM history WHERE umo=? AND delivery IN ('pending','unknown','failed','blocked') ORDER BY ended DESC LIMIT 1", (umo,)).fetchone()
+            if not state and not prefix and action != '上局':
+                row = self.db.execute("SELECT id,state FROM history WHERE umo=? AND delivery IN ('pending','unknown','failed','blocked','event_pending') ORDER BY ended DESC,rowid DESC LIMIT 1", (umo,)).fetchone()
                 if row:
-                    prefix.append('上局结算（此前投递未确认）：\n' + reveal(json.loads(row['state'])))
-                    self.delivery_result(row['id'], 'event_reply')
+                    prefix.append(self.offer(json.loads(row['state']), '上局结算（此前投递未确认）：\n'))
                     if action in ('进度', '题意', '题解', '结束'):
                         return prefix
             response = self._handle(umo, sender, action, arg, admin, route, state, now)
@@ -179,7 +226,31 @@ class Engine:
             if not admin:
                 return ['此命令仅机器人管理员可用。']
             counts = {m: sum(c['mode'] == m for c in self.cards) for m in ('普通', '困难')}
-            return [f"本地题库：普通 {counts['普通']}，困难 {counts['困难']}。运行中无需网络或模型。"]
+            snapshot = ''
+            if state:
+                current = next((c for c in self.cards if c['id'] == state['card']['id']), None)
+                old = not current or current.get('version') != state['card'].get('version')
+                snapshot = '\n当前对局使用旧题卡快照，新开局使用新版。' if old else '\n当前对局使用当前题卡版本。'
+            return [f"a一把 v{PLUGIN_VERSION}｜题库 v{BANK_VERSION}｜判定器 v{MATCHER_VERSION}\n"
+                    f"本地题库：普通 {counts['普通']}，困难 {counts['困难']}。运行中无需网络或模型。" + snapshot]
+        if action == '上局':
+            last = self.last(umo)
+            return [self.offer(last)] if last else ['当前会话还没有已结束的对局。']
+        if action in ('申诉列表', '处理申诉'):
+            if not admin:
+                return ['此命令仅机器人管理员可用。']
+            if action == '申诉列表':
+                if state:
+                    return ['本局结束后可查看申诉列表，避免提前透露题号或解法。']
+                rows = self.db.execute('SELECT id,card_id,note,status,resolution FROM appeals WHERE umo=? ORDER BY id DESC LIMIT 10', (umo,)).fetchall()
+                return ['当前会话最近申诉：\n' + '\n'.join(
+                    f"#{r['id']} {r['status']}｜{r['card_id']}｜{r['note'][:160]}\n处理：{r['resolution'][:160] or '待处理'}" for r in rows)] if rows else ['当前会话暂无申诉。']
+            match = re.fullmatch(r'(\d+)\s+(通过|驳回|待补充)\s+(.{2,300})', arg, re.S)
+            if not match:
+                return ['用法：a处理申诉 编号 通过/驳回/待补充 理由（2—300字）。']
+            changed = self.db.execute('UPDATE appeals SET status=?,resolution=? WHERE id=? AND umo=?',
+                                      (match[2], match[3], int(match[1]), umo)).rowcount
+            return ['已记录处理结果；题库答案需经审核更新，不会自动改判历史对局。' if changed else '当前会话未找到该申诉。']
         if action in ('一把', '再来'):
             if state:
                 return ['本群已有一局，使用 a进度 查看，或由发起人使用 a结束。']
@@ -195,11 +266,15 @@ class Engine:
             while not fresh and recent:
                 recent.pop()
                 fresh = [c for c in pool if c['id'] not in recent]
-            # Balance the first accepted algorithm before choosing a question.
-            groups = {}
-            for c in fresh or pool:
-                groups.setdefault(c['solutions'][0][0], []).append(c)
-            card = self.rng.choice(self.rng.choice(list(groups.values())))
+            # Question balance is the default; category balance is an explicit option.
+            candidates = fresh or pool
+            if self.config['draw_strategy'] == 'category':
+                groups = {}
+                for c in candidates:
+                    groups.setdefault(c.get('draw_group', c['solutions'][0][0]), []).append(c)
+                card = self.rng.choice(self.rng.choice(list(groups.values())))
+            else:
+                card = self.rng.choice(candidates)
             seconds = self.config['normal_seconds' if mode == '普通' else 'hard_seconds']
             state = {'id': uuid.uuid4().hex, 'owner': sender, 'mode': mode, 'card': card,
                      'attempts': 0, 'hint': 0, 'guessed': [], 'records': [], 'cooldowns': {},
@@ -223,7 +298,7 @@ class Engine:
         if not state:
             last = self.last(umo)
             if action in ('题意', '题解') and last:
-                return [reveal(last)]
+                return [self.offer(last)]
             return ['当前没有正在进行的 a一把。用 a一把 或 a一把 困难 开局。']
         if action == '结束':
             if sender != state['owner'] and not admin:
@@ -250,10 +325,12 @@ class Engine:
                 return ['慢一点，本次不扣次数。']
             answer, error = parse(arg)
             if error:
+                self.audit_guess(state, arg, answer, 'clarify')
+                self.save(umo, state)
                 return [error]
-            key = answer_key(answer)
+            key = answer_key(answer, state['card'])
             # Normalize legacy keys on comparison as well; no database rewrite.
-            if key in {answer_key(old.split('|')) for old in state['guessed']}:
+            if key in {answer_key(old.split('|'), state['card']) for old in state['guessed']}:
                 return ['这一套答案已经猜过了，本次不扣次数。']
             state['guessed'].append(key)
             state['attempts'] += 1
@@ -262,6 +339,7 @@ class Engine:
             result = verdict.status
             visible = ' + '.join(label(k) for k in sorted(answer))
             feedback = verdict.feedback
+            self.audit_guess(state, arg, answer, result, charged=True)
             state['records'].append(f"{state['attempts']}. {visible}：{feedback}")
             if result == 'correct':
                 return [self.finish(umo, state, 'win', 'event_reply')]

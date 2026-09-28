@@ -1,5 +1,5 @@
 {
-  "plugin_version": "1.1.1",
+  "plugin_version": "1.2.0",
   "review_date": "2026-09-28",
   "question_count": 200,
   "normal_count": 150,
@@ -18,7 +18,7 @@
     }
   },
   "review_scope": "Official Educational round metadata and official problem statements; independently written concise Chinese restatements, hints and accepted approaches. Does not claim exhaustive alternative solutions or Codeforces AC submissions.",
-  "questions_file_sha256": "01f2d906e17cc43dda4d0c78fd97f8fd644cfc405c332d8f50f7b963c43196c6",
+  "questions_file_sha256": "2e25b81daf336ae1ebe4f1a66f0f54647a030222010abb14ad00012fdd809f13",
   "cards": [
     {
       "id": "961B",
@@ -26,7 +26,7 @@
       "round": "Educational Codeforces Round 41 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "210991a8059cb6b5ec9da540acaaac02edfd8a13a2232c58ab7f04a1e442b511"
+      "card_sha256": "a976992e160450943f84891f902c22c2462f0a1a61fa15ad1ad611ff4b036817"
     },
     {
       "id": "1354B",
@@ -34,7 +34,7 @@
       "round": "Educational Codeforces Round 87 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "797495d2053b8c74dd9916629ec2886c1336b3eb96161d567f1ae0347ed9f621"
+      "card_sha256": "15101d189240b12e8c6eb43dbf9c585e13e27df1cf64b1a4996db397e0e5bc6a"
     },
     {
       "id": "1167C",
@@ -42,7 +42,7 @@
       "round": "Educational Codeforces Round 65 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "8c9dd5436e8504f69a0f8c9ea23ae9dc70fddcb252f1292d4d3ef39c79cf53b9"
+      "card_sha256": "d70fef5afdadafa57158d4899901a50d4746bb4cc3c61e7260a39a0e936e59aa"
     },
     {
       "id": "893C",
@@ -50,7 +50,7 @@
       "round": "Educational Codeforces Round 33 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "f21c4c3159bf4e629dde479f4a5211b3832c2b286a7ab4c44ed0fdda63efda46"
+      "card_sha256": "56454195538217deead6182be2c00241645daf807cce9b410c7a2042293b7212"
     },
     {
       "id": "762A",
@@ -58,7 +58,7 @@
       "round": "Educational Codeforces Round 17",
       "mode": "普通",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "50df6a021f3103169da70dfeee1f75146d1ca201c22f37b81e584911d5a0e943"
+      "card_sha256": "373b2c199e792bbbd2256465676e492b791c1f97553e368208f1c6af962826f2"
     },
     {
       "id": "808B",
@@ -66,7 +66,7 @@
       "round": "Educational Codeforces Round 21",
       "mode": "普通",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "1e6bccce7696ee48641d64e471e2562f6ca14e164ebc4e3f1430a62dad520f95"
+      "card_sha256": "91d7cd7b96a4d83458808fb9e7d91f224b5eca688c8abb0a0a543258671870dc"
     },
     {
       "id": "888C",
@@ -74,7 +74,7 @@
       "round": "Educational Codeforces Round 32",
       "mode": "普通",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "a94fe46765ee3028ffd8d296fae0fc7421264d4b1c5e7ef09db346e315b6c1a5"
+      "card_sha256": "b8882a16e340db43b6793841b739c2855da55fba28a6e28e71930f3f059f2718"
     },
     {
       "id": "903B",
@@ -82,7 +82,7 @@
       "round": "Educational Codeforces Round 34 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "a98f1c34729192912849e5caf8843a75e3fac9351a4b69971555702456219c44"
+      "card_sha256": "b208ce812f8e5b74008f3facbbfe1be3a4072413e81a6ecfb1e32704ea7332a2"
     },
     {
       "id": "903C",
@@ -90,7 +90,7 @@
       "round": "Educational Codeforces Round 34 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "7b7541cc0ee9c63254293f5b3d8e34e2482ae7a73dd7969074762d6512b8a217"
+      "card_sha256": "e85204956d33a0b971a964a4226791e50f2625d8fd5f10ce02e84a28804ab947"
     },
     {
       "id": "1000A",
@@ -98,7 +98,7 @@
       "round": "Educational Codeforces Round 46 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "3d2d20ada56dc38d8f8f68786bdfbf9935d8253683a914c951ed3dc77a68322c"
+      "card_sha256": "7430149c7f67ed3c23aa7904e6d8d9c84e37d718b6f5d51d27d7c979a02fde15"
     },
     {
       "id": "1093C",
@@ -106,7 +106,7 @@
       "round": "Educational Codeforces Round 56 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "4388bc86f1bc39991819550dffb4526add8073b5733279d9a2d5b4386a539666"
+      "card_sha256": "6543fa4c84bb9ddbfb021b3f03ec082bb3f052163e7afa7107778664f913f508"
     },
     {
       "id": "1096D",
@@ -114,7 +114,7 @@
       "round": "Educational Codeforces Round 57 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "8722ad16ca86d8e8414decaf39c82902102f34149f3ae1db4e3d57d7aa796a0e"
+      "card_sha256": "57b387a71d95742d695ae4a1d2f0b14e8c414a595d39eb2431587b3d0ef52677"
     },
     {
       "id": "1207C",
@@ -122,7 +122,7 @@
       "round": "Educational Codeforces Round 71 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "adc9b397e4d3bb997cdf84201b27965f3a88b16af6b9dc0e40ce938b14c9bdb2"
+      "card_sha256": "d887ca603b1c66fe5ff5315384967186b42165c0d111f9fe93f929ed56552f27"
     },
     {
       "id": "1238B",
@@ -130,7 +130,7 @@
       "round": "Educational Codeforces Round 74 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "76415477a38d48f3d20f63b4b74a301e9635b64fe4f8ba27c25504bbb363a7c4"
+      "card_sha256": "077f403e5a8b35fff741edd484af080e25ec6c0864814ff332eea7193f908f20"
     },
     {
       "id": "1327C",
@@ -138,7 +138,7 @@
       "round": "Educational Codeforces Round 84 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "086020969b49731c0da100097fa82723d12d61faaef36ce34611126bf8516d25"
+      "card_sha256": "52952bedc92c83599bd2a5f739c9100f2818bf53f72f8569b59333705d81cdee"
     },
     {
       "id": "1511C",
@@ -146,7 +146,7 @@
       "round": "Educational Codeforces Round 107 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "655f9d2f62baf6b4b9dd4181d80b889b4a407f300fdcce3f1ae9cea607a8d9b7"
+      "card_sha256": "0b2dc2e9773ce56ac395e3e6f24ca0f2e0c92eadb05a9f39ba92c41ea487ca65"
     },
     {
       "id": "600A",
@@ -154,7 +154,7 @@
       "round": "Educational Codeforces Round 2",
       "mode": "普通",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "3a7a618c8283d04582bd3f90263c7b86a771eeb8dbc78c2409d44ee636bbcca1"
+      "card_sha256": "4c947c5d717dd4638e832aa62949eb46c20160609fc52588c1aa9912813cd09f"
     },
     {
       "id": "652B",
@@ -162,7 +162,7 @@
       "round": "Educational Codeforces Round 10",
       "mode": "普通",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "b45c803480a0e151eedf92fb9328dfa17b901593182d43108b976c436373919f"
+      "card_sha256": "c572c96aa84c43a4c245d12ea95f048ac244f76ed1820abca7fa8053bcf103b4"
     },
     {
       "id": "792A",
@@ -170,7 +170,7 @@
       "round": "Educational Codeforces Round 18",
       "mode": "普通",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "f97042123244c8822b7a0d50ae8901a36cb8984f3b7b8b542cd097e592881e43"
+      "card_sha256": "16e05d3a287b545b45c936efe99844dabf4cea1c30703ae4b3c9b044a5f31956"
     },
     {
       "id": "961C",
@@ -178,7 +178,7 @@
       "round": "Educational Codeforces Round 41 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "a8cb016645d6a00d1b7c0e87f3b0d48f3d203eb8e89dd871765d0bd1984d2463"
+      "card_sha256": "153acfee5c3a179d7e4c2999af19fc19da74dfb65d8d5c2f4e4fbd6f96d11543"
     },
     {
       "id": "665E",
@@ -186,7 +186,7 @@
       "round": "Educational Codeforces Round 12",
       "mode": "困难",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "f1e92b50ba84fa6595ffd13ae77428fcfe1efad1c8b72e5cdb56c4916bd2e296"
+      "card_sha256": "83e63757f5042c1242127a51544839f21837101038c16feff2fd56db813a8609"
     },
     {
       "id": "808G",
@@ -194,7 +194,7 @@
       "round": "Educational Codeforces Round 21",
       "mode": "困难",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "4446372fafbd6cf7969490ad9613facc64f201cab73a763b12c5ade5f1919560"
+      "card_sha256": "95ebf1d9d4345521da6020ae76b136379b0e3067ee366e46a7ab4b36b250edd1"
     },
     {
       "id": "846D",
@@ -202,7 +202,7 @@
       "round": "Educational Codeforces Round 28",
       "mode": "困难",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "0d7a76a46fbf65df785c2f22e9419e413ef90a0630c11887b24e2d0ddfa800a9"
+      "card_sha256": "7201533d1791fac1f1f5aaf6d29d610456aa5d08d90db118b661132441c31bd7"
     },
     {
       "id": "893E",
@@ -210,7 +210,7 @@
       "round": "Educational Codeforces Round 33 (Rated for Div. 2)",
       "mode": "困难",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "a225c55edeceeaa55cc5a9684719f5419b9500e6dab1b3adc2fd8e3e11845024"
+      "card_sha256": "6ad9028dd197062f7855ef4ae9fc325186d3c6fce47602b878238331868db961"
     },
     {
       "id": "920F",
@@ -218,7 +218,7 @@
       "round": "Educational Codeforces Round 37 (Rated for Div. 2)",
       "mode": "困难",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "7d3ba6117df9e0249db8ed63c4836faadbdb6112866512d19cd60754d0a4b8de"
+      "card_sha256": "845f98a681c75a4c24902fc9cd78389665b8e904edf9db43400440f8d4e8be7d"
     },
     {
       "id": "920G",
@@ -226,7 +226,7 @@
       "round": "Educational Codeforces Round 37 (Rated for Div. 2)",
       "mode": "困难",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "cb611126f175428fc1b1e26bc19e8451981ad8d7e6516302927093fa0686cd7e"
+      "card_sha256": "c2bb3710c0a438b45af49db7bbee0e864ca78487cf28cc33a5623ca4dbd302a6"
     },
     {
       "id": "1000E",
@@ -234,7 +234,7 @@
       "round": "Educational Codeforces Round 46 (Rated for Div. 2)",
       "mode": "困难",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "1abac22161ec2937c4ba66474fedf9e3da44164515926bb18d678e1b52e98f4f"
+      "card_sha256": "965ce71aafd877caf0aced6e5db46e9fd9c79bf54ece6e2470f9b1810205e38e"
     },
     {
       "id": "1096F",
@@ -242,7 +242,7 @@
       "round": "Educational Codeforces Round 57 (Rated for Div. 2)",
       "mode": "困难",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "cb8322818d422c75cd6bc69ff3f055cc72c1b96b26bdeb0f0f77304342cbca4f"
+      "card_sha256": "94793a029ae9fd1189819b2b0717045e814882bddd52baa96c21cb7804ce5900"
     },
     {
       "id": "1207D",
@@ -250,7 +250,7 @@
       "round": "Educational Codeforces Round 71 (Rated for Div. 2)",
       "mode": "困难",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "71564c65b7c610e11c192c08afa0358cd4e30ae8407d2419707b250c939ed2aa"
+      "card_sha256": "6253d9737dd8191bfaf9d8c7ff2d238a1b19cf66ff918fd16a85f765b78823ba"
     },
     {
       "id": "1354E",
@@ -258,7 +258,7 @@
       "round": "Educational Codeforces Round 87 (Rated for Div. 2)",
       "mode": "困难",
       "origin": "retained_from_v1.0.0",
-      "card_sha256": "7270bad502c3463ccdacef18288187580110eaad25a7ec9db809ce127bc1ee78"
+      "card_sha256": "38e774e0f0263ee30b7449db047f7e3072032023b0b478297b6a81fd3fdefafb"
     },
     {
       "id": "598A",
@@ -266,7 +266,7 @@
       "round": "Educational Codeforces Round 1",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "e88a0f670c142c2097be8e6882987da0ebacee5d9c34c4acef170047a84ae4fa"
+      "card_sha256": "9207b11b4f2df3bbad5f2e79ca32f647f3d2aa4451580751079f870813d68dbf"
     },
     {
       "id": "598B",
@@ -274,7 +274,7 @@
       "round": "Educational Codeforces Round 1",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "813f126e2cd756e5085df99fadff11bd03baedd68dbef490338bfbfbf6e7aa9e"
+      "card_sha256": "ecb0a68d9c5806d00f7d4a2a75ca9c0beeccb9a6e245260e995d080ec470ce8e"
     },
     {
       "id": "598C",
@@ -282,7 +282,7 @@
       "round": "Educational Codeforces Round 1",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "859514f0719633bc0180f79c3dba660bc6c3f6dd8cb1f65071e79412ea36c2e2"
+      "card_sha256": "dc137065199e7692705d5267d8fa23a9a7491d328a405f366eb1dd3b8a82df83"
     },
     {
       "id": "598D",
@@ -290,7 +290,7 @@
       "round": "Educational Codeforces Round 1",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "01cff483978376f4a5640ba16732375ccb613676fa2acad0667bfe3378050a3c"
+      "card_sha256": "9c2d6e74d7026e676780e741dc4c81bb6631d27dd9ffa1b632771d61b572be13"
     },
     {
       "id": "598E",
@@ -298,7 +298,7 @@
       "round": "Educational Codeforces Round 1",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "db1e5c2e029dce2006c037b2b07ad417d6d2b3acc0f20e4abede8ecb2f6c899c"
+      "card_sha256": "a4e4bcd32f22a9b58a62dd7c1597c21c49cc0e3117b8f942fa3aa3905e2e66e9"
     },
     {
       "id": "600B",
@@ -306,7 +306,7 @@
       "round": "Educational Codeforces Round 2",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "9b6144f05e73328d53def26eedc35ebc0a4a6ce1aa9e357b7b10051a91d8fdf1"
+      "card_sha256": "a21e40bf8df7a695f7a14c05850e9e8f679c1a7774724ad7b9e34bef7511bc89"
     },
     {
       "id": "600C",
@@ -314,7 +314,7 @@
       "round": "Educational Codeforces Round 2",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "71d5a80fffd152fd2e5d0c0e2758bc6ecffa02f53f089e049e31296d6583bed8"
+      "card_sha256": "62e32e11e63d578522a357c8b039ffe0cb3c8febf5fb03f9edeb9c1024711ee6"
     },
     {
       "id": "600E",
@@ -322,7 +322,7 @@
       "round": "Educational Codeforces Round 2",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "b255849b51bd509008ce73213ea0efe0a60c94cf7e1e6e47d80fb6fb23bd8488"
+      "card_sha256": "d474bb6f725e644cce64815344ab4769553106d8191ab1ed636d2f433131c0ea"
     },
     {
       "id": "609A",
@@ -330,7 +330,7 @@
       "round": "Educational Codeforces Round 3",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "a27cc20cec56bd0aaf577c7eb9f5b2d52933750c440e8163d1cd3593dd2f2744"
+      "card_sha256": "38d4ba2e09007dc82fac49f973e75df790b39679dfefe2b49aa93412f3b38f86"
     },
     {
       "id": "609B",
@@ -338,7 +338,7 @@
       "round": "Educational Codeforces Round 3",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "a30164f98da64d9b879ce1e9f05eb556f52d2f0d250ec8f15c6e751774d2b5af"
+      "card_sha256": "9bb2c93f6383fc9d97746e65144fb2b1f55c70e7a6aa5838b4605634c4b6198e"
     },
     {
       "id": "609C",
@@ -346,7 +346,7 @@
       "round": "Educational Codeforces Round 3",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "d8413edc0192e8787540a5743b77bd298ebe04fbb2492995c38486235f3aee90"
+      "card_sha256": "3fdae3ea1fa862519610702815cd73d3f1fb89752c57cb9d108671e3d95cb501"
     },
     {
       "id": "609D",
@@ -354,7 +354,7 @@
       "round": "Educational Codeforces Round 3",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "7139272a691ac9f73a7d767eadfb7f0280a8cc62cb211e75c3899bb8eb59d48d"
+      "card_sha256": "64f562d24d9544d22ef78b139332adbee15cd3fc0d56cef0bad03724fc610891"
     },
     {
       "id": "609E",
@@ -362,7 +362,7 @@
       "round": "Educational Codeforces Round 3",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "d9e33a85d4068cdc2c6ee3fb265cb9435f842694fb8853257e3b811cc9c23ecb"
+      "card_sha256": "633b2fcf543cfea484ee473ece8d61d827c4c42c14f9547da105798647f4ed79"
     },
     {
       "id": "612A",
@@ -370,7 +370,7 @@
       "round": "Educational Codeforces Round 4",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "8dddf86d69d5d9ec9d1b0004697f2bb62ef891b1915de53bfc7004a0a028b91c"
+      "card_sha256": "b06fd1d09074458dad62669337964ce0897ff6b70759bf7bada19ba9a25ad9b1"
     },
     {
       "id": "612B",
@@ -378,7 +378,7 @@
       "round": "Educational Codeforces Round 4",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "b80851d78968c9fba0ffb1f2a6105ee8c6e38f8821048c9e2678fe0af8604ff4"
+      "card_sha256": "5eec5477d627003917f0883c084d88c0298c138c5c426f4eba41791ffcdc8959"
     },
     {
       "id": "612C",
@@ -386,7 +386,7 @@
       "round": "Educational Codeforces Round 4",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "41adf6e37270b37ac6c990b03ef3a9fb32a1dd0df60acfe3b8f1aefcb0e68bd4"
+      "card_sha256": "21465fb210c033bef0c00a1849a166a58c81e12a9e27d2b3975ed192cd5395b9"
     },
     {
       "id": "612D",
@@ -394,7 +394,7 @@
       "round": "Educational Codeforces Round 4",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "53307dce58dcbe48295ca01ab1b1b4419e9f001d0b6576a80eb6a8ce8e460327"
+      "card_sha256": "c85dfe0445a92c9a8871cc0a626c572d8ef33a528649db3cc8a7d8045dbec548"
     },
     {
       "id": "616A",
@@ -402,7 +402,7 @@
       "round": "Educational Codeforces Round 5",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "04bfad0919b16082e0775d791357c9a850618475de220e2ea4aaf8c38ed95c07"
+      "card_sha256": "a04c5ea72d7b74166fdca8c80996e3fea244cf7ff5b380ebad6a8b26380f8fde"
     },
     {
       "id": "616C",
@@ -410,7 +410,7 @@
       "round": "Educational Codeforces Round 5",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "bf13e551a3c50316b4800afbb2cca627c776b64c9b3f33761c48227ce0c157fe"
+      "card_sha256": "5ba80d10afa9878ee4e2dd1568bd477851c83d28f1a344fda3a241430d4a7b3b"
     },
     {
       "id": "616D",
@@ -418,7 +418,7 @@
       "round": "Educational Codeforces Round 5",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "29d6c3f1fe30283c95331f87a1a30fc21db7a6079aa5a538e23b212c7575f40f"
+      "card_sha256": "9fa2ad8f2574465f913f80b65bb339ba7a4c15e3084faa7fc2748d02fa22151f"
     },
     {
       "id": "616E",
@@ -426,7 +426,7 @@
       "round": "Educational Codeforces Round 5",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "ed3abff76309c1d37e9348329403e318e175426d305f008337a915418dcbea85"
+      "card_sha256": "f648bdb9931e164bd09dc008d4dbcc80dec50b24d82e0373d8ef34a02bd1d2b3"
     },
     {
       "id": "620B",
@@ -434,7 +434,7 @@
       "round": "Educational Codeforces Round 6",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "c5d953bfcbab77c171a11f8950d3a166b9103451776fe7c24093a3486bd690f4"
+      "card_sha256": "dd128b6598f143a3ed81fecb42691bfe8b28f3361476e9dd3f4d63820167ee15"
     },
     {
       "id": "620C",
@@ -442,7 +442,7 @@
       "round": "Educational Codeforces Round 6",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "af7fa1351c4379259da8c46c5cf647f7d378a9c479e08236bff3d46496d08abf"
+      "card_sha256": "ca1429694e4a1743386187a2812b6ac858183d079a168bbfd94914fc4d4e7a16"
     },
     {
       "id": "620D",
@@ -450,7 +450,7 @@
       "round": "Educational Codeforces Round 6",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "ae5e5844b7c7fe18d17442a516f070ccbe096f5a82dd7e274ac01bcdd0cb4181"
+      "card_sha256": "c38643a959baab19dd0535b01a288178bcdc5083760572828dce849776c6c8f2"
     },
     {
       "id": "620E",
@@ -458,7 +458,7 @@
       "round": "Educational Codeforces Round 6",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "97215bca337842ba7d651d1418c63625d627c3aa8ce5d5163b5eed5d5ddca9af"
+      "card_sha256": "767b9c1e74c33e7a279366f060130d9c889ce533e97a3fe4ec73e115a3f51fec"
     },
     {
       "id": "622A",
@@ -466,7 +466,7 @@
       "round": "Educational Codeforces Round 7",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "3f7c02a70785075bfed0fd66fbc8ab9337dc6d1a725bba6df0e857bf3f776ccf"
+      "card_sha256": "b33676cccedf7db3a6732fd00df25a43e27e0679d0cc70ae9387679ecdb4f927"
     },
     {
       "id": "622B",
@@ -474,7 +474,7 @@
       "round": "Educational Codeforces Round 7",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "df9f7cd2217e640c29b33638fbe1829373c4ee26d0f56b343cc733ee9d4a9bbb"
+      "card_sha256": "b71c1a92ecd6aa2cb1b4a36aa79727a8f13bf1f1a1b829a6cc75075b20a42be6"
     },
     {
       "id": "622C",
@@ -482,7 +482,7 @@
       "round": "Educational Codeforces Round 7",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "16efc065ab2f4bf2af53e982a0c2cc8808dc027694bfd0fff013eeae8a7773de"
+      "card_sha256": "bc6e250411a31388a1d1d40ccc8e825313c9ba45deb35b32a454981f9d82cca6"
     },
     {
       "id": "628A",
@@ -490,7 +490,7 @@
       "round": "Educational Codeforces Round 8",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "d142184d83dc06b16a2caccdc409ff236d8598589b139b9c1eb0e3408c8b75bd"
+      "card_sha256": "5b403d00af2ceeb0e76703d66d7ba738157fb407f86ed79e1b28991813dad083"
     },
     {
       "id": "628B",
@@ -498,7 +498,7 @@
       "round": "Educational Codeforces Round 8",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "b69226b9fce732284ba3afd658548ca3c61893617ae65711e20d258ae6480ba2"
+      "card_sha256": "591cd73a2a3a386980a1564e0c277014a55b429cc18ccab3d0bcd113b9c636d2"
     },
     {
       "id": "628C",
@@ -506,7 +506,7 @@
       "round": "Educational Codeforces Round 8",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "81102659e88f6126d3337e75326e4f025322b4479035b3c3723d9fa9e06ca5a9"
+      "card_sha256": "b04d03b422fcdf89aaee98608f18f7fc48d528991972974f0cc69a7eb2dca7da"
     },
     {
       "id": "628D",
@@ -514,7 +514,7 @@
       "round": "Educational Codeforces Round 8",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "cfdb3926c9cebd0401485843bdb14d3fa896f68b76850ff67248946198b2c422"
+      "card_sha256": "fa8e3aa5e3ce2ff761edcaa2872dc7ea3999b5347a06f7095ef4bd6c11e8ec0a"
     },
     {
       "id": "632A",
@@ -522,7 +522,7 @@
       "round": "Educational Codeforces Round 9",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "e4464b1b8675e998dd38f301934840ce77490747c7fc511fad6bde6594295f42"
+      "card_sha256": "9e5668c69df9039416db813b2821477f5f67225d48415f26059ecbea17fdc987"
     },
     {
       "id": "632B",
@@ -530,7 +530,7 @@
       "round": "Educational Codeforces Round 9",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "d626dbf0e5f4984c7a2fb14b52654d60927edbcc47023faf996b45e5e1684ae4"
+      "card_sha256": "8c635107983d0ac17b1dd466d6e8f726999ed6da4fa81eb89cf55f96b9a86d42"
     },
     {
       "id": "632C",
@@ -538,7 +538,7 @@
       "round": "Educational Codeforces Round 9",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "0d5e360b5ba567148d032b9ccbbc058612a6594172aa4fcd5dd41a476c634c66"
+      "card_sha256": "572e692a3eb49eb3910f842173a27290cbf3a78620ad9578a1c259998627dd57"
     },
     {
       "id": "632D",
@@ -546,7 +546,7 @@
       "round": "Educational Codeforces Round 9",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "6caf46778b1e91ace671182992ba0d098b567821de2cecff40d462554e0c9fc8"
+      "card_sha256": "0b3042e3582a4e33571cec0671b12b8d3eb9f7a7d249767d8e358d94aa5c621c"
     },
     {
       "id": "652A",
@@ -554,7 +554,7 @@
       "round": "Educational Codeforces Round 10",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "bce0d9aca1b58eabb7277a6101c59cbf5e62bc4a4b163217ac079c32eea02eee"
+      "card_sha256": "043ce23e6355cd91f00962a9418394daa64fdc8c34e9f04049b658f46f0cdc71"
     },
     {
       "id": "652C",
@@ -562,7 +562,7 @@
       "round": "Educational Codeforces Round 10",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "4b17f9530455915df15f97767e1147db9f736de2e09aa9367e6a5d124a902177"
+      "card_sha256": "3485811487c593cc20b79ec2aa23fa48ed71105ee13e69f06f5e0d0acf861b36"
     },
     {
       "id": "652D",
@@ -570,7 +570,7 @@
       "round": "Educational Codeforces Round 10",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "6e62a96df92ff99e98cc2ba8ce49fab6e2429f9146427b7f6f290cb27afe4cad"
+      "card_sha256": "73e4b5219aab09f5cff28927ec0b838fb85f7039acaf419a236ddc063f72f027"
     },
     {
       "id": "660B",
@@ -578,7 +578,7 @@
       "round": "Educational Codeforces Round 11",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "71ef95206d9e1a01dd9eb0b4daedd6fbfe107e2320443965458593ebf20a50c4"
+      "card_sha256": "7fe7961bc565fa8077f40b850ebb5985c97d9b46d0d33d1a713aad8e725ca1e5"
     },
     {
       "id": "660C",
@@ -586,7 +586,7 @@
       "round": "Educational Codeforces Round 11",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "86cd3ac60c030484938f33b58810d686b9be66a4433754abd35c06dc54e6807b"
+      "card_sha256": "f4529598dd0ab1dbc5b1cb8116b668bb5ff03ac5a4f2683cfd8d530199eb3edb"
     },
     {
       "id": "660D",
@@ -594,7 +594,7 @@
       "round": "Educational Codeforces Round 11",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "315704a7f5da705ca2e0222e607ea94f3db6592c8a743d2c2619d633fce3ea16"
+      "card_sha256": "5a241061ecc3d7d0b0fcf97eaa516d087570f6777c9e054aa103fedcea2dc23d"
     },
     {
       "id": "665A",
@@ -602,7 +602,7 @@
       "round": "Educational Codeforces Round 12",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "c14dff6388bc64561d3122086668c8495e8b4637f381eb3bdd76eb7c168c5cd0"
+      "card_sha256": "c354ab3fce059a5ab8aa96487b9a7bbe3fb8b20c100f644d6aafc83ec2435e3e"
     },
     {
       "id": "665B",
@@ -610,7 +610,7 @@
       "round": "Educational Codeforces Round 12",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "931fcb171c4a96833e723bcb144ed814288794c06eb109baa48df95f483f2815"
+      "card_sha256": "087f7a25cb735186408ab9e50ccef8ab8d896c0f2b738bcea2e7932e3e946dc1"
     },
     {
       "id": "665C",
@@ -618,7 +618,7 @@
       "round": "Educational Codeforces Round 12",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "6e0a0f5b67e63314c4848c7c46e72ab399553e4a9e7fe656ec134e93214cf4a4"
+      "card_sha256": "6a3d17486df26210c5b17a6ce00cd959fbabb1b1e8de80375317aa17fd77f535"
     },
     {
       "id": "665D",
@@ -626,7 +626,7 @@
       "round": "Educational Codeforces Round 12",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "a28a33f58a5e34bf78a8b442be995488ff496ba3607a86904bf83a83b6645643"
+      "card_sha256": "0ba458446ca574883d576b1965c0b4de25667a2991e137a701d73618397cdd4c"
     },
     {
       "id": "678B",
@@ -634,7 +634,7 @@
       "round": "Educational Codeforces Round 13",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "22ef5d8b0eb8465b03627d38a10f12586fea90e9a0d92bfb432b1b962e448059"
+      "card_sha256": "f8728f23f422326c2521fead140a5739a45323dadc2c259d01c8292e59f3fe27"
     },
     {
       "id": "678C",
@@ -642,7 +642,7 @@
       "round": "Educational Codeforces Round 13",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "7798b566d5ef54c8f65a4b15eb2c0e0eb3169dc02c40976575c7205acb51aaa4"
+      "card_sha256": "a5d68899efd148b1da08355c977676944710fdd1a1511551df91071114f28a25"
     },
     {
       "id": "678D",
@@ -650,7 +650,7 @@
       "round": "Educational Codeforces Round 13",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "2c6dd904dee39e04a89ffeb27e96ebfbb83f4706035e3e4be3a309fa77a665c6"
+      "card_sha256": "bb198965f573ba53fc163400db1e15af99351a45bbe2d479e92edbe72bf36d5c"
     },
     {
       "id": "691A",
@@ -658,7 +658,7 @@
       "round": "Educational Codeforces Round 14",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "251914dcfe646eb51bb9aa12b54234f388cc6707cacc6b4dca360ed0f39dc9aa"
+      "card_sha256": "00511af6d8aa6a13a7119c3bf40680fc3c6dfc34837c23e638e519e2982433c7"
     },
     {
       "id": "691C",
@@ -666,7 +666,7 @@
       "round": "Educational Codeforces Round 14",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "3f7fed269a7d119f84bf003439b7d685711d11d12b3265867e327a3a39862719"
+      "card_sha256": "84adf1b4db75a6c93e4c2e4bc595365eba525ccb937ac43992b4c1a6ffc8aaa8"
     },
     {
       "id": "691D",
@@ -674,7 +674,7 @@
       "round": "Educational Codeforces Round 14",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "ba343aef24910d8a5be540ddd4f890ddf1456c032bf86ec45eb0d1ca7031692b"
+      "card_sha256": "0455f5c4c33aaadc13f62c7fe22189f60a62eb807e3b4ef429d5d5fe752ddbb4"
     },
     {
       "id": "691E",
@@ -682,7 +682,7 @@
       "round": "Educational Codeforces Round 14",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "48c1add1eef4a75412d135996f90b0d1ed155154abf00a0543870c7ba5d8ca7d"
+      "card_sha256": "92487de16bcb865a78908ffa3d368a001c68dbe0f94c90bced7d0c3063f3dc22"
     },
     {
       "id": "702A",
@@ -690,7 +690,7 @@
       "round": "Educational Codeforces Round 15",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "844745bc88ace85e7074b7c7f6f58f874b14d948d66eca51f7b4338b67dda290"
+      "card_sha256": "7068d737a296a1dec3232d6887a3f92b32ed7e138aef4921d16df15c96a07cbf"
     },
     {
       "id": "702B",
@@ -698,7 +698,7 @@
       "round": "Educational Codeforces Round 15",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "4f178652713348cd2981b591ffb03d79e909dd29707db21ffc3752fb357dd9fc"
+      "card_sha256": "5317c52a86b1db8cb26b5a3885d02bfd3534b85cbf24e2407677df41501a65e7"
     },
     {
       "id": "702C",
@@ -706,7 +706,7 @@
       "round": "Educational Codeforces Round 15",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "7a773fb2cc873cf30ce92bfb0745e8dd40b1459289a013d49ffe02c3039834f5"
+      "card_sha256": "84d9f1f5626638c05c81784ca81f421916c40832e258df932d1879866f3b42ae"
     },
     {
       "id": "702D",
@@ -714,7 +714,7 @@
       "round": "Educational Codeforces Round 15",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "e82901a720ece9c6c23def8706ae96c2f15814bfcf094f90bd3726560c59e7b1"
+      "card_sha256": "54b08e31a99c4b3a123a988b44cb08f4afc86465b4b0a96ba799d127c3bd53ce"
     },
     {
       "id": "702E",
@@ -722,7 +722,7 @@
       "round": "Educational Codeforces Round 15",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "1e93723620a70fdd4fca01dcf9e0fbba52f81233e939156529b6770eb15c5246"
+      "card_sha256": "bd566c2dc8b016038e1f0ddd22e003739e082e6c2295f85cdb46410c69ae6e57"
     },
     {
       "id": "710A",
@@ -730,7 +730,7 @@
       "round": "Educational Codeforces Round 16",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "5d22bfd3b07928450b2f088ebbdfd347b624c4c491c69f5f941f4749e306c930"
+      "card_sha256": "c0260353ed8a7da61a8db4c0146ab96ea11d61f706146757b00d7f0c3692994f"
     },
     {
       "id": "710B",
@@ -738,7 +738,7 @@
       "round": "Educational Codeforces Round 16",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "993f3c4f01352cf95c56f9d0f5871babc91f200122d8766a47697792bc17f501"
+      "card_sha256": "cecaa1f88f54b52e540528c13dbd25aa491dec3122c7997e5cffb468a035b3e8"
     },
     {
       "id": "710C",
@@ -746,7 +746,7 @@
       "round": "Educational Codeforces Round 16",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "86a3b51414f53d8792598b86578b464bf11012ad9ded24e4be270a571e1f1079"
+      "card_sha256": "552255ce3a081c5782ee256487c3cfbf5d0ed3f018cd071f4295798641750dd2"
     },
     {
       "id": "710E",
@@ -754,7 +754,7 @@
       "round": "Educational Codeforces Round 16",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "a8c17fc85966432b065ceb2542f89aaa9bd288a5e46801b0e855f9078282c2bb"
+      "card_sha256": "39cc33f40cc5fbe61ecafaa1678d20445a1e055632d18b8189f855816e0ecb21"
     },
     {
       "id": "762C",
@@ -762,7 +762,7 @@
       "round": "Educational Codeforces Round 17",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "ddb06b39c12222386f59fa79779543327ba33b52bf6107b61b7afe9b93832a28"
+      "card_sha256": "513738a1f1558d0f0c40ff1233016671cbb996432d0e29bced1a0a36b63e3ee8"
     },
     {
       "id": "792B",
@@ -770,7 +770,7 @@
       "round": "Educational Codeforces Round 18",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "d93406f3103ea823fdc784fd3ff7727c4063519c0f8e030195ff0e6e2926b2bf"
+      "card_sha256": "c7160ccc25162aeef754a1af44b4dcfd556d4fb25704c008e87ea7b3d65c391d"
     },
     {
       "id": "792C",
@@ -778,7 +778,7 @@
       "round": "Educational Codeforces Round 18",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "d42e357001c76c67e17f5412a311fafa58f18caceee33cbba4a4f0ddfeb276ea"
+      "card_sha256": "1593841eae458557b03ca21bab1982f2e29cd15d2bd0f53bb57ac0b3140a796a"
     },
     {
       "id": "792D",
@@ -786,7 +786,7 @@
       "round": "Educational Codeforces Round 18",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "f394b1af7a49802951fc3e24f8e880e85eb5ea8ba58a8d0eb6cde5bdd5542fd1"
+      "card_sha256": "1bf5a150d8bdaa005bdcc8dbcfe03d5ac2117ee6a7ed881b8474433fd76f2db5"
     },
     {
       "id": "797A",
@@ -794,7 +794,7 @@
       "round": "Educational Codeforces Round 19",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "93a46e8d5aa0d1085b1d080882aaa8d5a777c5c60f6dac5d22f6bce8503d40e0"
+      "card_sha256": "294fbe0bb1db031d957fa3cf3b7c10bde4e8928aca0b104c29db3dda3e524809"
     },
     {
       "id": "797B",
@@ -802,7 +802,7 @@
       "round": "Educational Codeforces Round 19",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "d69db23375298e983a227a410b62c7d6fd650330e5443b32ac017718190bce7a"
+      "card_sha256": "55bc396734852461a8fbe1e9163ffee1f82ef0e58755c032b544674dfdc5c757"
     },
     {
       "id": "797C",
@@ -810,7 +810,7 @@
       "round": "Educational Codeforces Round 19",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "0a6954fea150a095a2a87ab224d9c1ec6074903850ebcf2ad232171f2c913bea"
+      "card_sha256": "f2e04d9a4704679e6d2b0f6e25f13cf0abdf320c81f3e00f803952eef53d15d3"
     },
     {
       "id": "797D",
@@ -818,7 +818,7 @@
       "round": "Educational Codeforces Round 19",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "304f63716fcc783d532ade3f4b3801a6741c955b404e515aa77fd135c97fc3e6"
+      "card_sha256": "49da1fae830abd4a4d39a01211c352808de3fa47113f484147e5ca55223a36e9"
     },
     {
       "id": "797E",
@@ -826,7 +826,7 @@
       "round": "Educational Codeforces Round 19",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "be940f994d97881b8343dfa5d097cf771b861d40688c7d375a5dd36f49500fd2"
+      "card_sha256": "c6178b6a3c033fd6dda602af52c43f09c4e8f94af55211df641627065154e085"
     },
     {
       "id": "803A",
@@ -834,7 +834,7 @@
       "round": "Educational Codeforces Round 20",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "ed02bc3f0959f5811471cf4edf14fb0f771b938fd395dbf01bf4aafddfd50589"
+      "card_sha256": "32418131b5555047da018d0a57733573de3d29ccfab823da344b06708df5ad55"
     },
     {
       "id": "803B",
@@ -842,7 +842,7 @@
       "round": "Educational Codeforces Round 20",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "147b15265b2d7fc4ee0e3821ddc0f0bde37d9e74d7b8e1db592f12babf23b91e"
+      "card_sha256": "9d7255a35b5a2375a488707535cd7dafc4484d01b2791e2a3f3a28db485c318b"
     },
     {
       "id": "803C",
@@ -850,7 +850,7 @@
       "round": "Educational Codeforces Round 20",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "a89bcaa2a25b543889b04d72cd9f025732d342a5b6d63daf895eeb7b6fa7b5d4"
+      "card_sha256": "e014cc1e858513a22f87e37e29adb22b0a92ae2ba1f6c8905d1fdd3679d7d076"
     },
     {
       "id": "803D",
@@ -858,7 +858,7 @@
       "round": "Educational Codeforces Round 20",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "9f6b86e8e3a97c0b41dbb8e6b38d8ce8bfe97849fb1c3f4fe716cb3c208d57dc"
+      "card_sha256": "4ee76e9a016fbb68cc84bb3a6c2643a8067d664d4937dddc42e2dda70895cccb"
     },
     {
       "id": "803E",
@@ -866,7 +866,7 @@
       "round": "Educational Codeforces Round 20",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "6d51004ee3297ff3b1f89a672967af61a8cde142d36d2af26978ce629a63797a"
+      "card_sha256": "c98456bfb85a46636dad9643b7df3e98088145f8b7e46777702655f8da45ab3f"
     },
     {
       "id": "803F",
@@ -874,7 +874,7 @@
       "round": "Educational Codeforces Round 20",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "728c6d2c7d93af82bc84b74f19dd53475d674c4d40d463ac7d8df0cd0e7ee957"
+      "card_sha256": "f2b8f96be33e18a81613c43df3aef77053c42037ff1ea266b8fee3bb1b99b54a"
     },
     {
       "id": "808A",
@@ -882,7 +882,7 @@
       "round": "Educational Codeforces Round 21",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "87a92a329c25727255365ea0127fe601dcb8d05b16d85752e927003bbb60e315"
+      "card_sha256": "cb5f6edaa9f796186413818351eb0373251518ce1734c6a44b74e4cf4fe091f9"
     },
     {
       "id": "808C",
@@ -890,7 +890,7 @@
       "round": "Educational Codeforces Round 21",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "be05b6c2370bfdbe12b0aac8442e25bba544fc3e30687dba67acaebe4b8d7ecc"
+      "card_sha256": "676969abed0003a39a4cbc1f325c7c94c74a194dfb0bce0e6769d0d3be63fb69"
     },
     {
       "id": "808D",
@@ -898,7 +898,7 @@
       "round": "Educational Codeforces Round 21",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "260d0eb1be04973f7680c92eb8cb0532d4464f6f8c87e1aa8fae53ad82a9abdf"
+      "card_sha256": "dd696d7d3f6f62bdab211aa045b397204fc2a253ddcc26db37c4ad59089a1911"
     },
     {
       "id": "813A",
@@ -906,7 +906,7 @@
       "round": "Educational Codeforces Round 22",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "b3e645c5c5e8b1d6dbba6775b4fd3ce927f7a9e55d0a6001a9755011754847b7"
+      "card_sha256": "53adf3b78ce2528b6fa1886837a04b2648ea5e608820fdc61deecd908e68a2cb"
     },
     {
       "id": "813B",
@@ -914,7 +914,7 @@
       "round": "Educational Codeforces Round 22",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "b4c8fc24529df54ada3889803912577e3bb5b414ef54a17e0d89edc007167871"
+      "card_sha256": "93f8498c9500c2f002ad44bdc1d529fca69d33eb31c4005d19c4b9d980b81916"
     },
     {
       "id": "813C",
@@ -922,7 +922,7 @@
       "round": "Educational Codeforces Round 22",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "11cdab67e17e18f769974d8f5a83af40fe19169aa24623fe0bbacbb4322c42e2"
+      "card_sha256": "b9f963eb9132245d870ac7b317ed255715deed7f112c3f190133bc48e40200ce"
     },
     {
       "id": "817A",
@@ -930,7 +930,7 @@
       "round": "Educational Codeforces Round 23",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "cc6b3ec93fa9e7452ce3cbf9a0ec6caed2168acc9dcde75fa382abbc802ab65c"
+      "card_sha256": "45132efab24eb1a64af9feee1677049c92807bcbbbec58a80c00bcfe480de602"
     },
     {
       "id": "817B",
@@ -938,7 +938,7 @@
       "round": "Educational Codeforces Round 23",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "e0487f6e9a02c1ab681ff8679d80205d6635ce53e97aa0a7685f0203c6b4cc37"
+      "card_sha256": "f0a72b826da74baf2c9c1ac3ce34bf46b6c8379cd30eb678d7fc2630c01be1ad"
     },
     {
       "id": "817C",
@@ -946,7 +946,7 @@
       "round": "Educational Codeforces Round 23",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "28b9670ca318002b69a85d5ae8c1f481af38dfe492b308c37abb7e9effe26dbc"
+      "card_sha256": "ecc6c62ad8ab141663fd4a95da402336b13e6a55290c58866eaa55372af7df35"
     },
     {
       "id": "817D",
@@ -954,7 +954,7 @@
       "round": "Educational Codeforces Round 23",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "c411149516d746c27ea378b7fa7a678ef2520b7ee8120c7596d52495055840da"
+      "card_sha256": "7c17d2e1efccd8ce17f0b5cb43413a44931802d344e64cbd0637ac5deba1034f"
     },
     {
       "id": "817E",
@@ -962,7 +962,7 @@
       "round": "Educational Codeforces Round 23",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "75bdc853409e2c4bfa222ed8e6ccb774ad0fe7df30034bcfca9b376a829002c6"
+      "card_sha256": "d38801f55a7aaf887b36642baa591076b8048bdb6253dcd05e5786bcd77c9394"
     },
     {
       "id": "818D",
@@ -970,7 +970,7 @@
       "round": "Educational Codeforces Round 24",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "0f1347faddb316ea3f8557a60c0fe9ba510fecf31571a4c0a8d37271fb4aa4a8"
+      "card_sha256": "9aa03b21cb208eeb5514bbf373eb5a6396335fbb5a45cc6c808982306e19e418"
     },
     {
       "id": "818E",
@@ -978,7 +978,7 @@
       "round": "Educational Codeforces Round 24",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "c69d6fd8e2b69810b064453026a708dd215c4ae5508e09e30fe162c14df39c53"
+      "card_sha256": "b6acde2f4eac0ae8d299a85276a667fbc533c15a1d59af2969bc260cd84f8015"
     },
     {
       "id": "825A",
@@ -986,7 +986,7 @@
       "round": "Educational Codeforces Round 25",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "1406522381974f875e7c98ec5ebbce05cc02ae28bdd56db25a85fb86da41a85e"
+      "card_sha256": "1a9f88efbf0480460e94adea3f5d69c8e0e01a39dae96c238862cffb7017016a"
     },
     {
       "id": "825B",
@@ -994,7 +994,7 @@
       "round": "Educational Codeforces Round 25",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "598404c83b5370fa34e6bb7e14a6527eb7aba7daa8230aca154eef92ce2b6979"
+      "card_sha256": "49f42f9ebea5a6cff93384999be8da3d2169f583dbfe075b72f1020d6ad66dea"
     },
     {
       "id": "825C",
@@ -1002,7 +1002,7 @@
       "round": "Educational Codeforces Round 25",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "71024866e75490e2f3abe205291366625f88d5ca07640eec1aaf7525e1d92dff"
+      "card_sha256": "8021694702cac1a972d71160db3933c1060b3943436a89b6d920fd0f5fa9fb49"
     },
     {
       "id": "825D",
@@ -1010,7 +1010,7 @@
       "round": "Educational Codeforces Round 25",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "b32b099d223144728ff751096cfc815ccf14ae7807720274c781dcb94d1f346a"
+      "card_sha256": "f4e72be2b4f449baafd81213ca41682590b6caa6cf80a2e49be54a9c8a0f1f50"
     },
     {
       "id": "825E",
@@ -1018,7 +1018,7 @@
       "round": "Educational Codeforces Round 25",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "b80ec41c63aadb4003816a3dd03412c6f4351f042dfbfc7701c3d4a510381924"
+      "card_sha256": "d710d25758984ca9f143e23a4d1f2934e70286f84eaf480d1c515401e1177efb"
     },
     {
       "id": "837A",
@@ -1026,7 +1026,7 @@
       "round": "Educational Codeforces Round 26",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "eb9cead3e86130978a8224cfd8c4947fc484a0439aaa9e7b85998ac6e7e3815f"
+      "card_sha256": "56dd5ebe9ac1ab8b5a6ab00695cb1391c8340d391b2feb7821d7a9627066d405"
     },
     {
       "id": "837B",
@@ -1034,7 +1034,7 @@
       "round": "Educational Codeforces Round 26",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "76bd0d5febfb689069e501d06dcccb5bd60a2b6f40e59818ceb38cb8f09f9e75"
+      "card_sha256": "c526f155edf0bef4d75c19e088573ed8f419494e517ed18939366fb449ae9457"
     },
     {
       "id": "837C",
@@ -1042,7 +1042,7 @@
       "round": "Educational Codeforces Round 26",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "1892faa897a8384bc45e89ac5644c7dc72a20f11af85e2963e5eee6202a38d12"
+      "card_sha256": "87e7bdead18aaab0136c75d3ec68d9d20f58f878914ccaec55140687d4427511"
     },
     {
       "id": "837D",
@@ -1050,7 +1050,7 @@
       "round": "Educational Codeforces Round 26",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "c56d430db001c4f0d9a82c7c6efe115c1420db124cc180e9812bbdd9e639bc6d"
+      "card_sha256": "7af0cf9f3609060d2c00d4e75dc35aefaa36cadc0e48550ad812268a6fb8c9a5"
     },
     {
       "id": "845A",
@@ -1058,7 +1058,7 @@
       "round": "Educational Codeforces Round 27",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "55b1f0ea1ee4fcc1d622abccd02435850245c6f249bd4b4676e5ae6abe2759cc"
+      "card_sha256": "e00305ecdffe4c99f0baacbc88c426e4be5e40c7ca28d68bf018004190c7e286"
     },
     {
       "id": "845B",
@@ -1066,7 +1066,7 @@
       "round": "Educational Codeforces Round 27",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "f92030dd6eeeffe12ba22beb3c7963d629c115d3b3ddc6f322f76b8edd3c2fee"
+      "card_sha256": "9d2e04f21410810bbad60ddb552f0cefe4ad4e973de2529c545218dfcf5ac0a1"
     },
     {
       "id": "845C",
@@ -1074,7 +1074,7 @@
       "round": "Educational Codeforces Round 27",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "34f721a84eab68c7a1667e715405ac7504ff361f07511ad4faa631b861a90f60"
+      "card_sha256": "22cb218dcbd034601787e13587cfa85a69fc7f729e0e5953a6ec76c219348b5f"
     },
     {
       "id": "845D",
@@ -1082,7 +1082,7 @@
       "round": "Educational Codeforces Round 27",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "0afa6f36c08ff5fed477606d58a045c75b0ff5bd924ad9b36c80f6e55c2ef31e"
+      "card_sha256": "c906785cf67b77d3dc0f62be444ef965441f6c9021b341e8ebeca1155abf7232"
     },
     {
       "id": "845G",
@@ -1090,7 +1090,7 @@
       "round": "Educational Codeforces Round 27",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "6daa0d2ea5a1166a8279a46f350e58387f26d3c3875a4b0eebd59844a05b34b8"
+      "card_sha256": "fceca2f19bd41b12ced819378d9a3826f7a925056b8b2e2e867943af48fbdeb9"
     },
     {
       "id": "846A",
@@ -1098,7 +1098,7 @@
       "round": "Educational Codeforces Round 28",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "5d1cb8193552e69669da80c1df85ee9c0d1d224181a4a94915c22ed587af43cd"
+      "card_sha256": "7a451ae5721d4ce14e65e2dc803bc8ae12a719d9d475c5ee4ba79e4db92c2aaa"
     },
     {
       "id": "846B",
@@ -1106,7 +1106,7 @@
       "round": "Educational Codeforces Round 28",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "7eec7a7e3d5c78db727a6a1ef25d95a2cf55069e9633b0725835f79f6913ddce"
+      "card_sha256": "fdcbcae6337a4bfaba5573b17ec0db1af0b8ec77570855d8332a81fbe13d235b"
     },
     {
       "id": "846C",
@@ -1114,7 +1114,7 @@
       "round": "Educational Codeforces Round 28",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "423516d315699a0d494d1ad2133ec4341e15111dcef81516dac98f1473f8da7c"
+      "card_sha256": "1dc0b979d932a669211f152b51be2f90474d7be1cd8ec43ec80da225fca42e4c"
     },
     {
       "id": "846F",
@@ -1122,7 +1122,7 @@
       "round": "Educational Codeforces Round 28",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "2a17925dfd7dcc306e61ae72ef2f7aea53486560fe99daf67e8a5569b6f717d6"
+      "card_sha256": "91b490f62d0d3d90bb36c2c69d4c3b7902c1ff4d212f7c6085ff44fe59dcb27e"
     },
     {
       "id": "863A",
@@ -1130,7 +1130,7 @@
       "round": "Educational Codeforces Round 29",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "4b319e1e66fb9380ce169f1ca1b8cc47149852e650e4d082609b03f78618d584"
+      "card_sha256": "62eda63b9a762350f47c5e939ff5a7ad045f1ef5087ace825252a371af0e4e93"
     },
     {
       "id": "863B",
@@ -1138,7 +1138,7 @@
       "round": "Educational Codeforces Round 29",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "87113727ac7016af839f68102595cfa3ae19d8dc79e6465ccad9d5eee502369e"
+      "card_sha256": "16e3cd270236fddb16e83a3e17637070e5c522e1f4523a792bdb08fa801b242a"
     },
     {
       "id": "863C",
@@ -1146,7 +1146,7 @@
       "round": "Educational Codeforces Round 29",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "1baa965221f13ae6402470867b1a5d0d192ed9fa73a84660745afb8414b3376e"
+      "card_sha256": "0d4ef7fc9961531ef74bc9e66fbf9e7a772a4f5ee7f23b98804d1d04fad14b00"
     },
     {
       "id": "863D",
@@ -1154,7 +1154,7 @@
       "round": "Educational Codeforces Round 29",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "9f04426071353a592f051bf848921abe5524897290cc8f7492df5aefc45b8934"
+      "card_sha256": "60cb22525ace9a53544292c074b3acaa84cefeecf238eea325aa2d781211f81e"
     },
     {
       "id": "863E",
@@ -1162,7 +1162,7 @@
       "round": "Educational Codeforces Round 29",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "e21d47b224ac6ba852de70ef79cffc008ff4e1c1f7d1e2476ad70a004a47c2d1"
+      "card_sha256": "53d1fab7c9959cd3d1214231ff7a8196b1ed43543acda73e032db143c90060c8"
     },
     {
       "id": "873A",
@@ -1170,7 +1170,7 @@
       "round": "Educational Codeforces Round 30",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "e07e490198664add282c18731552296fb5eb12efd351acb609a7e36fd2e399ae"
+      "card_sha256": "c1cd35da17b652239d88eda9167dd9d4fde0dcacf9ca13b45777da8c4ba2c8c5"
     },
     {
       "id": "873B",
@@ -1178,7 +1178,7 @@
       "round": "Educational Codeforces Round 30",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "747284722da9dffa00ba502085d7c0df9c2d74d41f8442683be5e821634f349d"
+      "card_sha256": "b1ce2fe48f9242ffbf52332432d08a09a5a1defb5f337465189e6f07b38257ff"
     },
     {
       "id": "873C",
@@ -1186,7 +1186,7 @@
       "round": "Educational Codeforces Round 30",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "5a7ad4ca32af42f8136b6eca165c42149f5eb95c7650956061a627597d559d61"
+      "card_sha256": "a2b331a23b5bde52cd902713f34665db7f021a8b542a93ede94e654336d3f94b"
     },
     {
       "id": "873D",
@@ -1194,7 +1194,7 @@
       "round": "Educational Codeforces Round 30",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "088a8edb9341555abf737791f83ad67b88a01ee3a9697189e4b35cf764aed87e"
+      "card_sha256": "89591be6f7160e55b78d5871ce6cf4db4ff88be68a6463f6b15f102651f85288"
     },
     {
       "id": "884A",
@@ -1202,7 +1202,7 @@
       "round": "Educational Codeforces Round 31",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "1baf5fada8633b8d694d6d9186df791a5aaaf3b6a26772e1b09badb2d6ba003f"
+      "card_sha256": "cd86e3af9f5d9ec3137929135205b7cd45b5fd72fc742ed3f13f1185d2ad6f04"
     },
     {
       "id": "884B",
@@ -1210,7 +1210,7 @@
       "round": "Educational Codeforces Round 31",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "fbc92b02f56e80bc070b164b1f53317eb84782707018e34e6533f55f8cd82081"
+      "card_sha256": "3b550e5344d3ee880995775dfef1b624757060a0bcc1423c2182dc2d8013b321"
     },
     {
       "id": "884C",
@@ -1218,7 +1218,7 @@
       "round": "Educational Codeforces Round 31",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "ed727cc5cedab73237031bdee851763293810f59d51afca376799f25b001ad56"
+      "card_sha256": "158baf655f2347a08cad7aedaed90c268fb8e0907071e04b009b0f6a65fdfb28"
     },
     {
       "id": "884D",
@@ -1226,7 +1226,7 @@
       "round": "Educational Codeforces Round 31",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "220a84208f2dd901ae5e7bac9eafc11daac1a672fe9119586a22aa9359b25782"
+      "card_sha256": "d0e99b90fbf65d772d5b71cd0b00bd1d7f29d3318b02822ef77124eaceb8808b"
     },
     {
       "id": "888B",
@@ -1234,7 +1234,7 @@
       "round": "Educational Codeforces Round 32",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "03d421adc6f05f05772d081dbc09038b06f9aafff57b941291d15d9573ed3c90"
+      "card_sha256": "d3d8a181fea537dbb4e4c590285cded5860a1e9946ff0221c09a383c40bb0b83"
     },
     {
       "id": "888D",
@@ -1242,7 +1242,7 @@
       "round": "Educational Codeforces Round 32",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "1ce60c50044caaa05ff4c5f0544b80e83dbed18b019462ee1a78024d98489d9e"
+      "card_sha256": "36845aecd923f1e21610c6ed36d3e55dfc7409042b2b9d115559e16c7a6b2666"
     },
     {
       "id": "888E",
@@ -1250,7 +1250,7 @@
       "round": "Educational Codeforces Round 32",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "a16225e7053997c8e5784c7c482994f5680e29bd78f8d9d193aa49a340415831"
+      "card_sha256": "b590637768cfeaa2a2323d1822f94426725ed09f00b76d65488120d53c05d085"
     },
     {
       "id": "888G",
@@ -1258,7 +1258,7 @@
       "round": "Educational Codeforces Round 32",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "f3d5e7d6b3235bffe165e4e966ca7aa2f736cf8cf27fca832f0bdbf54132620e"
+      "card_sha256": "aa3ff443c1c746405368bd3377f0c6cb9923fffae4abd1ec579185edc5e357c3"
     },
     {
       "id": "893A",
@@ -1266,7 +1266,7 @@
       "round": "Educational Codeforces Round 33 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "253e852d649256d83efc6344dc26c5781c4b88aa11426877c09708c516c6aedd"
+      "card_sha256": "c7d126170c1e33aba564436cec851a5ce5db584dd8208562392c43c60e472e15"
     },
     {
       "id": "893B",
@@ -1274,7 +1274,7 @@
       "round": "Educational Codeforces Round 33 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "1524c9f5178d49e295d503d4d77b88a6c79a162a9bf8955e23abe771d9246f3a"
+      "card_sha256": "976235a90dd3602f9cbbcd9666d820d5c872e4055e446c8e52955476b6139c99"
     },
     {
       "id": "893D",
@@ -1282,7 +1282,7 @@
       "round": "Educational Codeforces Round 33 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "8576b9287cb3731c741c227320d996787af99b5466b0b4d6f47114b48b322f56"
+      "card_sha256": "c9a0fbc85b01e1c9a7b06845a22ec5b17094a191f9cd07da972a64834b0cfd25"
     },
     {
       "id": "903A",
@@ -1290,7 +1290,7 @@
       "round": "Educational Codeforces Round 34 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "821ed4d74e976e70ab15553d65939475b713878d623b87ecc89f2cf3ccecb77d"
+      "card_sha256": "67e1b211f293bbdca31e17a6be9526ad13a564b5d1dac8296957be24986f7a7c"
     },
     {
       "id": "990C",
@@ -1298,7 +1298,7 @@
       "round": "Educational Codeforces Round 45 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "186b8c712c15fe9036dde9c1728c4d8ceb0ff16ca7f911d00127fc984ce7bcf5"
+      "card_sha256": "3cf21cf9d37122fe2913c91c773c846810858e0d31544dbdd82b3253ff344362"
     },
     {
       "id": "911A",
@@ -1306,7 +1306,7 @@
       "round": "Educational Codeforces Round 35 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "bb8ff51a32be42bf90a3527704f08440f0af9ea28ce6a1ec8f8fe613c4c9f3ef"
+      "card_sha256": "bcfd4695481abc84bbadfbfa02b508092b25c5b504b0495571302c9a553922b3"
     },
     {
       "id": "911B",
@@ -1314,7 +1314,7 @@
       "round": "Educational Codeforces Round 35 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "463979c30d33366347efda6c48f51906e55b0c97285729c16e3f24a6924d275d"
+      "card_sha256": "3a1ceff4f4441530b6ecdbf2b469d38ee84febdb1386aa34f670c9b3e24ae3a0"
     },
     {
       "id": "911C",
@@ -1322,7 +1322,7 @@
       "round": "Educational Codeforces Round 35 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "c6f55fc4fe71807fa899f9e8343436d7eb4d1bb4978a32dc6933e572bf74dbac"
+      "card_sha256": "469af08e9aceff4f577fd0e6af5f33501d78a37ca145cd643b885f921f6c6bff"
     },
     {
       "id": "911D",
@@ -1330,7 +1330,7 @@
       "round": "Educational Codeforces Round 35 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "c65d49864fa000438f84143a5e7a540c2a335acda195d95f5fcb44a225eb4d4d"
+      "card_sha256": "d60d02b8f1963dce918f2b629a34eb8efb94c7e1504737d2b9451c505dd86920"
     },
     {
       "id": "915A",
@@ -1338,7 +1338,7 @@
       "round": "Educational Codeforces Round 36 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "69a6741399aea03ab744d029270a5c3c383f56686711e14743ce89f08d4f5353"
+      "card_sha256": "49b2089ca544084cad02b91360f9e52544fbabca68c0470fb1249ce3095e1e81"
     },
     {
       "id": "915B",
@@ -1346,7 +1346,7 @@
       "round": "Educational Codeforces Round 36 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "3f92fe5ada72d4dfec578c9b2a5915cb519d6d067acfa17de83b2d03d21f5bd9"
+      "card_sha256": "b9a87926dff2d407c94cfe8f749924f90a0471154d85f00a061bd9a637d1db80"
     },
     {
       "id": "915C",
@@ -1354,7 +1354,7 @@
       "round": "Educational Codeforces Round 36 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "2cdb033644bf52355a084cc6307725892673c8ab95e1ae2ac58b24618bc1025f"
+      "card_sha256": "b93b156b24ca99a840b839ecea19f9210c3e1c1b720f6e6c0e273723adcdff70"
     },
     {
       "id": "915D",
@@ -1362,7 +1362,7 @@
       "round": "Educational Codeforces Round 36 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "d2fd84ca22cecba22c3e382fa8b04ab189d4cf9ff9a649397ee538eac15fa325"
+      "card_sha256": "ca9e16a5ffae7061ca21a24a4d9292ae0a75009a3c806d77559053a7dc925bde"
     },
     {
       "id": "920A",
@@ -1370,7 +1370,7 @@
       "round": "Educational Codeforces Round 37 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "7fe1b0ad2f1222d3baddc5d84154e009ab0f8158581c9e1ef9712b9aedd21c2e"
+      "card_sha256": "5f7a73e8948187413c503208b1644f7797348663de12633fad876a3fefbb632d"
     },
     {
       "id": "920B",
@@ -1378,7 +1378,7 @@
       "round": "Educational Codeforces Round 37 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "6f88ca72bd88328d7e1dd34b64cc0641d76b8dde06f64a679241a598da2c5404"
+      "card_sha256": "2482acb8b4860e56113f735a3acdf7925b665d2790ccea04c723b8012b62d026"
     },
     {
       "id": "920C",
@@ -1386,7 +1386,7 @@
       "round": "Educational Codeforces Round 37 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "d99a4e42b9bf819ac9d2a75c48f318c1ae6aadc95910ae501197ce1e4bf99345"
+      "card_sha256": "b83f97f0f5244932b6da72ccfbd289c8ca74f812413ff1882fb359dff854bbdd"
     },
     {
       "id": "920E",
@@ -1394,7 +1394,7 @@
       "round": "Educational Codeforces Round 37 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "78e05f38679e838d1dfb5feed60181033ed9e9fd563f5ca05d96608ec2067061"
+      "card_sha256": "baf7cfb356555ac6556b72a96735b6712d616eb5abd0d019fd4672d74e55007e"
     },
     {
       "id": "938A",
@@ -1402,7 +1402,7 @@
       "round": "Educational Codeforces Round 38 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "34f82869ad71b5b0844f94e9c3bf9bea2a0997699dbe00a0692a8cd8a4185884"
+      "card_sha256": "1cafd82057c0f1f3b41a939beef3221a50e254809a08ab0205669b1f1f3dc1b9"
     },
     {
       "id": "938B",
@@ -1410,7 +1410,7 @@
       "round": "Educational Codeforces Round 38 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "96fd0271c28f0788b7bcbf4c739cdce6e8a75e2d9cfc50bff1ba21ad72e699c5"
+      "card_sha256": "4c235de02fae6099e3d0f46624acce6c4390bb7b15ab14e4b14172c82d259f32"
     },
     {
       "id": "938C",
@@ -1418,7 +1418,7 @@
       "round": "Educational Codeforces Round 38 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "b521eb6cc36094f16c92304aae25f0e21187523d57f876a44d8da4d6d0bb8e9f"
+      "card_sha256": "185e83e5a7103901fd21fc04d5b083bf7a47474b76b067af828c932665002bde"
     },
     {
       "id": "938D",
@@ -1426,7 +1426,7 @@
       "round": "Educational Codeforces Round 38 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "ac55c635e61c9f5a862f1ca8a14dd92af54a643cbaa48ca3b309746431f266e3"
+      "card_sha256": "7535e1914a4755e51adf6ffbdcbc46f45dc59370567ed407ec0bca1461fbcee4"
     },
     {
       "id": "946A",
@@ -1434,7 +1434,7 @@
       "round": "Educational Codeforces Round 39 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "88ac4f6a662824c23941048200f9797c404bf1fce3b9d739e61d4728c921e9fb"
+      "card_sha256": "a17af3667f4fb1b4b310b3784f7ec1cc29b0c00b7c889adc492c242d4d676a3e"
     },
     {
       "id": "946B",
@@ -1442,7 +1442,7 @@
       "round": "Educational Codeforces Round 39 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "d33879cb7a59384adfcb96e203c7501d9b20fdee2175662ebbe8e372f5f9f509"
+      "card_sha256": "cb5502bed76ad58d388a9335cb4ae7625d8d35467607d626a1a3dd67513a6e70"
     },
     {
       "id": "946C",
@@ -1450,7 +1450,7 @@
       "round": "Educational Codeforces Round 39 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "8581f8343b3a923cea7724d37be6ce39bb888454d3e8986a333827894a1f7de6"
+      "card_sha256": "9691e901188b580f76fbef2e0d70ec05c0cef1a9fa43b4f684ba8736af73e8bd"
     },
     {
       "id": "946D",
@@ -1458,7 +1458,7 @@
       "round": "Educational Codeforces Round 39 (Rated for Div. 2)",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "38ac839f211de2ed150a12c63f393a30d3ad63c24045115ddc878d11dc3ca96a"
+      "card_sha256": "6258e7263ad9c2977774c8c9e912e1cdc5908440250d45a4bb3846f2669fd68c"
     },
     {
       "id": "954A",
@@ -1466,7 +1466,7 @@
       "round": "Educational Codeforces Round 40 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "706adcd4b601693a670e269d5e407dfd45e3e652d9667b551544530158ce438d"
+      "card_sha256": "2d6c1eab823e614196dffef88c27ce4160bc48f8c8a75225b316e6c940525471"
     },
     {
       "id": "954B",
@@ -1474,7 +1474,7 @@
       "round": "Educational Codeforces Round 40 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "90341ff5a1ce04755ec6f749f7bb203d9af84fa2376048b4337ea06185622640"
+      "card_sha256": "819c47fb551e44b71c5ffc4beea04df85ef08cf9caccdbb9a1325666abf55bec"
     },
     {
       "id": "954C",
@@ -1482,7 +1482,7 @@
       "round": "Educational Codeforces Round 40 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "c410d085861f064f539b29ae6e756628a14c50c4c5dfb4a2b5c26d0119eacbdd"
+      "card_sha256": "87cdb25f525ce8728a58abb4e1763fbbadf748240057da182ea7e718024f2012"
     },
     {
       "id": "954D",
@@ -1490,7 +1490,7 @@
       "round": "Educational Codeforces Round 40 (Rated for Div. 2)",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "7fd0822d73fc471d4c3bce22db9291bdde09c1ebd046f455c6d3420ed64f1d03"
+      "card_sha256": "9427f9b1472105f1898e600f320d952a811a9ce2895c79033b50ef109606b301"
     },
     {
       "id": "954G",
@@ -1498,7 +1498,7 @@
       "round": "Educational Codeforces Round 40 (Rated for Div. 2)",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "e08c87b9f6c56b685cbd1ba7c1914fce7435edd1b61f97203e282bab2c1f7f04"
+      "card_sha256": "e983a99a04a94ae94b8d156feb20871090125439ca7ed781a536fcd4d1ebc905"
     },
     {
       "id": "961A",
@@ -1506,7 +1506,7 @@
       "round": "Educational Codeforces Round 41 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "f692277c84639784f3bb1aae5c79de3773ca2038e1a28c65cebfc019c67dfec6"
+      "card_sha256": "5cf1f9e4f711a32113d49ce4fa77b1a578852b99f2b6325ad22a4e874fff6120"
     },
     {
       "id": "961D",
@@ -1514,7 +1514,7 @@
       "round": "Educational Codeforces Round 41 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "ee49dd3bcd6d5b4cdd53c791a5666546c40c31cb592ff7952764de4b516dd3df"
+      "card_sha256": "23103379ffddd500d8ebe16f1cf3bb89854833aeb6b06622b66ce9972ceebfee"
     },
     {
       "id": "961E",
@@ -1522,7 +1522,7 @@
       "round": "Educational Codeforces Round 41 (Rated for Div. 2)",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "bb2f9a2eb9df035e2285608bd6c5de2f6a83acd03337eec4a15f9917cd2f7125"
+      "card_sha256": "a218a9f29a1a3656a20c0c99689c1eaef353d02993037685fe3355e5f41eee9b"
     },
     {
       "id": "962A",
@@ -1530,7 +1530,7 @@
       "round": "Educational Codeforces Round 42 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "72f86f033a6e29beb0529964807bc1fb61db2139463d0d3759b213029f8a3a1a"
+      "card_sha256": "e792fd67dd1440b57f4d95a89d6a3221bfbc2cc03a1b83b3e05beb9a4af856f5"
     },
     {
       "id": "962B",
@@ -1538,7 +1538,7 @@
       "round": "Educational Codeforces Round 42 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "660664be1377e6aa6d24dbbd8bbf75038f4c3f5652b7d57e6109c12c7744d1eb"
+      "card_sha256": "012a375c86d80d9410a4d3c520ae6916da242556f0a345bc41e6c61e88b168dc"
     },
     {
       "id": "962C",
@@ -1546,7 +1546,7 @@
       "round": "Educational Codeforces Round 42 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "06a5d2b500b4d6c2bccb445d1fc30ec84fc6fea6b1b017db388efe2c0927b9ef"
+      "card_sha256": "c2c8f3fb23aa1f816783fef5b4c077271b0896ac754a0cb10dd80dba75bb6fbc"
     },
     {
       "id": "962D",
@@ -1554,7 +1554,7 @@
       "round": "Educational Codeforces Round 42 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "0f82bde43b573b7c0bbcfa6388f12a7a17c41e75d050d714776d2af23c8b4a48"
+      "card_sha256": "ffe992528bfdda24c9c34299a1f8327ad4e8948ea0d768f46d6895acffa818e6"
     },
     {
       "id": "976A",
@@ -1562,7 +1562,7 @@
       "round": "Educational Codeforces Round 43 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "c153e0e3b126916f346ea226cc052f46c4c5561777a75ebd69cf8d8bd96de642"
+      "card_sha256": "642dad74d32cc4ffab57c4ff2462747b2521a58f11c3a8b9c9710e3458b0995a"
     },
     {
       "id": "976B",
@@ -1570,7 +1570,7 @@
       "round": "Educational Codeforces Round 43 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "426a765a18514f1def2430b896a07e126d94db912f3dbb437f9a7c451dcecdd9"
+      "card_sha256": "b771148db45fbb21da6f89a64afcc9603a408a9530c1a30f29f8386c2b584fdb"
     },
     {
       "id": "976C",
@@ -1578,7 +1578,7 @@
       "round": "Educational Codeforces Round 43 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "d5a46c98eeca61b820da09f51020178e0592fe486cf017264cabd560a6343f74"
+      "card_sha256": "7bf4e93f2e2066055adf872d1dc3800bb49b3c55069ddd1547633a5f2f7a1c2b"
     },
     {
       "id": "985A",
@@ -1586,7 +1586,7 @@
       "round": "Educational Codeforces Round 44 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "d60dd0053316d33980cbf269c94b044cc1f9c5da145bbdca596cba3d6344a82e"
+      "card_sha256": "48c338e0fe3bd43f992f31d5f3be80be3ac61365cca51f8f6865f0b12b8fc744"
     },
     {
       "id": "985B",
@@ -1594,7 +1594,7 @@
       "round": "Educational Codeforces Round 44 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "773e9075db56ba6f3a80cfa6964aa8f26733cb840dac62a0ac7cf84bc89fe3ab"
+      "card_sha256": "9204655b89c80dc6d7c0e28e44634f019be8733b67ea6579cd91f8d68cdf86d4"
     },
     {
       "id": "985C",
@@ -1602,7 +1602,7 @@
       "round": "Educational Codeforces Round 44 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "9c341e3d9386f0f7abe60117ad92c24407f34b9dd45ab4c1b12a8be3b0ccbfec"
+      "card_sha256": "911c5c992c8476fc99a9332cdae7aaea474c3bf08e660558c7e8c48aae04253f"
     },
     {
       "id": "990A",
@@ -1610,7 +1610,7 @@
       "round": "Educational Codeforces Round 45 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "f683cf47aafdf9f74b8b0c9e2252f91d7166febe2c0e4f3c23ce4a5f28c36dda"
+      "card_sha256": "f3c0b933ef8c1fd8dd11d884024d59a11010128111c2576c4a29931cdd10d5a8"
     },
     {
       "id": "990B",
@@ -1618,19 +1618,11 @@
       "round": "Educational Codeforces Round 45 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "7f763764debbc26154191554d8e97dcb436f71e4c4d3a70aaa5deed40aa25061"
+      "card_sha256": "b5d98b8fc626c35146a1576e7a319889e8f280dd44ef4d1d2e4868c4683bc3c3"
     }
   ],
   "matching_revision": {
-    "version": "1.1.1",
-    "changed_cards": [
-      "652D",
-      "632B",
-      "873D",
-      "911A",
-      "961E",
-      "612D"
-    ],
-    "scope": "Reviewed alternative methods and helpers from gameplay feedback; original metadata snapshot retained. See MATCHING.md for reasoning and regression coverage."
+    "version": "1.2.0",
+    "scope": "Explicit core/helper rules for all 200 cards; reviewed 11 normal composite cards and per-card accepted terminology. Original official metadata snapshot retained."
   }
 }

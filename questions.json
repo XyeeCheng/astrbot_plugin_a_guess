@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "updated": "2026-09-28",
   "scope": "Codeforces Educational Rounds",
   "questions": [
@@ -39,8 +39,30 @@
       "explanation": "先求清醒位置之和。睡眠位置保留 a[i]，清醒位置置零，再求长度 k 的最大区间和。前缀和或定长滑窗均可。",
       "complexity": "时间 O(n)，空间 O(n) 或 O(1) 额外空间。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": "https://codeforces.com/blog/entry/58743"
+      "version": 2,
+      "editorial": "https://codeforces.com/blog/entry/58743",
+      "solution_rules": [
+        {
+          "core": [
+            "prefix"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "window"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "two_pointers"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "prefix",
+      "method_aliases": {}
     },
     {
       "id": "1354B",
@@ -85,8 +107,44 @@
       "explanation": "维护包含三类字符的滑窗并尽量收缩；也可在每个右端点用三类字符最后出现位置的最小值求最短合法后缀。二分长度加前缀计数也可。",
       "complexity": "滑窗/位置维护 O(n)；二分方案 O(n log n)。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "window"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "two_pointers"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "last_position"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "dp"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "binary_answer"
+          ],
+          "helpers": [
+            "prefix"
+          ]
+        }
+      ],
+      "draw_group": "window",
+      "method_aliases": {}
     },
     {
       "id": "1167C",
@@ -127,8 +185,36 @@
       "explanation": "每群把首位成员与其余成员合并，输出所在集合大小。也可建星形边后 DFS/BFS 求连通分量，不能对大群建完全图。",
       "complexity": "时间 O((n+Σk)α(n))，或遍历 O(n+Σk)；空间 O(n+Σk)。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "dsu"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "dfs"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "bfs"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "components"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "dsu",
+      "method_aliases": {}
     },
     {
       "id": "893C",
@@ -171,8 +257,36 @@
       "explanation": "每个连通分量至少买通一人，取分量最小费用求和即可。DFS、BFS 或维护分量最小费用的并查集都成立。",
       "complexity": "O(n+m)，并查集版本附加 α(n) 因子。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "dsu"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "dfs"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "bfs"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "components"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "dsu",
+      "method_aliases": {}
     },
     {
       "id": "762A",
@@ -213,8 +327,32 @@
       "explanation": "枚举 d≤√n，若整除则收集 d 与 n/d，平方根只收一次；整理递增序列后取第 k 个。也可质因数分解后生成全部约数。",
       "complexity": "基础枚举 O(√n)，额外排序 O(τ(n) log τ(n))。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "divisors"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "factor"
+          ],
+          "helpers": [
+            "enumeration"
+          ]
+        }
+      ],
+      "draw_group": "divisors",
+      "method_aliases": {}
     },
     {
       "id": "808B",
@@ -255,8 +393,36 @@
       "explanation": "用前缀和或定长滑窗累加各周区间和，最后除以 n-k+1；按每个元素覆盖次数计算贡献同样可行。",
       "complexity": "时间 O(n)，空间 O(n) 或 O(1) 额外空间。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "prefix"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "window"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "two_pointers"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "contribution"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "prefix",
+      "method_aliases": {}
     },
     {
       "id": "888C",
@@ -295,8 +461,32 @@
       "explanation": "对每个字符，在出现位置两端补0与 n+1，取相邻位置差的最大值，再对字符取最小值。也可二分 k 并检查所有长度 k 窗口共同含有的字符。",
       "complexity": "位置差法 O(26n)；二分检查 O(26n log n)。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "gap"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "binary_answer"
+          ],
+          "helpers": [
+            "window"
+          ]
+        }
+      ],
+      "draw_group": "gap",
+      "method_aliases": {}
     },
     {
       "id": "903B",
@@ -330,8 +520,18 @@
       "explanation": "若能一击击杀或当前生命大于怪物攻击，就攻击；否则治疗。攻击次数固定，拖延治疗不增加所需治疗总数，因此最优。",
       "complexity": "时间 O(输出行动数)，空间 O(输出行动数)。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "greedy",
+      "method_aliases": {}
     },
     {
       "id": "903C",
@@ -369,8 +569,30 @@
       "explanation": "同尺寸盒子不能在同一条严格递增链中，因此答案至少为最大频次。按尺寸递增，把每组盒子分配给不同链即可达到下界。",
       "complexity": "哈希计数期望 O(n)，排序计数 O(n log n)。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "count"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "sort"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "count",
+      "method_aliases": {}
     },
     {
       "id": "1000A",
@@ -405,8 +627,24 @@
       "explanation": "分别统计每种字符串频次，抵消相同项。剩余同长度合法尺码改一个末尾字母即可，答案为未抵消项数。",
       "complexity": "O(n)，尺码种类固定。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "count"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "count",
+      "method_aliases": {}
     },
     {
       "id": "1093C",
@@ -438,8 +676,18 @@
       "explanation": "首先可取 a[1]=0、a[n]=b[1]，向内每对取满足单调性的最小左值；右值为配对和减左值。该选择使剩余可选区间最大。",
       "complexity": "时间 O(n)，空间 O(n)。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "greedy",
+      "method_aliases": {}
     },
     {
       "id": "1096D",
@@ -471,8 +719,18 @@
       "explanation": "状态是保留部分匹配 hard 的前缀长度0至3。删字符付代价、状态不变；保留会在匹配时前进一格，禁止到4。取最终最小值。",
       "complexity": "时间 O(4n)，额外空间 O(4)。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "dp"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "dp",
+      "method_aliases": {}
     },
     {
       "id": "1207C",
@@ -507,8 +765,24 @@
       "explanation": "两状态DP逐段转移，变化高度增加 a，新增支柱按新高度付 b；路口仅允许高到高。也可按路口间零段，比较保持高位与下降再上升的成本。",
       "complexity": "时间 O(n)，额外空间 O(1)。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "dp"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "dp",
+      "method_aliases": {}
     },
     {
       "id": "1238B",
@@ -542,8 +816,18 @@
       "explanation": "对位置去重降序扫描，已射击 c 次时，若当前原位置大于 c*r 则再射击，直到其余都进入陷阱。射最右位置不会把别人推远。",
       "complexity": "时间 O(n log n)，空间 O(n)。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "greedy",
+      "method_aliases": {}
     },
     {
       "id": "1327C",
@@ -575,8 +859,18 @@
       "explanation": "先上移 n-1、左移 m-1，把所有棋子汇到左上角。之后蛇形遍历全部格子，各棋子都访问所有目标。总步数 nm+n+m-3≤2nm。",
       "complexity": "时间与输出长度 O(nm)，额外空间取决于输出缓冲。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "construct"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "construct",
+      "method_aliases": {}
     },
     {
       "id": "1511C",
@@ -611,8 +905,24 @@
       "explanation": "维护50种颜色的首次出现位置。查询颜色的位置为 p，把其余小于 p 的位置加1，再将它设为1。也可用树状数组维护牌位和前移时间戳。",
       "complexity": "代表位置模拟 O(n+50q)；树状数组 O((n+q)log(n+q))。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "fenwick"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "simulation",
+      "method_aliases": {}
     },
     {
       "id": "600A",
@@ -644,8 +954,18 @@
       "explanation": "逐字符按两类分隔符切分并保留空字段。非空、全为数字且无多余前导零的字段归整数组，其余归另一组。",
       "complexity": "时间 O(|s|)，空间 O(|s|)。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "simulation",
+      "method_aliases": {}
     },
     {
       "id": "652B",
@@ -683,8 +1003,30 @@
       "explanation": "排序后交换第2与3、第4与5等相邻位置可构造答案。也可线性扫描，按奇偶要求对违反条件的相邻元素交换。",
       "complexity": "排序法 O(n log n)，局部交换法 O(n)。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "sort"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "construct"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "sort",
+      "method_aliases": {}
     },
     {
       "id": "792A",
@@ -716,8 +1058,18 @@
       "explanation": "排序后只检查相邻坐标差。非相邻两点间存在更短的相邻间距，因此不会遗漏最短对。",
       "complexity": "时间 O(n log n)，空间按排序实现。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "sort"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "sort",
+      "method_aliases": {}
     },
     {
       "id": "961C",
@@ -753,8 +1105,25 @@
       "explanation": "预处理每块两种起始颜色的代价。枚举哪两块采用起始色0并求最小和；也可按两种代价之差排序选两块。",
       "complexity": "时间 O(n²)，额外空间 O(1)（不含输入）。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": "https://codeforces.com/blog/entry/58743"
+      "version": 2,
+      "editorial": "https://codeforces.com/blog/entry/58743",
+      "solution_rules": [
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "sort",
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "enumeration",
+      "method_aliases": {}
     },
     {
       "id": "665E",
@@ -791,8 +1160,28 @@
       "explanation": "以 p[0]=0 建前缀异或，区间值=p[r] xor p[l-1]。在线用01字典树查询历史前缀中异或≥k的数量。也可对全部前缀按位分治计数无序对。",
       "complexity": "时间 O(n log V)，空间 O(n log V)。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "prefix_xor",
+            "trie01"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "prefix_xor",
+            "divide"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "prefix_xor",
+      "method_aliases": {
+        "trie": "trie01"
+      }
     },
     {
       "id": "808G",
@@ -825,8 +1214,19 @@
       "explanation": "用KMP前缀函数构造匹配自动机；DP记录处理位置和已匹配前缀的最大出现数。匹配完整模式时计一次并转回边界，问号枚举字母。",
       "complexity": "O(26|s||t|+26|t|)，额外空间 O(26|t|)。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "kmp",
+            "dp"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "kmp",
+      "method_aliases": {}
     },
     {
       "id": "846D",
@@ -863,8 +1263,28 @@
       "explanation": "二分时间，将已坏像素置1，用二维前缀和检查是否有窗口和为 k²。另一方案是横纵两轮单调队列求 k×k 窗口最大时间，永不坏记无穷。",
       "complexity": "二分方案 O(nm log T)；二维滑窗 O(nm)，空间 O(nm)。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "binary_answer",
+            "prefix2d"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "window",
+            "monoque"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "binary_answer",
+      "method_aliases": {
+        "prefix": "prefix2d"
+      }
     },
     {
       "id": "893E",
@@ -899,8 +1319,19 @@
       "explanation": "将x分解为∏p^e，每个指数分配数为C(e+y-1,e)，各素数相乘。符号必须有偶数个负号，方案数为2^(y-1)。预处理最小素因子、阶乘及逆阶乘。",
       "complexity": "预处理 O(M log log M)，每询问 O(log x+log y) 量级。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "factor",
+            "combinatorics"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "factor",
+      "method_aliases": {}
     },
     {
       "id": "920F",
@@ -947,8 +1378,42 @@
       "explanation": "先筛约数个数。线段树保存和与最大值，最大值≤2的区间直接跳过，其他递归到需要更新的叶子。也可用后继并查集/有序集合跳过稳定点，树状数组维护和。质因数分解并缓存变换值也可替代约数筛。",
       "complexity": "预处理 O(V log V)，操作总计 O((nK+m)log n)，K为单点稳定前变化次数。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "divisor_sieve",
+            "segment"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "divisor_sieve",
+            "fenwick",
+            "dsu"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "divisor_sieve",
+            "fenwick",
+            "ordered_set"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "factor",
+            "segment"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "divisor_sieve",
+      "method_aliases": {}
     },
     {
       "id": "920G",
@@ -982,8 +1447,20 @@
       "explanation": "分解 p 的不同素因子，用容斥求 C(v)=1..v 中互质数数量。倍增上界后，二分最小 v 使 C(v)-C(x)≥k。p=1时直接x+k。",
       "complexity": "每询问 O(√p+2^ω(p) log A)，可用素因子筛加速。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "factor",
+            "inclusion",
+            "binary_answer"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "factor",
+      "method_aliases": {}
     },
     {
       "id": "1000E",
@@ -1019,8 +1496,19 @@
       "explanation": "用Tarjan求桥，压缩边双连通分量得到桥树。任意s,t的必经边就是对应树路径上的边，最大值为树直径，可用两次BFS/DFS。",
       "complexity": "时间与空间 O(n+m)。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "bridges",
+            "diameter"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "bridges",
+      "method_aliases": {}
     },
     {
       "id": "1096F",
@@ -1063,8 +1551,33 @@
       "explanation": "利用期望线性性分类。已知对用树状数组或归并统计逆序；未知对各以1/2贡献；混合对按缺失值中小于/大于已知值的比例计算。",
       "complexity": "时间 O(n log n)，空间 O(n)。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "expectation",
+            "fenwick"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "expectation",
+            "merge"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "expectation",
+            "segment"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "expectation",
+      "method_aliases": {}
     },
     {
       "id": "1207D",
@@ -1105,8 +1618,26 @@
       "explanation": "答案=n!-按a非降数-按b非降数+两者都非降数。前两项为相同坐标分组阶乘积。按(a,b)排序后若b非降，交集为相同数对频次阶乘积，否则为0。",
       "complexity": "时间 O(n log n)，空间 O(n)。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "inclusion",
+            "combinatorics"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "inclusion",
+            "sort"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "inclusion",
+      "method_aliases": {}
     },
     {
       "id": "1354E",
@@ -1146,8 +1677,29 @@
       "explanation": "逐连通块做二分图染色，失败则无解。对每块两侧大小做分组背包，凑出n2并记录选择。选中侧全部标2，余下顶点任取n1个标1，其余标3。",
       "complexity": "时间 O(n²+m)，方案恢复空间 O(n²)，可压缩可达状态。",
       "review_basis": "官方原题核对；解法独立推导；中文为简明重述。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "bipartite",
+            "knapsack"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "bipartite",
+            "dp"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "bipartite",
+      "method_aliases": {
+        "dp": "knapsack",
+        "group_knapsack": "knapsack"
+      }
     },
     {
       "id": "598A",
@@ -1182,8 +1734,24 @@
       "explanation": "先求n(n+1)/2，再枚举不超过n的2的幂，逐个减去两倍。",
       "complexity": "时间O(log n)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "arithmetic"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "arithmetic",
+      "method_aliases": {}
     },
     {
       "id": "598B",
@@ -1215,8 +1783,18 @@
       "explanation": "逐次切出区间，将末尾k模区间长度个字符与其余部分交换次序，再放回。",
       "complexity": "时间O(nm)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "simulation",
+      "method_aliases": {}
     },
     {
       "id": "598C",
@@ -1249,8 +1827,19 @@
       "explanation": "按极角排序，比较相邻向量和首尾向量的圆周角差，取最小者。注意跨越2π处的角差。",
       "complexity": "时间O(n log n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "geometry",
+            "sort"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "geometry",
+      "method_aliases": {}
     },
     {
       "id": "598D",
@@ -1288,8 +1877,30 @@
       "explanation": "遍历每个空地连通块，统计遍历中遇到的墙边数，记录块编号；询问直接查块答案。",
       "complexity": "预处理O(nm)，每次询问O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "components"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "dfs"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "bfs"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "components",
+      "method_aliases": {}
     },
     {
       "id": "598E",
@@ -1322,8 +1933,22 @@
       "explanation": "设f(n,m,k)，枚举横切或竖切位置及两边分配的k值，加切口平方并取最小；记忆化复用状态。",
       "complexity": "N=M=30、K=50，预处理O(NM(N+M)K²)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "dp",
+            "enumeration"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "dp",
+      "method_aliases": {
+        "interval_dp": "dp",
+        "memo": "dp"
+      }
     },
     {
       "id": "600B",
@@ -1359,8 +1984,26 @@
       "explanation": "将a排序，对每个b使用upper_bound；也可对查询排序并用指针离线扫描。",
       "complexity": "时间O(n log n+m log n)，空间O(n+m)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "binary_search"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "two_pointers"
+          ],
+          "helpers": [
+            "sort"
+          ]
+        }
+      ],
+      "draw_group": "binary_search",
+      "method_aliases": {}
     },
     {
       "id": "600C",
@@ -1392,8 +2035,18 @@
       "explanation": "按字母顺序两端配对奇数频次，将大字母的一次出现改成小字母；用升序半串、剩余中心及逆序半串构造。",
       "complexity": "时间O(n+26)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "greedy",
+      "method_aliases": {}
     },
     {
       "id": "600E",
@@ -1430,8 +2083,26 @@
       "explanation": "后序遍历，把孩子颜色表小并大，并维护最大频次和对应颜色之和；也可用重儿子保留的树上启发式合并。",
       "complexity": "哈希小并大期望O(n log n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "dfs",
+            "small_to_large"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "euler",
+            "dsu_on_tree"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "dfs",
+      "method_aliases": {}
     },
     {
       "id": "609A",
@@ -1466,8 +2137,24 @@
       "explanation": "容量降序排列，取和首次达到m的最短前缀，其长度即答案。",
       "complexity": "时间O(n log n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "sort"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "greedy",
+      "method_aliases": {}
     },
     {
       "id": "609B",
@@ -1502,8 +2189,24 @@
       "explanation": "统计各类数量c，计算C(n,2)-ΣC(c,2)，或累加不同类别数量的乘积。",
       "complexity": "时间O(n+m)，空间O(m)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "count"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "combinatorics"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "count",
+      "method_aliases": {}
     },
     {
       "id": "609C",
@@ -1538,8 +2241,24 @@
       "explanation": "排序后令前n-r项目标为q，后r项为q+1，其中总和=nq+r；累加正的初始值减目标值。",
       "complexity": "时间O(n log n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "sort"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "greedy",
+      "method_aliases": {}
     },
     {
       "id": "609D",
@@ -1576,8 +2295,26 @@
       "explanation": "预处理两种汇率的前缀最低值及日期；二分截止日，按该日最低汇率换算设备并取最便宜k件判断预算，最后恢复方案。",
       "complexity": "直接排序检查O(n+m log m log n)，空间O(n+m)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "binary_answer",
+            "greedy"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "binary_answer",
+            "sort"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "binary_answer",
+      "method_aliases": {}
     },
     {
       "id": "609E",
@@ -1614,8 +2351,26 @@
       "explanation": "先建最小生成树。对边(u,v,w)，答案为树总权重+w-树上u到v路径最大边；用倍增LCA或树链剖分查询最大值。",
       "complexity": "时间O(m log m+(n+m)log n)，空间O(n log n+m)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "mst",
+            "lca"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "mst",
+            "hld"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "mst",
+      "method_aliases": {}
     },
     {
       "id": "612A",
@@ -1650,8 +2405,24 @@
       "explanation": "枚举p段数x，若n-xp≥0且能被q整除，就按这些长度顺序切串。也可对可达总长度做DP。",
       "complexity": "时间O(n)，空间O(n)，含输出。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "dp"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "enumeration",
+      "method_aliases": {}
     },
     {
       "id": "612B",
@@ -1683,8 +2454,18 @@
       "explanation": "建立逆排列pos，答案为Σabs(pos[i+1]-pos[i])，使用64位整数。",
       "complexity": "时间O(n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "simulation",
+      "method_aliases": {}
     },
     {
       "id": "612C",
@@ -1716,8 +2497,18 @@
       "explanation": "遇左括号入栈，右括号与栈顶配对并统计种类不符；栈空时遇右括号或结束后栈非空则无解。",
       "complexity": "时间O(n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "stack"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "stack",
+      "method_aliases": {}
     },
     {
       "id": "612D",
@@ -1756,8 +2547,26 @@
       "explanation": "排序端点做扫描，维护覆盖数；同坐标先加入全部左端点，再移除右端点，记录覆盖数跨越k的区间边界。",
       "complexity": "时间O(n log n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 2,
-      "editorial": ""
+      "version": 3,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "sweep"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "difference"
+          ],
+          "helpers": [
+            "sort"
+          ]
+        }
+      ],
+      "draw_group": "sweep",
+      "method_aliases": {}
     },
     {
       "id": "616A",
@@ -1789,8 +2598,18 @@
       "explanation": "去掉前导零，空串视为0；先比较长度，再比较等长字符串的字典序。",
       "complexity": "时间O(n+m)，额外空间取决于切片实现。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "simulation",
+      "method_aliases": {}
     },
     {
       "id": "616C",
@@ -1831,8 +2650,36 @@
       "explanation": "预处理空地连通块；每个墙格取四邻块编号去重，把这些块大小加1，再模10。",
       "complexity": "时间O(nm)，空间O(nm)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "components"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "dfs"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "bfs"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "dsu"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "components",
+      "method_aliases": {}
     },
     {
       "id": "616D",
@@ -1867,8 +2714,24 @@
       "explanation": "右端点逐步右移，用频次表维护种类；超过k就收缩左端点，每次记录最长窗口。",
       "complexity": "时间O(n)，空间O(值域)或O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "window"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "two_pointers"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "window",
+      "method_aliases": {}
     },
     {
       "id": "616E",
@@ -1901,8 +2764,19 @@
       "explanation": "从nm中减去Σi·floor(n/i)。按相同商分块，块右端为min(m,n//商)，用等差和累加；i>n部分商为0。",
       "complexity": "时间O(√n)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "quotient_group",
+            "arithmetic"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "quotient_group",
+      "method_aliases": {}
     },
     {
       "id": "620B",
@@ -1937,8 +2811,24 @@
       "explanation": "枚举区间整数，反复取十进制末位并累加查表段数。",
       "complexity": "时间O((b-a+1)log b)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "simulation",
+      "method_aliases": {}
     },
     {
       "id": "620C",
@@ -1970,8 +2860,18 @@
       "explanation": "扫描并维护本段已见类型，首次重复就截断并清空集合；最后不足一段的尾巴并入末段。没有截出任何段则无解。",
       "complexity": "期望时间O(n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "greedy",
+      "method_aliases": {}
     },
     {
       "id": "620D",
@@ -2008,8 +2908,26 @@
       "explanation": "枚举单次交换；预处理一侧全部不同下标二元组和并排序，对另一侧每个二元组和查最近值，使原差减两倍交换和差的绝对值最小。",
       "complexity": "时间O(nm+(n²+m²)log(n+m))，空间O(n²+m²)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "enumeration",
+            "binary_search"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "enumeration",
+            "two_pointers"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "enumeration",
+      "method_aliases": {}
     },
     {
       "id": "620E",
@@ -2042,8 +2960,19 @@
       "explanation": "用DFS序展开子树区间，懒标记线段树维护颜色位掩码的或；区间覆盖赋值，查询结果统计置位数。",
       "complexity": "时间O((n+q)log n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "euler",
+            "segment"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "euler",
+      "method_aliases": {}
     },
     {
       "id": "622A",
@@ -2081,8 +3010,30 @@
       "explanation": "找最小k使k(k+1)/2≥n，输出n-k(k-1)/2；二分k或开平方后校正整数边界。",
       "complexity": "二分时间O(log n)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "binary_answer"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "binary_search"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "arithmetic"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "binary_answer",
+      "method_aliases": {}
     },
     {
       "id": "622B",
@@ -2117,8 +3068,24 @@
       "explanation": "令t=(60h+m+a) mod 1440，输出t整除60和t模60并补零。",
       "complexity": "时间O(1)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "modular"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "simulation",
+      "method_aliases": {}
     },
     {
       "id": "622C",
@@ -2156,8 +3123,30 @@
       "explanation": "预处理每个位置所在同值连续段的左端点；先检查a[r]，若等于x且段左端大于l，则输出段左端减1，否则无解。",
       "complexity": "预处理O(n)，每次O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "dp"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "last_position"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "segment"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "dp",
+      "method_aliases": {}
     },
     {
       "id": "628A",
@@ -2192,8 +3181,24 @@
       "explanation": "共淘汰n-1人，即n-1场；水为(n-1)(2b+1)，毛巾为np。",
       "complexity": "时间O(1)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "arithmetic"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "count"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "arithmetic",
+      "method_aliases": {}
     },
     {
       "id": "628B",
@@ -2231,8 +3236,30 @@
       "explanation": "每位若能被4整除就加1；以第i位结尾的两位数若能被4整除，再加i-1（下标从1开始）。",
       "complexity": "时间O(n)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "contribution"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "modular"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "dp"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "contribution",
+      "method_aliases": {}
     },
     {
       "id": "628C",
@@ -2267,8 +3294,24 @@
       "explanation": "对每位选择较远的字母端点，移动min(剩余k,该位最大距离)，扣除贡献；处理完仍有剩余则无解。",
       "complexity": "时间O(n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "construct"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "greedy",
+      "method_aliases": {}
     },
     {
       "id": "628D",
@@ -2305,8 +3348,26 @@
       "explanation": "数位DP维护位置、余数和边界限制，按位置奇偶筛选数字；分别求不大于b和小于a的计数后相减。",
       "complexity": "时间O(位数·m·10)，滚动空间O(m)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "digit_dp",
+            "modular"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "dp",
+            "modular"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "digit_dp",
+      "method_aliases": {}
     },
     {
       "id": "632A",
@@ -2316,14 +3377,14 @@
       "rating": 1200,
       "round": "Educational Codeforces Round 9",
       "source": "https://codeforces.com/contest/632/problem/A",
-      "statement_zh": "每天有n名顾客，依次购买当前苹果数的一半。记录half表示恰好一半，halfplus表示另赠半个苹果；顾客只为原来的一半付款。最后苹果恰好卖完，单价p为偶数，求总收入。n≤40，p≤1000，买到的苹果数为整数。",
+      "statement_zh": "这一天有n名顾客，依次购买当前苹果数的一半。记录half表示恰好一半，halfplus表示另赠半个苹果；顾客只为原来的一半付款。最后苹果恰好卖完，单价p为偶数，求总收入。n≤40，p≤1000，买到的苹果数为整数。",
       "example": "两次halfplus、p=2：原有3个，收入3+1=4。",
       "hints": [
-        "每天有n名顾客，依次购买当前苹果数的一半。",
+        "这一天有n名顾客，依次购买当前苹果数的一半。",
         "记录half表示恰好一半，halfplus表示另赠半个苹果；顾客只为原来的一半付款。",
         "最后苹果恰好卖完，单价p为偶数，求总收入。",
         "n≤40，p≤1000，买到的苹果数为整数。",
-        "每天有n名顾客，依次购买当前苹果数的一半。记录half表示恰好一半，halfplus表示另赠半个苹果；顾客只为原来的一半付款。最后苹果恰好卖完，单价p为偶数，求总收入。n≤40，p≤1000，买到的苹果数为整数。 例：两次halfplus、p=2：原有3个，收入3+1=4。",
+        "这一天有n名顾客，依次购买当前苹果数的一半。记录half表示恰好一半，halfplus表示另赠半个苹果；顾客只为原来的一半付款。最后苹果恰好卖完，单价p为偶数，求总收入。n≤40，p≤1000，买到的苹果数为整数。 例：两次halfplus、p=2：原有3个，收入3+1=4。",
         "最后剩余数量已知为零。",
         "倒着看，原数量是剩余的两倍，赠送时还要加一。",
         "该次收入等于原数量乘p再除以二。",
@@ -2341,8 +3402,24 @@
       "explanation": "从末尾向前倒推苹果数x，half用2x，halfplus用2x+1；每步把新x乘p/2加入收入。",
       "complexity": "时间O(n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "reverse"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "reverse",
+      "method_aliases": {}
     },
     {
       "id": "632B",
@@ -2383,8 +3460,36 @@
       "explanation": "先算初始B总和，A的翻转收益为正权值、B为负权值，比较0、最大前缀和与最大后缀和。也可从两端分别模拟逐项翻转，用O(1)增量更新总分并保留最优值。动态规划可以维护“仍在翻转前缀”和“已经停止翻转”两个状态：每读入一项，前者必须继续翻转，后者取此前已停止或现在停止的较优值；反向扫描再求后缀最优。禁止从中途重新开始翻转，不能直接套任意最大子段和。",
       "complexity": "时间O(n)，空间O(n)或O(1)额外空间。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 2,
-      "editorial": "https://codeforces.com/blog/entry/43493"
+      "version": 3,
+      "editorial": "https://codeforces.com/blog/entry/43493",
+      "solution_rules": [
+        {
+          "core": [
+            "prefix"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "dp"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "prefix",
+      "method_aliases": {}
     },
     {
       "id": "632C",
@@ -2419,8 +3524,24 @@
       "explanation": "定义a排在b前当且仅当a+b小于b+a，按此比较器排序后拼接；相邻交换论证说明该顺序最优。",
       "complexity": "时间O(Ln log n)，L为最大串长；输出空间O(总长度)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "sort"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "sort",
+      "method_aliases": {}
     },
     {
       "id": "632D",
@@ -2453,8 +3574,19 @@
       "explanation": "统计不超过m的值的频次，枚举值向其倍数累加，找得分最大的目标；取所有整除目标的元素，并计算它们实际LCM输出。",
       "complexity": "时间O(n+m log m)，空间O(m+n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "count",
+            "divisor_sieve"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "count",
+      "method_aliases": {}
     },
     {
       "id": "652A",
@@ -2489,8 +3621,24 @@
       "explanation": "若h1+8a≥h2答0；否则a≤b无解；其余答案为向上取整((h2-h1-8a)/(12(a-b)))。",
       "complexity": "公式时间O(1)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "arithmetic"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "arithmetic",
+      "method_aliases": {}
     },
     {
       "id": "652C",
@@ -2528,8 +3676,30 @@
       "explanation": "每对位置l<r给r设一个至少l+1的左边界，扫描右端点维护所有已遇限制的最大值L，累加r-L+1。",
       "complexity": "时间O(n+m)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "two_pointers"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "window"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "dp"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "two_pointers",
+      "method_aliases": {}
     },
     {
       "id": "652D",
@@ -2588,13 +3758,74 @@
       ],
       "optional": [
         "sort",
-        "sweep"
+        "sweep",
+        "discretize"
       ],
       "explanation": "按左端点降序扫描，离散化右端点；已加入线段左端点均更大，用树状数组或线段树查询右端点小于当前r的数量，再加入当前线段。这就是扫描线；也可用维护子树大小、支持O(log n)排名查询的平衡树（普通set配合线性distance不满足复杂度）。另一方案：按左端点升序排序，对右端点序列做归并分治，为每个元素统计其右侧比它小的数量。扫描线与排序不能替代动态计数这一步。",
       "complexity": "时间O(n log n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 2,
-      "editorial": "https://codeforces.com/blog/entry/43986"
+      "version": 3,
+      "editorial": "https://codeforces.com/blog/entry/43986",
+      "solution_rules": [
+        {
+          "core": [
+            "sort",
+            "fenwick"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "sort",
+            "segment"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "sweep",
+            "fenwick"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "sweep",
+            "segment"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "sort",
+            "ordered_set"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "sweep",
+            "ordered_set"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "sort",
+            "merge"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "sort",
+            "divide"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "sort",
+      "method_aliases": {}
     },
     {
       "id": "660B",
@@ -2626,8 +3857,18 @@
       "explanation": "枚举i=1至2n，若i+2n≤m输出它，再在i≤m时输出i。",
       "complexity": "时间O(n)，空间O(1)额外空间。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "simulation",
+      "method_aliases": {}
     },
     {
       "id": "660C",
@@ -2662,8 +3903,24 @@
       "explanation": "维护零数不超过k的最长滑窗，记录端点后将该区间所有元素改为1，其余保留。",
       "complexity": "时间O(n)，空间O(n)，含输出数组。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "window"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "two_pointers"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "window",
+      "method_aliases": {}
     },
     {
       "id": "660D",
@@ -2696,8 +3953,19 @@
       "explanation": "枚举无序点对，统计(x1+x2,y1+y2)频次c，累加C(c,2)；无三点共线保证这些组合不退化。",
       "complexity": "期望时间O(n²)，空间O(n²)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "geometry",
+            "count"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "geometry",
+      "method_aliases": {}
     },
     {
       "id": "665A",
@@ -2732,8 +4000,24 @@
       "explanation": "把时间化为分钟；对对向发车时刻t，若t<本车到达且t+对向行程>本车出发，则计数。",
       "complexity": "枚举时间O(1440/b)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "enumeration",
+      "method_aliases": {}
     },
     {
       "id": "665B",
@@ -2765,8 +4049,18 @@
       "explanation": "按订单顺序线性找商品，加当前位置，执行移到最前的操作。",
       "complexity": "时间O(nmk)，空间O(k)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "simulation",
+      "method_aliases": {}
     },
     {
       "id": "665C",
@@ -2798,8 +4092,18 @@
       "explanation": "若当前字符与已处理的前一字符相同，改成不同于前一字符和下一个原字符的字母；26种字母保证可选。",
       "complexity": "时间O(n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "greedy",
+      "method_aliases": {}
     },
     {
       "id": "665D",
@@ -2836,8 +4140,26 @@
       "explanation": "筛出不超过2×10^6的质数。候选取所有1并加一个使x+1为质数的偶数；再枚举任意质数和二元组和单点，选最大。",
       "complexity": "时间O(V log log V+n²)，空间O(V)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "parity",
+            "prime_sieve"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "enumeration",
+            "prime_sieve"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "parity",
+      "method_aliases": {}
     },
     {
       "id": "678B",
@@ -2872,8 +4194,24 @@
       "explanation": "从y开始累加各年天数对7的余数，逐年寻找偏移为0且闰年状态与y相同的第一个年份。",
       "complexity": "至多检查400年，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "modular"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "simulation",
+      "method_aliases": {}
     },
     {
       "id": "678C",
@@ -2908,8 +4246,24 @@
       "explanation": "答案为floor(n/a)p+floor(n/b)q-floor(n/lcm(a,b))min(p,q)，LCM用gcd计算并注意溢出。",
       "complexity": "时间O(log min(a,b))，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "inclusion"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "arithmetic"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "inclusion",
+      "method_aliases": {}
     },
     {
       "id": "678D",
@@ -2944,8 +4298,24 @@
       "explanation": "以系数对表示映射，复合(a,b)与(c,d)得(ac,ad+b)，对变换做快速幂后作用于x；也可用2×2矩阵。",
       "complexity": "时间O(log n)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "fast_power"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "matrix_power"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "fast_power",
+      "method_aliases": {}
     },
     {
       "id": "691A",
@@ -2980,8 +4350,24 @@
       "explanation": "n=1时检查唯一值为1，否则统计0是否恰有一个。",
       "complexity": "时间O(n)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "count"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "count",
+      "method_aliases": {}
     },
     {
       "id": "691C",
@@ -3013,8 +4399,18 @@
       "explanation": "记录原小数点前的位数，去掉点后找到首尾非零位；指数为原整数位数减首非零下标减1，首位后放小数点并按规则省略。",
       "complexity": "时间O(n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "simulation",
+      "method_aliases": {}
     },
     {
       "id": "691D",
@@ -3055,8 +4451,33 @@
       "explanation": "求位置图连通分量，各分量位置升序、对应值降序一一匹配，最后按原位置输出。",
       "complexity": "时间O(n log n+mα(n))，空间O(n+m)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "components",
+            "sort"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "dsu",
+            "sort"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "dfs",
+            "sort"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "components",
+      "method_aliases": {}
     },
     {
       "id": "691E",
@@ -3091,8 +4512,24 @@
       "explanation": "建立邻接矩阵M，M[i][j]由异或置位数是否模3为0决定；答案为M的k-1次方所有元素之和。",
       "complexity": "时间O(n³ log k)，空间O(n²)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "matrix_power"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "fast_power"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "matrix_power",
+      "method_aliases": {}
     },
     {
       "id": "702A",
@@ -3130,8 +4567,30 @@
       "explanation": "从左到右扫描，若a[i]>a[i-1]则长度加一，否则置1，维护历史最大值。",
       "complexity": "时间O(n)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "dp"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "two_pointers"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "dp",
+      "method_aliases": {}
     },
     {
       "id": "702B",
@@ -3167,8 +4626,25 @@
       "explanation": "维护已扫描数的频次，对每个x枚举不超过2×10^9的2的幂并累加其补数频次；最后加入x。",
       "complexity": "期望时间O(n log V)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "count"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "enumeration",
+            "binary_search"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "count",
+      "method_aliases": {}
     },
     {
       "id": "702C",
@@ -3203,8 +4679,24 @@
       "explanation": "对各城市二分相邻基站，取最近距离后求最大值；也可让最近基站指针随城市单调右移。",
       "complexity": "二分O(n log m)，双指针O(n+m)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "binary_search"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "two_pointers"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "binary_search",
+      "method_aliases": {}
     },
     {
       "id": "702D",
@@ -3239,8 +4731,24 @@
       "explanation": "d≤k时直接开到。否则比较只开k公里、开floor(d/k)个整段后走余路、全程开车三种时间；每个已开整段后的维修只在继续开时计费。",
       "complexity": "时间O(1)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "arithmetic"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "greedy",
+      "method_aliases": {}
     },
     {
       "id": "702E",
@@ -3272,8 +4780,18 @@
       "explanation": "记录每点走2^j步的终点、总和与最小边权；按k的二进制逐段跳转并合并答案。",
       "complexity": "时间O(n log k)，空间O(n log k)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "doubling"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "doubling",
+      "method_aliases": {}
     },
     {
       "id": "710A",
@@ -3308,8 +4826,24 @@
       "explanation": "枚举行列增量均在-1至1且不同时为0的八种移动，统计坐标仍落在棋盘内者。",
       "complexity": "时间O(1)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "enumeration",
+      "method_aliases": {}
     },
     {
       "id": "710B",
@@ -3347,8 +4881,30 @@
       "explanation": "坐标排序，输出从1计数第(n+1)//2个值，即下中位数。",
       "complexity": "时间O(n log n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "median"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "sort"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "median",
+      "method_aliases": {}
     },
     {
       "id": "710C",
@@ -3380,8 +4936,18 @@
       "explanation": "用奇阶幻方法：1放首行中间，下一数尝试右上并循环越界，若目标已占则从原位置下移一格；按序填完。",
       "complexity": "时间O(n²)，空间O(n²)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "construct"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "construct",
+      "method_aliases": {}
     },
     {
       "id": "710E",
@@ -3413,8 +4979,20 @@
       "explanation": "f[i]先由f[i-1]+x更新；偶数考虑f[i/2]+y，奇数考虑f[(i+1)/2]+y+x，初值f[0]=0、f[1]=x。",
       "complexity": "时间O(n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "dp"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "dp",
+      "method_aliases": {
+        "memo": "dp"
+      }
     },
     {
       "id": "762C",
@@ -3451,8 +5029,26 @@
       "explanation": "贪心求前缀最早结束与后缀最晚开始位置；枚举保留前缀，用双指针或二分找最早可保留后缀，使前者小于后者。",
       "complexity": "双指针O(n+m)，二分O(n+m log m)，空间O(n+m)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "subsequence",
+            "two_pointers"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "subsequence",
+            "binary_search"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "subsequence",
+      "method_aliases": {}
     },
     {
       "id": "792B",
@@ -3484,8 +5080,18 @@
       "explanation": "维护领队下标p，每轮p=(p+a)%当前人数，输出并删除该项，再对新人数修正p。",
       "complexity": "时间O(nk)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "simulation",
+      "method_aliases": {}
     },
     {
       "id": "792C",
@@ -3521,8 +5127,26 @@
       "explanation": "用余数三状态维护无前导零子序列的最大长度，记录来源以恢复答案；单独比较0。更新必须使用上一层状态，避免重复用数字。",
       "complexity": "时间O(n)，恢复方案空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "dp"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": [
+            "modular"
+          ]
+        }
+      ],
+      "draw_group": "dp",
+      "method_aliases": {}
     },
     {
       "id": "792D",
@@ -3557,8 +5181,24 @@
       "explanation": "令b=u&-u，孩子为u±b/2（b>1）；非根时父亲由u&2b决定加b或减b，逐条模拟。",
       "complexity": "时间O(指令总数)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "bitwise"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "bitwise",
+      "method_aliases": {}
     },
     {
       "id": "797A",
@@ -3593,8 +5233,24 @@
       "explanation": "试除得到带重数质因子列表，少于k个则无解；前k-1个独立输出，剩余乘积作最后一个。",
       "complexity": "时间O(√n)，空间O(log n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "factor"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "divisors"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "factor",
+      "method_aliases": {}
     },
     {
       "id": "797B",
@@ -3629,8 +5285,24 @@
       "explanation": "先求所有正数和；若为偶数，比较去掉最小正奇数和加上最大负奇数两方案，取存在且较大者。也可维护奇偶两种最大和。",
       "complexity": "时间O(n)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "dp"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "greedy",
+      "method_aliases": {}
     },
     {
       "id": "797C",
@@ -3663,8 +5335,19 @@
       "explanation": "预处理未读后缀最小字符，逐个压栈；栈顶不大于后缀最小时不断弹出到答案，输入结束后清空栈。",
       "complexity": "时间O(n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "stack",
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "stack",
+      "method_aliases": {}
     },
     {
       "id": "797D",
@@ -3696,8 +5379,18 @@
       "explanation": "从根携带开区间(lo,hi)遍历，点值位于区间内则标为可查到；左子树收紧上界，右子树收紧下界，最后统计未标记值的节点数。",
       "complexity": "期望时间O(n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "dfs"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "dfs",
+      "method_aliases": {}
     },
     {
       "id": "797E",
@@ -3730,8 +5423,21 @@
       "explanation": "取阈值B≈√n，对k≤B预处理f[k][p]=1+f[k][p+a[p]+k]；更大k逐次模拟。",
       "complexity": "时间O((n+q)√n)，空间O(n√n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "sqrt_decomp",
+            "dp"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "sqrt_decomp",
+      "method_aliases": {
+        "memo": "dp"
+      }
     },
     {
       "id": "803A",
@@ -3766,8 +5472,24 @@
       "explanation": "若k>n²无解；按上三角的逐行顺序，能放就放：对角扣1，非对角与镜像一起扣2。",
       "complexity": "时间O(n²)，空间O(n²)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "construct"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "greedy",
+      "method_aliases": {}
     },
     {
       "id": "803B",
@@ -3805,8 +5527,30 @@
       "explanation": "先从左到右传播相邻距离，再从右到左更新最小值；或把所有零作为起点做多源BFS。",
       "complexity": "时间O(n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "dp"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "two_pointers"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "bfs"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "dp",
+      "method_aliases": {}
     },
     {
       "id": "803C",
@@ -3843,8 +5587,26 @@
       "explanation": "先判断k(k+1)/2≤n。枚举n的约数d，选最大使n/d≥k(k+1)/2者；输出d,2d,…,(k-1)d，最后输出剩余量。",
       "complexity": "时间O(√n+k)，空间O(k)，含输出。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "divisors",
+            "construct"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "factor",
+            "construct"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "divisors",
+      "method_aliases": {}
     },
     {
       "id": "803D",
@@ -3877,8 +5639,19 @@
       "explanation": "把文本按合法断点切成带分隔符的小块；二分宽度，用贪心顺序装行检查是否≤k行，超宽小块直接判失败。",
       "complexity": "时间O(n log n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "binary_answer",
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "binary_answer",
+      "method_aliases": {}
     },
     {
       "id": "803E",
@@ -3910,8 +5683,18 @@
       "explanation": "按位置对差值[-k,k]做可达DP，非末位限制在开区间(-k,k)，末位必须为±k，沿前驱恢复。",
       "complexity": "时间O(nk)，恢复空间O(nk)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "dp"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "dp",
+      "method_aliases": {}
     },
     {
       "id": "803F",
@@ -3948,8 +5731,26 @@
       "explanation": "筛出每个d的倍数出现总数c[d]；倒序令f[d]=2^c[d]-1-Σf[kd]，输出f[1]；可等价使用莫比乌斯反演。",
       "complexity": "时间O(V log V+n)，空间O(V)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "divisor_sieve",
+            "inclusion"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "mobius",
+            "count"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "divisor_sieve",
+      "method_aliases": {}
     },
     {
       "id": "808A",
@@ -3984,8 +5785,24 @@
       "explanation": "令p为不超过n的最大10次幂，下一个幸运年为(n//p+1)p，减去n即可。",
       "complexity": "时间O(log n)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "arithmetic"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "arithmetic",
+      "method_aliases": {}
     },
     {
       "id": "808C",
@@ -4020,8 +5837,24 @@
       "explanation": "先分ceil(a[i]/2)，剩余按容量降序逐个补到上限，保留原编号输出。",
       "complexity": "时间O(n log n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "sort"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "greedy",
+      "method_aliases": {}
     },
     {
       "id": "808D",
@@ -4058,8 +5891,26 @@
       "explanation": "扫描切口维护前缀和与两侧频次；若两侧已平衡则成功，否则检查较重侧是否含两侧差的一半。对空边界也检查，移动后必须非空。",
       "complexity": "期望时间O(n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "prefix",
+            "count"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "prefix",
+            "ordered_set"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "prefix",
+      "method_aliases": {}
     },
     {
       "id": "813A",
@@ -4094,8 +5945,24 @@
       "explanation": "累加做题时间S，按顺序寻找第一个右端点≥S的区间，答案max(S,左端点)，不存在则-1。",
       "complexity": "时间O(n+m)，空间O(1)额外空间。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "simulation",
+      "method_aliases": {}
     },
     {
       "id": "813B",
@@ -4135,8 +6002,34 @@
       "explanation": "枚举不超过r的两组幂，收集落在[l,r]的和，排序去重并加l-1、r+1边界；取相邻差减一的最大值。",
       "complexity": "时间O(log_x r·log_y r·log(log²r))，空间O(log²r)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": [
+            "sort"
+          ]
+        },
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": [
+            "gap"
+          ]
+        }
+      ],
+      "draw_group": "enumeration",
+      "method_aliases": {}
     },
     {
       "id": "813C",
@@ -4171,8 +6064,24 @@
       "explanation": "分别求从1与x出发的距离d1、dx，答案为2乘以满足dx[v]<d1[v]的点中最大的d1[v]。",
       "complexity": "时间O(n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "bfs"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "dfs"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "bfs",
+      "method_aliases": {}
     },
     {
       "id": "817A",
@@ -4207,8 +6116,24 @@
       "explanation": "令u=abs(dx)/x、v=abs(dy)/y，只有两者均整除且u、v同奇偶时可达；多出的偶数步可来回抵消。",
       "complexity": "时间O(1)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "parity"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "modular"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "parity",
+      "method_aliases": {}
     },
     {
       "id": "817B",
@@ -4243,8 +6168,24 @@
       "explanation": "排序取第三小值v；设小于v的有s个，等于v的有c个，答案为C(c,3-s)。",
       "complexity": "时间O(n log n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "combinatorics"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "count"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "combinatorics",
+      "method_aliases": {}
     },
     {
       "id": "817C",
@@ -4282,8 +6223,30 @@
       "explanation": "二分最小x使x-digit_sum(x)≥s；若不存在答0，否则n-x+1。也可只检查s附近有限个数位和范围。",
       "complexity": "时间O(log²n)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "binary_answer"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "binary_search"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "binary_answer",
+      "method_aliases": {}
     },
     {
       "id": "817D",
@@ -4316,8 +6279,19 @@
       "explanation": "用单调栈求每点作为最大或最小时的左右阻挡边界，贡献为a[i]乘左右可选端点数；最大贡献减最小贡献。",
       "complexity": "时间O(n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "monostack",
+            "contribution"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "monostack",
+      "method_aliases": {}
     },
     {
       "id": "817E",
@@ -4349,8 +6323,20 @@
       "explanation": "01字典树支持路径计数增减；查询按l的位分支，l位为1时累加异或位为0的整棵子树，再沿异或位为1继续。",
       "complexity": "每次O(log V)，空间O(q log V)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "trie01"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "trie01",
+      "method_aliases": {
+        "trie": "trie01"
+      }
     },
     {
       "id": "818D",
@@ -4385,8 +6371,24 @@
       "explanation": "保存各颜色位置表，对B检查数量不少于A且每个对应出现位置更早；所有候选比较次数总计O(n)。A未出现时任取其他颜色。",
       "complexity": "时间O(n+值域)，空间O(n+值域)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "count"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "count",
+      "method_aliases": {}
     },
     {
       "id": "818E",
@@ -4423,8 +6425,26 @@
       "explanation": "分解k，预处理各元素对这些质因子的指数；滑窗维护指数和，满足全部需求后统计相应合法区间并收缩。k=1时所有非空子段合法。",
       "complexity": "时间O(√k+n log V)，空间O(n·ω(k))。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "factor",
+            "two_pointers"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "factor",
+            "window"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "factor",
+      "method_aliases": {}
     },
     {
       "id": "825A",
@@ -4459,8 +6479,24 @@
       "explanation": "按零分割并保留空段，每段一的数量就是对应十进制数字，顺序输出。",
       "complexity": "时间O(n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "count"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "simulation",
+      "method_aliases": {}
     },
     {
       "id": "825B",
@@ -4495,8 +6531,24 @@
       "explanation": "枚举所有长度五且不越界的横竖斜线段，若恰好四个X和一个空格，则可获胜，否则不行。",
       "complexity": "固定棋盘时间O(10²·4·5)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "enumeration",
+      "method_aliases": {}
     },
     {
       "id": "825C",
@@ -4528,8 +6580,18 @@
       "explanation": "将指定题升序，若a>2k则不断补难度2k并令k翻倍；能做指定题后令k=max(k,a)。",
       "complexity": "时间O(n log n+log V)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "greedy",
+      "method_aliases": {}
     },
     {
       "id": "825D",
@@ -4566,8 +6628,26 @@
       "explanation": "统计现有频次和模板频次，二分份数c，以Σmax(0,c·need-have)检查；按缺口填问号，余下随便填。",
       "complexity": "时间O(n+m+26 log n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "binary_answer",
+            "count"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "greedy",
+            "count"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "binary_answer",
+      "method_aliases": {}
     },
     {
       "id": "825E",
@@ -4604,8 +6684,26 @@
       "explanation": "反向拓扑处理：维护当前出度零点的最大堆，依次赋标签n至1，删除该点并更新前驱出度。",
       "complexity": "时间O((n+m)log n)，空间O(n+m)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "topo",
+            "heap"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "topo",
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "topo",
+      "method_aliases": {}
     },
     {
       "id": "837A",
@@ -4640,8 +6738,24 @@
       "explanation": "逐字符累计当前词大写字母数，空格处结算并归零，最后再结算一次。",
       "complexity": "时间O(n)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "count"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "count",
+      "method_aliases": {}
     },
     {
       "id": "837B",
@@ -4676,8 +6790,24 @@
       "explanation": "分别尝试按行三等分、按列三等分，扫描检查各块纯色及颜色互异，有一种成立即可。",
       "complexity": "时间O(nm)，空间O(1)额外空间。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "enumeration",
+      "method_aliases": {}
     },
     {
       "id": "837C",
@@ -4709,8 +6839,18 @@
       "explanation": "枚举不同印章和四种旋转组合，判断宽度和与最大高度，或高度和与最大宽度是否不超纸张，取面积和最大值。",
       "complexity": "时间O(n²)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "enumeration",
+      "method_aliases": {}
     },
     {
       "id": "837D",
@@ -4747,8 +6887,28 @@
       "explanation": "分解出2与5指数，01背包状态为已选数、总5数，值为最大2数；最后在选k个的状态上最大化min(2数,5数)。",
       "complexity": "时间O(nkF)，空间O(kF)，F≤25n。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "factor",
+            "knapsack"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "factor",
+            "dp"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "factor",
+      "method_aliases": {
+        "dp": "knapsack"
+      }
     },
     {
       "id": "845A",
@@ -4783,8 +6943,24 @@
       "explanation": "排序后判断第n个值是否严格小于第n+1个值；成立则可分队，否则不行。",
       "complexity": "时间O(n log n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "sort"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "sort",
+      "method_aliases": {}
     },
     {
       "id": "845B",
@@ -4819,8 +6995,24 @@
       "explanation": "较大侧每位可贡献其数字值，较小侧每位可贡献9减该值；把六个潜在贡献降序，取最短前缀覆盖差值。",
       "complexity": "固定规模O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "greedy",
+      "method_aliases": {}
     },
     {
       "id": "845C",
@@ -4855,8 +7047,24 @@
       "explanation": "排序开始和结束事件，闭区间同点先加入后移除；最大同时覆盖数不超过2即YES。也可按开始时间贪心安排空闲电视。",
       "complexity": "时间O(n log n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "sweep"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "sweep",
+      "method_aliases": {}
     },
     {
       "id": "845D",
@@ -4889,8 +7097,19 @@
       "explanation": "限速牌入栈，速度超过栈顶就弹出并计忽略数；取消限速清栈。禁止超车累计，允许超车清零，每次超车将累计禁令全部计为忽略并清零。",
       "complexity": "时间O(n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "stack",
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "stack",
+      "method_aliases": {}
     },
     {
       "id": "845G",
@@ -4927,8 +7146,26 @@
       "explanation": "遍历求dist，所有边产生环值dist[u]异或dist[v]异或w，将其插入线性基；用线性基从高位到低位最小化dist[n]。",
       "complexity": "时间O((n+m)log V)，空间O(n+m+log V)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "dfs",
+            "xor_basis"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "bfs",
+            "xor_basis"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "dfs",
+      "method_aliases": {}
     },
     {
       "id": "846A",
@@ -4966,8 +7203,30 @@
       "explanation": "预处理零的前缀数和一的后缀数，枚举分界点取和的最大值；也可做两状态最长非降子序列DP。",
       "complexity": "时间O(n)，空间O(n)或O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "prefix"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "dp"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "prefix",
+      "method_aliases": {}
     },
     {
       "id": "846B",
@@ -5004,8 +7263,26 @@
       "explanation": "枚举完整题数c，消耗cΣt并得c(k+1)分；剩余每种子任务有n-c份，按耗时升序尽量选，取最大分。",
       "complexity": "时间O(k log k+nk)，空间O(k)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "enumeration",
+            "greedy"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "enumeration",
+            "sort"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "enumeration",
+      "method_aliases": {}
     },
     {
       "id": "846C",
@@ -5042,8 +7319,26 @@
       "explanation": "计算前缀和，线性DP维护P[x]、P[x]-P[y]、P[x]-P[y]+P[z]的最大值及下标，允许同位置依次更新；恢复三个界点。",
       "complexity": "优化时间O(n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "prefix",
+            "dp"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "prefix",
+            "enumeration"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "prefix",
+      "method_aliases": {}
     },
     {
       "id": "846F",
@@ -5080,8 +7375,26 @@
       "explanation": "记同值上次位置pre[i]，所有无序区间总贡献S=Σ(i-pre[i])(n-i+1)；期望为(2S-n)/n²。",
       "complexity": "时间O(n)，空间O(值域)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "expectation",
+            "last_position"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "expectation",
+            "contribution"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "expectation",
+      "method_aliases": {}
     },
     {
       "id": "863A",
@@ -5116,8 +7429,24 @@
       "explanation": "去掉尾部连续零，再用双指针判断剩余字符串是否回文，成立则YES。",
       "complexity": "时间O(log n)，空间O(log n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "two_pointers"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "two_pointers",
+      "method_aliases": {}
     },
     {
       "id": "863B",
@@ -5154,8 +7483,26 @@
       "explanation": "先排序，枚举删除两个单人艇乘客，把剩余序列相邻两两配对并求差，取最小。",
       "complexity": "时间O(n³)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "enumeration",
+            "greedy"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "enumeration",
+            "sort"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "enumeration",
+      "method_aliases": {}
     },
     {
       "id": "863C",
@@ -5190,8 +7537,24 @@
       "explanation": "记录每对出招首次出现轮次与累计比分，检测循环后计算完整循环次数和剩余轮数；也可对九状态做倍增。",
       "complexity": "循环法时间O(9)，空间O(9)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "cycle"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "doubling"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "cycle",
+      "method_aliases": {}
     },
     {
       "id": "863D",
@@ -5226,8 +7589,24 @@
       "explanation": "对每个目标下标倒序处理操作：反转区间内映射到l+r-p；右移区间内p=l映射r，否则映射p-1。最终查原数组。",
       "complexity": "时间O(qm+n)，空间O(n+q)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "reverse"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "reverse",
+      "method_aliases": {}
     },
     {
       "id": "863E",
@@ -5260,12 +7639,32 @@
           "segment"
         ]
       ],
-      "optional": [],
+      "optional": [
+        "discretize"
+      ],
       "explanation": "离散化l与r+1，用差分得到各整数跨度的覆盖数，建区间最小值结构；某原区间最小覆盖≥2时可关闭。",
       "complexity": "时间O(n log n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "difference",
+            "segment"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "sweep",
+            "segment"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "difference",
+      "method_aliases": {}
     },
     {
       "id": "873A",
@@ -5297,8 +7696,18 @@
       "explanation": "前n-k项仍按原耗时相加，最后k项各计x，得到最小总时间。",
       "complexity": "时间O(n)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "greedy",
+      "method_aliases": {}
     },
     {
       "id": "873B",
@@ -5333,8 +7742,24 @@
       "explanation": "扫描带符号前缀和，记录每个和最早出现位置，当前位置减最早位置得到候选最长长度；初始和0位于位置0。",
       "complexity": "时间O(n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "prefix"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "count"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "prefix",
+      "method_aliases": {}
     },
     {
       "id": "873C",
@@ -5372,8 +7797,30 @@
       "explanation": "逐列预处理前缀和，枚举原来为一的位置，查询其下k格的一数并计算上方一数，按分数大、修改少择优后求和。",
       "complexity": "时间O(nm)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "prefix"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "window"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "prefix",
+      "method_aliases": {}
     },
     {
       "id": "873D",
@@ -5411,8 +7858,30 @@
       "explanation": "先排1至n，令预算k-1；递归区间，预算至少2时交换中点两侧元素并扣2，再处理子区间。也可称为贪心构造：固定优先展开左子树，能增加调用就消耗两次预算，再处理右子树。递归树共有n-1个可展开节点，每展开一次恰增加两次调用，因而1到2n-1之间的每个奇数预算都可实现；偶数或超界无解。",
       "complexity": "时间O(n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 2,
-      "editorial": "https://codeforces.com/blog/entry/55171"
+      "version": 3,
+      "editorial": "https://codeforces.com/blog/entry/55171",
+      "solution_rules": [
+        {
+          "core": [
+            "divide"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "construct"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "divide",
+      "method_aliases": {}
     },
     {
       "id": "884A",
@@ -5447,8 +7916,24 @@
       "explanation": "顺序累加86400-a[i]，首次总空闲时间≥t时输出该天编号。",
       "complexity": "时间O(n)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "prefix"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "simulation",
+      "method_aliases": {}
     },
     {
       "id": "884B",
@@ -5483,8 +7968,24 @@
       "explanation": "仅当Σa+n-1=x时恰好唯一，否则不是唯一。",
       "complexity": "时间O(n)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "arithmetic"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "count"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "arithmetic",
+      "method_aliases": {}
     },
     {
       "id": "884C",
@@ -5522,8 +8023,30 @@
       "explanation": "遍历求所有环长；若至少两环，把最大两个长度合并，再将各环长度平方求和。",
       "complexity": "时间O(n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "components"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "dfs"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "components",
+      "method_aliases": {}
     },
     {
       "id": "884D",
@@ -5556,8 +8079,19 @@
       "explanation": "用最小堆实现三叉Huffman：偶数个叶子先合并最小两项，随后每次合并最小三项，累加各次合并和。n=1费用0。",
       "complexity": "时间O(n log n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "heap",
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "heap",
+      "method_aliases": {}
     },
     {
       "id": "888B",
@@ -5592,8 +8126,24 @@
       "explanation": "统计四方向次数，答案为2min(U,D)+2min(L,R)。",
       "complexity": "时间O(n)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "count"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "count",
+      "method_aliases": {}
     },
     {
       "id": "888D",
@@ -5628,8 +8178,24 @@
       "explanation": "答案为ΣC(n,j)D[j]，j从0至k；错排数D[0..4]=1,0,1,2,9，可直接代入。",
       "complexity": "时间O(k²)，空间O(k)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "combinatorics"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "combinatorics",
+      "method_aliases": {}
     },
     {
       "id": "888E",
@@ -5666,8 +8232,26 @@
       "explanation": "折半枚举余数和，一侧排序；对另一侧每个x二分最大y≤m-1-x并更新。跨模组合不优于该侧单独选取，空集保证候选存在。",
       "complexity": "时间O(n·2^(n/2))，空间O(2^(n/2))。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "meet_middle",
+            "binary_search"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "meet_middle",
+            "two_pointers"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "meet_middle",
+      "method_aliases": {}
     },
     {
       "id": "888G",
@@ -5704,8 +8288,28 @@
       "explanation": "按二进制位递归分组求各组MST，组间用01字典树找最小异或连边；每个分裂处加入一条最小跨边。",
       "complexity": "时间O(n log²V)，空间O(n log V)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "trie01",
+            "mst"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "trie01",
+            "divide"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "trie01",
+      "method_aliases": {
+        "trie": "trie01"
+      }
     },
     {
       "id": "893A",
@@ -5737,8 +8341,18 @@
       "explanation": "维护旁观者初值3；若当前胜者等于旁观者则失败，否则新旁观者为6减胜者减旧旁观者。",
       "complexity": "时间O(n)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "simulation",
+      "method_aliases": {}
     },
     {
       "id": "893B",
@@ -5776,8 +8390,30 @@
       "explanation": "依次生成(2^t-1)·2^(t-1)，不超过n时检查整除并更新最大值。",
       "complexity": "时间O(log n)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "divisors"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "bitwise"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "enumeration",
+      "method_aliases": {}
     },
     {
       "id": "893D",
@@ -5809,8 +8445,18 @@
       "explanation": "维护最少存款次数下可达余额[L,R]，交易整体平移并裁上限；检查时若R<0则次数加1并置[0,d]，否则L=max(L,0)。",
       "complexity": "时间O(n)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "greedy",
+      "method_aliases": {}
     },
     {
       "id": "903A",
@@ -5845,8 +8491,24 @@
       "explanation": "枚举b从0到x//7，若x-7b能被3整除则YES，否则NO；也可预处理可达重量DP。",
       "complexity": "每次时间O(x)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "dp"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "enumeration",
+      "method_aliases": {}
     },
     {
       "id": "990C",
@@ -5885,8 +8547,32 @@
       "explanation": "对每串求净余额和最小前缀余额；可作左半的要求最小前缀非负，可作右半的要求最小前缀等于最终负余额。按余额绝对值配对频次相乘，完整合法串贡献其频次平方。",
       "complexity": "时间O(总串长)，空间O(总串长)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "count"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "stack"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "prefix"
+          ],
+          "helpers": [
+            "count"
+          ]
+        }
+      ],
+      "draw_group": "count",
+      "method_aliases": {}
     },
     {
       "id": "911A",
@@ -5927,8 +8613,36 @@
       "explanation": "先求全局最小值，再扫描记录其上次出现位置并最小化当前下标减上次下标。可看作贪心地只保留最近的前一个最小值：较早位置离当前点只会更远，所以只需比较相邻最小值位置；也可用前后两个指针枚举这些相邻位置。",
       "complexity": "时间O(n)，空间O(1)额外空间。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 2,
-      "editorial": ""
+      "version": 3,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "last_position"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "two_pointers"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "last_position",
+      "method_aliases": {}
     },
     {
       "id": "911B",
@@ -5963,8 +8677,24 @@
       "explanation": "枚举第一种分i盘、第二种分n-i盘，要求均至少一盘，候选min(a//i,b//(n-i))，取最大。",
       "complexity": "时间O(n)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "binary_answer"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "enumeration",
+      "method_aliases": {}
     },
     {
       "id": "911C",
@@ -5999,8 +8729,24 @@
       "explanation": "排序周期，合法条件为最小值1、最小两值均2、三值均3，或恰为2、4、4；其他组合无法覆盖全部余数类。",
       "complexity": "时间O(1)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "case_analysis"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "arithmetic"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "case_analysis",
+      "method_aliases": {}
     },
     {
       "id": "911D",
@@ -6032,8 +8778,18 @@
       "explanation": "先计算初始逆序奇偶，长度L的反转将奇偶异或C(L,2)模2，无需实际改动数组。",
       "complexity": "时间O(n²+q)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "parity"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "parity",
+      "method_aliases": {}
     },
     {
       "id": "915A",
@@ -6068,8 +8824,24 @@
       "explanation": "枚举能整除k的a[i]，最小化k/a[i]。",
       "complexity": "时间O(n)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "enumeration",
+      "method_aliases": {}
     },
     {
       "id": "915B",
@@ -6104,8 +8876,24 @@
       "explanation": "只删左则abs(pos-l)+1，只删右类似；两侧都删则min(abs(pos-l),abs(pos-r))+r-l+2；都不删为0。",
       "complexity": "时间O(1)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "arithmetic"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "greedy",
+      "method_aliases": {}
     },
     {
       "id": "915C",
@@ -6140,8 +8928,24 @@
       "explanation": "等长时按b逐位尝试最大可用数字；保持相等时继续，遇到无法完成则回退前一位选更小数字，后续降序填剩余数字。",
       "complexity": "时间O(位数²·10)，空间O(位数)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "backtracking"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "greedy",
+      "method_aliases": {}
     },
     {
       "id": "915D",
@@ -6176,8 +8980,24 @@
       "explanation": "先用DFS找一个有向环；若无环直接成功，否则枚举环边，使用DFS或拓扑排序判定删后是否无环。",
       "complexity": "时间O(n(n+m))，空间O(n+m)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "dfs"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "topo"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "dfs",
+      "method_aliases": {}
     },
     {
       "id": "920A",
@@ -6212,8 +9032,24 @@
       "explanation": "每个位置计算到所有龙头的最小距离，取这些距离的最大值再加1；可等价多源BFS。",
       "complexity": "直接枚举O(nk)，空间O(k)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "bfs"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "enumeration",
+      "method_aliases": {}
     },
     {
       "id": "920B",
@@ -6248,8 +9084,24 @@
       "explanation": "维护下一可用秒t，令s=max(t,l[i])；s≤r[i]则输出s并置t=s+1，否则输出0且t不变。",
       "complexity": "时间O(n)，空间O(1)额外空间。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "simulation",
+      "method_aliases": {}
     },
     {
       "id": "920C",
@@ -6287,8 +9139,30 @@
       "explanation": "按0切成连续块，检查块内每个值都落在该块下标区间内；排列无重复保证这已足够。也可块内排序后核对。",
       "complexity": "直接检查O(n)，空间O(1)额外空间。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "components"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "dsu"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "sort"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "components",
+      "method_aliases": {}
     },
     {
       "id": "920E",
@@ -6331,8 +9205,40 @@
       "explanation": "保存缺边邻接集合与未访问有序集合；从队列点扫描未访问者，非缺边者加入同一块并删除。扫描失败可归因于输入的一条缺边。",
       "complexity": "时间O((n+m)log n)，空间O(n+m)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "bfs"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "dfs"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "bfs"
+          ],
+          "helpers": [
+            "ordered_set"
+          ]
+        },
+        {
+          "core": [
+            "dfs"
+          ],
+          "helpers": [
+            "ordered_set"
+          ]
+        }
+      ],
+      "draw_group": "bfs",
+      "method_aliases": {}
     },
     {
       "id": "938A",
@@ -6367,8 +9273,24 @@
       "explanation": "从左到右构造答案，仅当当前字符与答案末尾不同时为元音时才追加。",
       "complexity": "时间O(n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "two_pointers"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "simulation",
+      "method_aliases": {}
     },
     {
       "id": "938B",
@@ -6403,8 +9325,24 @@
       "explanation": "对每个位置a计算min(a-1,10^6-a)，答案是这些最短到达时间的最大值。",
       "complexity": "时间O(n)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "arithmetic"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "greedy",
+      "method_aliases": {}
     },
     {
       "id": "938C",
@@ -6439,8 +9377,24 @@
       "explanation": "x=0用n=m=1；否则枚举x的因子u≤v，令n=(u+v)/2、q=(v-u)/2，要求同奇偶且q>0；取m=n//q并核对n//m=q及边界。",
       "complexity": "时间O(√x)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "divisors"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "divisors",
+      "method_aliases": {}
     },
     {
       "id": "938D",
@@ -6472,8 +9426,20 @@
       "explanation": "将各点距离初始化为本地点票价，全部入优先队列，使用两倍原边权跑多源Dijkstra，最终距离即答案。",
       "complexity": "时间O((n+m)log n)，空间O(n+m)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "dijkstra"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "dijkstra",
+      "method_aliases": {
+        "shortest_path": "dijkstra"
+      }
     },
     {
       "id": "946A",
@@ -6508,8 +9474,24 @@
       "explanation": "答案为所有元素绝对值的和，按符号分组即可达到。",
       "complexity": "时间O(n)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "arithmetic"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "greedy",
+      "method_aliases": {}
     },
     {
       "id": "946B",
@@ -6547,8 +9529,30 @@
       "explanation": "循环中若a≥2b令a%=2b，否则若b≥2a令b%=2a；任一为0或均不满足则停止。",
       "complexity": "类似欧几里得过程，时间O(log max(a,b))，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "gcd"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "modular"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "gcd",
+      "method_aliases": {}
     },
     {
       "id": "946C",
@@ -6586,8 +9590,30 @@
       "explanation": "维护下一个待匹配字母，从左到右遇到不大于它的字符就改成它并前进；成功得到26个字母则输出，否则-1。",
       "complexity": "时间O(n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "construct"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "subsequence"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "greedy",
+      "method_aliases": {}
     },
     {
       "id": "946D",
@@ -6624,8 +9650,29 @@
       "explanation": "列出每日有课位置，枚举固定保留数量的连续窗口求最短跨度，得到cost[天][逃课数]；按天做分组背包合并总逃课数。",
       "complexity": "预处理O(nm²)，背包O(nk²)，空间O(nk+k)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "window",
+            "knapsack"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "enumeration",
+            "knapsack"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "window",
+      "method_aliases": {
+        "dp": "knapsack",
+        "group_knapsack": "knapsack"
+      }
     },
     {
       "id": "954A",
@@ -6660,8 +9707,24 @@
       "explanation": "从左向右扫描，若当前与下个字符不同就配成一组并跨两位，否则单独保留；每组计长度1。",
       "complexity": "时间O(n)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "greedy",
+      "method_aliases": {}
     },
     {
       "id": "954B",
@@ -6696,8 +9759,24 @@
       "explanation": "枚举L≤n/2，若s前L位等于接下来的L位，候选操作数为n-L+1；与不复制的n取最小。",
       "complexity": "直接比较时间O(n²)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "kmp"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "enumeration",
+      "method_aliases": {}
     },
     {
       "id": "954C",
@@ -6732,8 +9811,24 @@
       "explanation": "从非1差确定列数，没有则取一列；检查每次两编号对应行列的曼哈顿距离为1，行数取足以包含最大编号的值。",
       "complexity": "时间O(n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "construct"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "construct",
+      "method_aliases": {}
     },
     {
       "id": "954D",
@@ -6766,8 +9861,19 @@
       "explanation": "分别从s、t做BFS，对每对无边u、v检查ds[u]+1+dt[v]与ds[v]+1+dt[u]都不小于ds[t]则计数。",
       "complexity": "时间O(n²+m)，空间O(n²+m)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "bfs",
+            "enumeration"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "bfs",
+      "method_aliases": {}
     },
     {
       "id": "954G",
@@ -6804,8 +9910,26 @@
       "explanation": "前缀和算原防御，二分最低防御；检查时不足就把所需人数放到min(n,i+r)，用差分维护对后续位置的覆盖，判断总新增是否≤k。",
       "complexity": "时间O(n log(Σa+k+1))，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "binary_answer",
+            "difference"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "binary_answer",
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "binary_answer",
+      "method_aliases": {}
     },
     {
       "id": "961A",
@@ -6840,8 +9964,24 @@
       "explanation": "统计每列收到方块数量，输出其中最小值。",
       "complexity": "时间O(n+m)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "count"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "count",
+      "method_aliases": {}
     },
     {
       "id": "961D",
@@ -6876,8 +10016,24 @@
       "explanation": "n≤4直接可行；否则枚举前三点中的三对作第一条线，收集不在线上的点并用叉积检查是否共线。",
       "complexity": "时间O(n)，空间O(n)，用宽整数算叉积。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "geometry"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "geometry",
+      "method_aliases": {}
     },
     {
       "id": "961E",
@@ -6925,8 +10081,40 @@
       "explanation": "按阈值做离线扫描线：令x从n降到1，将所有a[y]≥x的位置y加入树状数组或线段树，查询位置[x+1,min(n,a[x])]的已加入数量并累加。预先按a[y]排序安排加入顺序；扫描线与动态区间计数共同组成解法。",
       "complexity": "时间O(n log n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 2,
-      "editorial": ""
+      "version": 3,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "sort",
+            "fenwick"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "sort",
+            "segment"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "sweep",
+            "fenwick"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "sweep",
+            "segment"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "sort",
+      "method_aliases": {}
     },
     {
       "id": "962A",
@@ -6961,8 +10149,24 @@
       "explanation": "求总和S，再累加前缀P，首次2P≥S时输出下标。",
       "complexity": "时间O(n)，空间O(n)或复用输入数组。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "prefix"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "prefix",
+      "method_aliases": {}
     },
     {
       "id": "962B",
@@ -6994,8 +10198,18 @@
       "explanation": "扫描空位，上一位已有学生则尽量安排另一类；新段或留空后的首位优先安排剩余更多者，不能安排则留空并重置相邻限制。",
       "complexity": "时间O(n)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "greedy",
+      "method_aliases": {}
     },
     {
       "id": "962C",
@@ -7030,8 +10244,24 @@
       "explanation": "枚举非空子集掩码拼出保留数字，无前导零且为正平方时记录保留长度最大值；答案为原长减最大长度。",
       "complexity": "时间O(位数·2^位数)，空间O(位数)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "enumeration"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "bitmask"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "enumeration",
+      "method_aliases": {}
     },
     {
       "id": "962D",
@@ -7066,8 +10296,24 @@
       "explanation": "把(数值,原下标)放入最小堆，每次弹出最小项，若堆顶同值则合并并把翻倍值放回较右下标；否则该项定型，最后按下标输出。",
       "complexity": "时间O(n log n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "heap"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "ordered_set"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "heap",
+      "method_aliases": {}
     },
     {
       "id": "976A",
@@ -7105,8 +10351,30 @@
       "explanation": "输入为0则保持；否则输出一个1，再接原串所有零，消去其余一。",
       "complexity": "时间O(n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "count"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "construct"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "greedy",
+      "method_aliases": {}
     },
     {
       "id": "976B",
@@ -7141,8 +10409,24 @@
       "explanation": "若k<n则位置(k+1,1)；否则令t=k-n，行=n-t//(m-1)，余数u=t%(m-1)，块编号偶时列=u+2，奇时列=m-u。",
       "complexity": "时间O(1)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "arithmetic"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "simulation"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "arithmetic",
+      "method_aliases": {}
     },
     {
       "id": "976C",
@@ -7177,8 +10461,24 @@
       "explanation": "按(l升序,r降序)排序，当前r不超过此前最大r则找到被包含区间；否则更新最大r。",
       "complexity": "时间O(n log n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "sort"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "sweep"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "sort",
+      "method_aliases": {}
     },
     {
       "id": "985A",
@@ -7213,8 +10513,24 @@
       "explanation": "排序初始位置p[i]，分别计算Σabs(p[i]-(2i-1))与Σabs(p[i]-2i)，下标从1开始，取较小值。",
       "complexity": "时间O(n log n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "sort"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "sort",
+      "method_aliases": {}
     },
     {
       "id": "985B",
@@ -7246,8 +10562,18 @@
       "explanation": "统计各列1数，逐行检查它控制的每盏灯的列计数是否都至少为2，有一行满足即YES。",
       "complexity": "时间O(nm)，空间O(nm+m)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "count"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "count",
+      "method_aliases": {}
     },
     {
       "id": "985C",
@@ -7282,8 +10608,24 @@
       "explanation": "排序并数出合格前缀长度g，g<n则0；顺次取底板，每次最多跳过k-1根填充板，且不得跳掉后续所需的合格底板，累加底板长度。",
       "complexity": "时间O(nk log(nk))，空间O(nk)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "sort"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "greedy",
+      "method_aliases": {}
     },
     {
       "id": "990A",
@@ -7318,8 +10660,24 @@
       "explanation": "r=n%m，r=0答案0，否则取min(r·b,(m-r)·a)。",
       "complexity": "时间O(1)，空间O(1)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "arithmetic"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "arithmetic",
+      "method_aliases": {}
     },
     {
       "id": "990B",
@@ -7357,8 +10715,30 @@
       "explanation": "按大小分组排序；若下一组值与当前组差≤K，当前组全可消灭，否则当前组全须保留。最后一组必保留，累加其数量。",
       "complexity": "时间O(n log n)，空间O(n)。",
       "review_basis": "Codeforces 官方题面核对；算法与小例子独立整理。",
-      "version": 1,
-      "editorial": ""
+      "version": 2,
+      "editorial": "",
+      "solution_rules": [
+        {
+          "core": [
+            "sort"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "greedy"
+          ],
+          "helpers": []
+        },
+        {
+          "core": [
+            "count"
+          ],
+          "helpers": []
+        }
+      ],
+      "draw_group": "sort",
+      "method_aliases": {}
     }
   ]
 }
