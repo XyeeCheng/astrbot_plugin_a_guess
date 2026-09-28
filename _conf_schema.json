@@ -1,0 +1,11 @@
+{
+  "normal_seconds": {"description": "普通模式最长秒数", "type": "int", "default": 600},
+  "hard_seconds": {"description": "困难模式最长秒数", "type": "int", "default": 900},
+  "idle_seconds": {"description": "无有效游戏操作的超时秒数", "type": "int", "default": 300},
+  "guess_cooldown": {"description": "每人提交答案的间隔秒数", "type": "int", "default": 2},
+  "hint_cooldown": {"description": "全群索取提示的间隔秒数", "type": "int", "default": 3},
+  "recent_window": {"description": "避免重复最近多少题，题库不足时逐步放宽", "type": "int", "default": 30},
+  "require_wake": {"description": "群聊需要 @机器人或使用 AstrBot 唤醒方式", "type": "bool", "default": true},
+  "wake_prefixes": {"description": "兼容的文字唤醒前缀", "type": "list", "default": ["菲比", "啾比"]},
+  "proactive_timeout": {"description": "尝试主动发送超时结算", "hint": "仅真实 QQ 官方群路由尝试；权限不足或回执不明时保存结算，下次游戏交互展示。", "type": "bool", "default": true}
+}
