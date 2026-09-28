@@ -46,8 +46,8 @@ class GameTests(unittest.TestCase):
             self.assertNotIn(secret, output)
 
     def test_all_cards_solutions_and_hints(self):
-        self.assertEqual(len(self.cards), 30)
-        self.assertEqual(sum(c['mode'] == '困难' for c in self.cards), 10)
+        self.assertEqual(len(self.cards), 200)
+        self.assertEqual(sum(c['mode'] == '困难' for c in self.cards), 50)
         for c in self.cards:
             with self.subTest(card=c['id']):
                 self.assertEqual(len(c['hints']), 9)

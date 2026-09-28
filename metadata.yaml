@@ -1,7 +1,7 @@
 name: astrbot_plugin_a_guess
 display_name: 菲比 a一把
 desc: 猜算法与复合算法的群聊游戏，十次机会，逐层中文题意，Codeforces Educational 题库
-version: v1.0.0
+version: v1.1.0
 author: XyeeCheng
 repo: https://github.com/XyeeCheng/astrbot_plugin_a_guess
 astrbot_version: ">=4.28.1"

@@ -1,0 +1,1624 @@
+{
+  "plugin_version": "1.1.0",
+  "review_date": "2026-09-28",
+  "question_count": 200,
+  "normal_count": 150,
+  "hard_count": 50,
+  "retained_cards": 30,
+  "added_cards": 170,
+  "metadata_snapshot_at": "2026-09-28T11:05:07.323428+00:00",
+  "metadata_sources": {
+    "contests": {
+      "url": "https://codeforces.com/api/contest.list?gym=false&lang=en",
+      "sha256": "02ffbd7410b7b651831fbbb797e947baa4def8820d717b5c8b07edda0312423e"
+    },
+    "problems": {
+      "url": "https://codeforces.com/api/problemset.problems?lang=en",
+      "sha256": "05722e6ff52243d9bfae29fe6e48594b97bda7b22a132bd9895c2d0e06d85f59"
+    }
+  },
+  "review_scope": "Official Educational round metadata and official problem statements; independently written concise Chinese restatements, hints and accepted approaches. Does not claim exhaustive alternative solutions or Codeforces AC submissions.",
+  "questions_file_sha256": "d2eae3cf28097b53a73fec98ddc845d9141c32e914252e964ae3cf43bcde8501",
+  "cards": [
+    {
+      "id": "961B",
+      "official_problem_url": "https://codeforces.com/contest/961/problem/B",
+      "round": "Educational Codeforces Round 41 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "210991a8059cb6b5ec9da540acaaac02edfd8a13a2232c58ab7f04a1e442b511"
+    },
+    {
+      "id": "1354B",
+      "official_problem_url": "https://codeforces.com/contest/1354/problem/B",
+      "round": "Educational Codeforces Round 87 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "797495d2053b8c74dd9916629ec2886c1336b3eb96161d567f1ae0347ed9f621"
+    },
+    {
+      "id": "1167C",
+      "official_problem_url": "https://codeforces.com/contest/1167/problem/C",
+      "round": "Educational Codeforces Round 65 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "8c9dd5436e8504f69a0f8c9ea23ae9dc70fddcb252f1292d4d3ef39c79cf53b9"
+    },
+    {
+      "id": "893C",
+      "official_problem_url": "https://codeforces.com/contest/893/problem/C",
+      "round": "Educational Codeforces Round 33 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "f21c4c3159bf4e629dde479f4a5211b3832c2b286a7ab4c44ed0fdda63efda46"
+    },
+    {
+      "id": "762A",
+      "official_problem_url": "https://codeforces.com/contest/762/problem/A",
+      "round": "Educational Codeforces Round 17",
+      "mode": "普通",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "50df6a021f3103169da70dfeee1f75146d1ca201c22f37b81e584911d5a0e943"
+    },
+    {
+      "id": "808B",
+      "official_problem_url": "https://codeforces.com/contest/808/problem/B",
+      "round": "Educational Codeforces Round 21",
+      "mode": "普通",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "1e6bccce7696ee48641d64e471e2562f6ca14e164ebc4e3f1430a62dad520f95"
+    },
+    {
+      "id": "888C",
+      "official_problem_url": "https://codeforces.com/contest/888/problem/C",
+      "round": "Educational Codeforces Round 32",
+      "mode": "普通",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "a94fe46765ee3028ffd8d296fae0fc7421264d4b1c5e7ef09db346e315b6c1a5"
+    },
+    {
+      "id": "903B",
+      "official_problem_url": "https://codeforces.com/contest/903/problem/B",
+      "round": "Educational Codeforces Round 34 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "a98f1c34729192912849e5caf8843a75e3fac9351a4b69971555702456219c44"
+    },
+    {
+      "id": "903C",
+      "official_problem_url": "https://codeforces.com/contest/903/problem/C",
+      "round": "Educational Codeforces Round 34 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "7b7541cc0ee9c63254293f5b3d8e34e2482ae7a73dd7969074762d6512b8a217"
+    },
+    {
+      "id": "1000A",
+      "official_problem_url": "https://codeforces.com/contest/1000/problem/A",
+      "round": "Educational Codeforces Round 46 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "3d2d20ada56dc38d8f8f68786bdfbf9935d8253683a914c951ed3dc77a68322c"
+    },
+    {
+      "id": "1093C",
+      "official_problem_url": "https://codeforces.com/contest/1093/problem/C",
+      "round": "Educational Codeforces Round 56 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "4388bc86f1bc39991819550dffb4526add8073b5733279d9a2d5b4386a539666"
+    },
+    {
+      "id": "1096D",
+      "official_problem_url": "https://codeforces.com/contest/1096/problem/D",
+      "round": "Educational Codeforces Round 57 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "8722ad16ca86d8e8414decaf39c82902102f34149f3ae1db4e3d57d7aa796a0e"
+    },
+    {
+      "id": "1207C",
+      "official_problem_url": "https://codeforces.com/contest/1207/problem/C",
+      "round": "Educational Codeforces Round 71 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "adc9b397e4d3bb997cdf84201b27965f3a88b16af6b9dc0e40ce938b14c9bdb2"
+    },
+    {
+      "id": "1238B",
+      "official_problem_url": "https://codeforces.com/contest/1238/problem/B",
+      "round": "Educational Codeforces Round 74 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "76415477a38d48f3d20f63b4b74a301e9635b64fe4f8ba27c25504bbb363a7c4"
+    },
+    {
+      "id": "1327C",
+      "official_problem_url": "https://codeforces.com/contest/1327/problem/C",
+      "round": "Educational Codeforces Round 84 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "086020969b49731c0da100097fa82723d12d61faaef36ce34611126bf8516d25"
+    },
+    {
+      "id": "1511C",
+      "official_problem_url": "https://codeforces.com/contest/1511/problem/C",
+      "round": "Educational Codeforces Round 107 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "655f9d2f62baf6b4b9dd4181d80b889b4a407f300fdcce3f1ae9cea607a8d9b7"
+    },
+    {
+      "id": "600A",
+      "official_problem_url": "https://codeforces.com/contest/600/problem/A",
+      "round": "Educational Codeforces Round 2",
+      "mode": "普通",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "3a7a618c8283d04582bd3f90263c7b86a771eeb8dbc78c2409d44ee636bbcca1"
+    },
+    {
+      "id": "652B",
+      "official_problem_url": "https://codeforces.com/contest/652/problem/B",
+      "round": "Educational Codeforces Round 10",
+      "mode": "普通",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "b45c803480a0e151eedf92fb9328dfa17b901593182d43108b976c436373919f"
+    },
+    {
+      "id": "792A",
+      "official_problem_url": "https://codeforces.com/contest/792/problem/A",
+      "round": "Educational Codeforces Round 18",
+      "mode": "普通",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "f97042123244c8822b7a0d50ae8901a36cb8984f3b7b8b542cd097e592881e43"
+    },
+    {
+      "id": "961C",
+      "official_problem_url": "https://codeforces.com/contest/961/problem/C",
+      "round": "Educational Codeforces Round 41 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "a8cb016645d6a00d1b7c0e87f3b0d48f3d203eb8e89dd871765d0bd1984d2463"
+    },
+    {
+      "id": "665E",
+      "official_problem_url": "https://codeforces.com/contest/665/problem/E",
+      "round": "Educational Codeforces Round 12",
+      "mode": "困难",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "f1e92b50ba84fa6595ffd13ae77428fcfe1efad1c8b72e5cdb56c4916bd2e296"
+    },
+    {
+      "id": "808G",
+      "official_problem_url": "https://codeforces.com/contest/808/problem/G",
+      "round": "Educational Codeforces Round 21",
+      "mode": "困难",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "4446372fafbd6cf7969490ad9613facc64f201cab73a763b12c5ade5f1919560"
+    },
+    {
+      "id": "846D",
+      "official_problem_url": "https://codeforces.com/contest/846/problem/D",
+      "round": "Educational Codeforces Round 28",
+      "mode": "困难",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "0d7a76a46fbf65df785c2f22e9419e413ef90a0630c11887b24e2d0ddfa800a9"
+    },
+    {
+      "id": "893E",
+      "official_problem_url": "https://codeforces.com/contest/893/problem/E",
+      "round": "Educational Codeforces Round 33 (Rated for Div. 2)",
+      "mode": "困难",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "a225c55edeceeaa55cc5a9684719f5419b9500e6dab1b3adc2fd8e3e11845024"
+    },
+    {
+      "id": "920F",
+      "official_problem_url": "https://codeforces.com/contest/920/problem/F",
+      "round": "Educational Codeforces Round 37 (Rated for Div. 2)",
+      "mode": "困难",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "7d3ba6117df9e0249db8ed63c4836faadbdb6112866512d19cd60754d0a4b8de"
+    },
+    {
+      "id": "920G",
+      "official_problem_url": "https://codeforces.com/contest/920/problem/G",
+      "round": "Educational Codeforces Round 37 (Rated for Div. 2)",
+      "mode": "困难",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "cb611126f175428fc1b1e26bc19e8451981ad8d7e6516302927093fa0686cd7e"
+    },
+    {
+      "id": "1000E",
+      "official_problem_url": "https://codeforces.com/contest/1000/problem/E",
+      "round": "Educational Codeforces Round 46 (Rated for Div. 2)",
+      "mode": "困难",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "1abac22161ec2937c4ba66474fedf9e3da44164515926bb18d678e1b52e98f4f"
+    },
+    {
+      "id": "1096F",
+      "official_problem_url": "https://codeforces.com/contest/1096/problem/F",
+      "round": "Educational Codeforces Round 57 (Rated for Div. 2)",
+      "mode": "困难",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "cb8322818d422c75cd6bc69ff3f055cc72c1b96b26bdeb0f0f77304342cbca4f"
+    },
+    {
+      "id": "1207D",
+      "official_problem_url": "https://codeforces.com/contest/1207/problem/D",
+      "round": "Educational Codeforces Round 71 (Rated for Div. 2)",
+      "mode": "困难",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "71564c65b7c610e11c192c08afa0358cd4e30ae8407d2419707b250c939ed2aa"
+    },
+    {
+      "id": "1354E",
+      "official_problem_url": "https://codeforces.com/contest/1354/problem/E",
+      "round": "Educational Codeforces Round 87 (Rated for Div. 2)",
+      "mode": "困难",
+      "origin": "retained_from_v1.0.0",
+      "card_sha256": "7270bad502c3463ccdacef18288187580110eaad25a7ec9db809ce127bc1ee78"
+    },
+    {
+      "id": "598A",
+      "official_problem_url": "https://codeforces.com/contest/598/problem/A",
+      "round": "Educational Codeforces Round 1",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "e88a0f670c142c2097be8e6882987da0ebacee5d9c34c4acef170047a84ae4fa"
+    },
+    {
+      "id": "598B",
+      "official_problem_url": "https://codeforces.com/contest/598/problem/B",
+      "round": "Educational Codeforces Round 1",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "813f126e2cd756e5085df99fadff11bd03baedd68dbef490338bfbfbf6e7aa9e"
+    },
+    {
+      "id": "598C",
+      "official_problem_url": "https://codeforces.com/contest/598/problem/C",
+      "round": "Educational Codeforces Round 1",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "859514f0719633bc0180f79c3dba660bc6c3f6dd8cb1f65071e79412ea36c2e2"
+    },
+    {
+      "id": "598D",
+      "official_problem_url": "https://codeforces.com/contest/598/problem/D",
+      "round": "Educational Codeforces Round 1",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "01cff483978376f4a5640ba16732375ccb613676fa2acad0667bfe3378050a3c"
+    },
+    {
+      "id": "598E",
+      "official_problem_url": "https://codeforces.com/contest/598/problem/E",
+      "round": "Educational Codeforces Round 1",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "db1e5c2e029dce2006c037b2b07ad417d6d2b3acc0f20e4abede8ecb2f6c899c"
+    },
+    {
+      "id": "600B",
+      "official_problem_url": "https://codeforces.com/contest/600/problem/B",
+      "round": "Educational Codeforces Round 2",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "9b6144f05e73328d53def26eedc35ebc0a4a6ce1aa9e357b7b10051a91d8fdf1"
+    },
+    {
+      "id": "600C",
+      "official_problem_url": "https://codeforces.com/contest/600/problem/C",
+      "round": "Educational Codeforces Round 2",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "71d5a80fffd152fd2e5d0c0e2758bc6ecffa02f53f089e049e31296d6583bed8"
+    },
+    {
+      "id": "600E",
+      "official_problem_url": "https://codeforces.com/contest/600/problem/E",
+      "round": "Educational Codeforces Round 2",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "b255849b51bd509008ce73213ea0efe0a60c94cf7e1e6e47d80fb6fb23bd8488"
+    },
+    {
+      "id": "609A",
+      "official_problem_url": "https://codeforces.com/contest/609/problem/A",
+      "round": "Educational Codeforces Round 3",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "a27cc20cec56bd0aaf577c7eb9f5b2d52933750c440e8163d1cd3593dd2f2744"
+    },
+    {
+      "id": "609B",
+      "official_problem_url": "https://codeforces.com/contest/609/problem/B",
+      "round": "Educational Codeforces Round 3",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "a30164f98da64d9b879ce1e9f05eb556f52d2f0d250ec8f15c6e751774d2b5af"
+    },
+    {
+      "id": "609C",
+      "official_problem_url": "https://codeforces.com/contest/609/problem/C",
+      "round": "Educational Codeforces Round 3",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "d8413edc0192e8787540a5743b77bd298ebe04fbb2492995c38486235f3aee90"
+    },
+    {
+      "id": "609D",
+      "official_problem_url": "https://codeforces.com/contest/609/problem/D",
+      "round": "Educational Codeforces Round 3",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "7139272a691ac9f73a7d767eadfb7f0280a8cc62cb211e75c3899bb8eb59d48d"
+    },
+    {
+      "id": "609E",
+      "official_problem_url": "https://codeforces.com/contest/609/problem/E",
+      "round": "Educational Codeforces Round 3",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "d9e33a85d4068cdc2c6ee3fb265cb9435f842694fb8853257e3b811cc9c23ecb"
+    },
+    {
+      "id": "612A",
+      "official_problem_url": "https://codeforces.com/contest/612/problem/A",
+      "round": "Educational Codeforces Round 4",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "8dddf86d69d5d9ec9d1b0004697f2bb62ef891b1915de53bfc7004a0a028b91c"
+    },
+    {
+      "id": "612B",
+      "official_problem_url": "https://codeforces.com/contest/612/problem/B",
+      "round": "Educational Codeforces Round 4",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "b80851d78968c9fba0ffb1f2a6105ee8c6e38f8821048c9e2678fe0af8604ff4"
+    },
+    {
+      "id": "612C",
+      "official_problem_url": "https://codeforces.com/contest/612/problem/C",
+      "round": "Educational Codeforces Round 4",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "41adf6e37270b37ac6c990b03ef3a9fb32a1dd0df60acfe3b8f1aefcb0e68bd4"
+    },
+    {
+      "id": "612D",
+      "official_problem_url": "https://codeforces.com/contest/612/problem/D",
+      "round": "Educational Codeforces Round 4",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "1315391af6ecb6610d34166fb848e1071dd4d5a06e808573aff724a67dbb2208"
+    },
+    {
+      "id": "616A",
+      "official_problem_url": "https://codeforces.com/contest/616/problem/A",
+      "round": "Educational Codeforces Round 5",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "04bfad0919b16082e0775d791357c9a850618475de220e2ea4aaf8c38ed95c07"
+    },
+    {
+      "id": "616C",
+      "official_problem_url": "https://codeforces.com/contest/616/problem/C",
+      "round": "Educational Codeforces Round 5",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "bf13e551a3c50316b4800afbb2cca627c776b64c9b3f33761c48227ce0c157fe"
+    },
+    {
+      "id": "616D",
+      "official_problem_url": "https://codeforces.com/contest/616/problem/D",
+      "round": "Educational Codeforces Round 5",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "29d6c3f1fe30283c95331f87a1a30fc21db7a6079aa5a538e23b212c7575f40f"
+    },
+    {
+      "id": "616E",
+      "official_problem_url": "https://codeforces.com/contest/616/problem/E",
+      "round": "Educational Codeforces Round 5",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "ed3abff76309c1d37e9348329403e318e175426d305f008337a915418dcbea85"
+    },
+    {
+      "id": "620B",
+      "official_problem_url": "https://codeforces.com/contest/620/problem/B",
+      "round": "Educational Codeforces Round 6",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "c5d953bfcbab77c171a11f8950d3a166b9103451776fe7c24093a3486bd690f4"
+    },
+    {
+      "id": "620C",
+      "official_problem_url": "https://codeforces.com/contest/620/problem/C",
+      "round": "Educational Codeforces Round 6",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "af7fa1351c4379259da8c46c5cf647f7d378a9c479e08236bff3d46496d08abf"
+    },
+    {
+      "id": "620D",
+      "official_problem_url": "https://codeforces.com/contest/620/problem/D",
+      "round": "Educational Codeforces Round 6",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "ae5e5844b7c7fe18d17442a516f070ccbe096f5a82dd7e274ac01bcdd0cb4181"
+    },
+    {
+      "id": "620E",
+      "official_problem_url": "https://codeforces.com/contest/620/problem/E",
+      "round": "Educational Codeforces Round 6",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "97215bca337842ba7d651d1418c63625d627c3aa8ce5d5163b5eed5d5ddca9af"
+    },
+    {
+      "id": "622A",
+      "official_problem_url": "https://codeforces.com/contest/622/problem/A",
+      "round": "Educational Codeforces Round 7",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "3f7c02a70785075bfed0fd66fbc8ab9337dc6d1a725bba6df0e857bf3f776ccf"
+    },
+    {
+      "id": "622B",
+      "official_problem_url": "https://codeforces.com/contest/622/problem/B",
+      "round": "Educational Codeforces Round 7",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "df9f7cd2217e640c29b33638fbe1829373c4ee26d0f56b343cc733ee9d4a9bbb"
+    },
+    {
+      "id": "622C",
+      "official_problem_url": "https://codeforces.com/contest/622/problem/C",
+      "round": "Educational Codeforces Round 7",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "16efc065ab2f4bf2af53e982a0c2cc8808dc027694bfd0fff013eeae8a7773de"
+    },
+    {
+      "id": "628A",
+      "official_problem_url": "https://codeforces.com/contest/628/problem/A",
+      "round": "Educational Codeforces Round 8",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "d142184d83dc06b16a2caccdc409ff236d8598589b139b9c1eb0e3408c8b75bd"
+    },
+    {
+      "id": "628B",
+      "official_problem_url": "https://codeforces.com/contest/628/problem/B",
+      "round": "Educational Codeforces Round 8",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "b69226b9fce732284ba3afd658548ca3c61893617ae65711e20d258ae6480ba2"
+    },
+    {
+      "id": "628C",
+      "official_problem_url": "https://codeforces.com/contest/628/problem/C",
+      "round": "Educational Codeforces Round 8",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "81102659e88f6126d3337e75326e4f025322b4479035b3c3723d9fa9e06ca5a9"
+    },
+    {
+      "id": "628D",
+      "official_problem_url": "https://codeforces.com/contest/628/problem/D",
+      "round": "Educational Codeforces Round 8",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "cfdb3926c9cebd0401485843bdb14d3fa896f68b76850ff67248946198b2c422"
+    },
+    {
+      "id": "632A",
+      "official_problem_url": "https://codeforces.com/contest/632/problem/A",
+      "round": "Educational Codeforces Round 9",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "e4464b1b8675e998dd38f301934840ce77490747c7fc511fad6bde6594295f42"
+    },
+    {
+      "id": "632B",
+      "official_problem_url": "https://codeforces.com/contest/632/problem/B",
+      "round": "Educational Codeforces Round 9",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "b6b9da7c0c380ffdbf83e381ddbc6d98b669a4d74423f7375f8fdec1bb53a87a"
+    },
+    {
+      "id": "632C",
+      "official_problem_url": "https://codeforces.com/contest/632/problem/C",
+      "round": "Educational Codeforces Round 9",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "0d5e360b5ba567148d032b9ccbbc058612a6594172aa4fcd5dd41a476c634c66"
+    },
+    {
+      "id": "632D",
+      "official_problem_url": "https://codeforces.com/contest/632/problem/D",
+      "round": "Educational Codeforces Round 9",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "6caf46778b1e91ace671182992ba0d098b567821de2cecff40d462554e0c9fc8"
+    },
+    {
+      "id": "652A",
+      "official_problem_url": "https://codeforces.com/contest/652/problem/A",
+      "round": "Educational Codeforces Round 10",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "bce0d9aca1b58eabb7277a6101c59cbf5e62bc4a4b163217ac079c32eea02eee"
+    },
+    {
+      "id": "652C",
+      "official_problem_url": "https://codeforces.com/contest/652/problem/C",
+      "round": "Educational Codeforces Round 10",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "4b17f9530455915df15f97767e1147db9f736de2e09aa9367e6a5d124a902177"
+    },
+    {
+      "id": "652D",
+      "official_problem_url": "https://codeforces.com/contest/652/problem/D",
+      "round": "Educational Codeforces Round 10",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "ba4eff430a8e3a66abe0f8354f788d79f7b450b53c3f15e060c88f07e241fc8b"
+    },
+    {
+      "id": "660B",
+      "official_problem_url": "https://codeforces.com/contest/660/problem/B",
+      "round": "Educational Codeforces Round 11",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "71ef95206d9e1a01dd9eb0b4daedd6fbfe107e2320443965458593ebf20a50c4"
+    },
+    {
+      "id": "660C",
+      "official_problem_url": "https://codeforces.com/contest/660/problem/C",
+      "round": "Educational Codeforces Round 11",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "86cd3ac60c030484938f33b58810d686b9be66a4433754abd35c06dc54e6807b"
+    },
+    {
+      "id": "660D",
+      "official_problem_url": "https://codeforces.com/contest/660/problem/D",
+      "round": "Educational Codeforces Round 11",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "315704a7f5da705ca2e0222e607ea94f3db6592c8a743d2c2619d633fce3ea16"
+    },
+    {
+      "id": "665A",
+      "official_problem_url": "https://codeforces.com/contest/665/problem/A",
+      "round": "Educational Codeforces Round 12",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "c14dff6388bc64561d3122086668c8495e8b4637f381eb3bdd76eb7c168c5cd0"
+    },
+    {
+      "id": "665B",
+      "official_problem_url": "https://codeforces.com/contest/665/problem/B",
+      "round": "Educational Codeforces Round 12",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "931fcb171c4a96833e723bcb144ed814288794c06eb109baa48df95f483f2815"
+    },
+    {
+      "id": "665C",
+      "official_problem_url": "https://codeforces.com/contest/665/problem/C",
+      "round": "Educational Codeforces Round 12",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "6e0a0f5b67e63314c4848c7c46e72ab399553e4a9e7fe656ec134e93214cf4a4"
+    },
+    {
+      "id": "665D",
+      "official_problem_url": "https://codeforces.com/contest/665/problem/D",
+      "round": "Educational Codeforces Round 12",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "a28a33f58a5e34bf78a8b442be995488ff496ba3607a86904bf83a83b6645643"
+    },
+    {
+      "id": "678B",
+      "official_problem_url": "https://codeforces.com/contest/678/problem/B",
+      "round": "Educational Codeforces Round 13",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "22ef5d8b0eb8465b03627d38a10f12586fea90e9a0d92bfb432b1b962e448059"
+    },
+    {
+      "id": "678C",
+      "official_problem_url": "https://codeforces.com/contest/678/problem/C",
+      "round": "Educational Codeforces Round 13",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "7798b566d5ef54c8f65a4b15eb2c0e0eb3169dc02c40976575c7205acb51aaa4"
+    },
+    {
+      "id": "678D",
+      "official_problem_url": "https://codeforces.com/contest/678/problem/D",
+      "round": "Educational Codeforces Round 13",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "2c6dd904dee39e04a89ffeb27e96ebfbb83f4706035e3e4be3a309fa77a665c6"
+    },
+    {
+      "id": "691A",
+      "official_problem_url": "https://codeforces.com/contest/691/problem/A",
+      "round": "Educational Codeforces Round 14",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "251914dcfe646eb51bb9aa12b54234f388cc6707cacc6b4dca360ed0f39dc9aa"
+    },
+    {
+      "id": "691C",
+      "official_problem_url": "https://codeforces.com/contest/691/problem/C",
+      "round": "Educational Codeforces Round 14",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "3f7fed269a7d119f84bf003439b7d685711d11d12b3265867e327a3a39862719"
+    },
+    {
+      "id": "691D",
+      "official_problem_url": "https://codeforces.com/contest/691/problem/D",
+      "round": "Educational Codeforces Round 14",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "ba343aef24910d8a5be540ddd4f890ddf1456c032bf86ec45eb0d1ca7031692b"
+    },
+    {
+      "id": "691E",
+      "official_problem_url": "https://codeforces.com/contest/691/problem/E",
+      "round": "Educational Codeforces Round 14",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "48c1add1eef4a75412d135996f90b0d1ed155154abf00a0543870c7ba5d8ca7d"
+    },
+    {
+      "id": "702A",
+      "official_problem_url": "https://codeforces.com/contest/702/problem/A",
+      "round": "Educational Codeforces Round 15",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "844745bc88ace85e7074b7c7f6f58f874b14d948d66eca51f7b4338b67dda290"
+    },
+    {
+      "id": "702B",
+      "official_problem_url": "https://codeforces.com/contest/702/problem/B",
+      "round": "Educational Codeforces Round 15",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "4f178652713348cd2981b591ffb03d79e909dd29707db21ffc3752fb357dd9fc"
+    },
+    {
+      "id": "702C",
+      "official_problem_url": "https://codeforces.com/contest/702/problem/C",
+      "round": "Educational Codeforces Round 15",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "7a773fb2cc873cf30ce92bfb0745e8dd40b1459289a013d49ffe02c3039834f5"
+    },
+    {
+      "id": "702D",
+      "official_problem_url": "https://codeforces.com/contest/702/problem/D",
+      "round": "Educational Codeforces Round 15",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "e82901a720ece9c6c23def8706ae96c2f15814bfcf094f90bd3726560c59e7b1"
+    },
+    {
+      "id": "702E",
+      "official_problem_url": "https://codeforces.com/contest/702/problem/E",
+      "round": "Educational Codeforces Round 15",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "1e93723620a70fdd4fca01dcf9e0fbba52f81233e939156529b6770eb15c5246"
+    },
+    {
+      "id": "710A",
+      "official_problem_url": "https://codeforces.com/contest/710/problem/A",
+      "round": "Educational Codeforces Round 16",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "5d22bfd3b07928450b2f088ebbdfd347b624c4c491c69f5f941f4749e306c930"
+    },
+    {
+      "id": "710B",
+      "official_problem_url": "https://codeforces.com/contest/710/problem/B",
+      "round": "Educational Codeforces Round 16",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "993f3c4f01352cf95c56f9d0f5871babc91f200122d8766a47697792bc17f501"
+    },
+    {
+      "id": "710C",
+      "official_problem_url": "https://codeforces.com/contest/710/problem/C",
+      "round": "Educational Codeforces Round 16",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "86a3b51414f53d8792598b86578b464bf11012ad9ded24e4be270a571e1f1079"
+    },
+    {
+      "id": "710E",
+      "official_problem_url": "https://codeforces.com/contest/710/problem/E",
+      "round": "Educational Codeforces Round 16",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "a8c17fc85966432b065ceb2542f89aaa9bd288a5e46801b0e855f9078282c2bb"
+    },
+    {
+      "id": "762C",
+      "official_problem_url": "https://codeforces.com/contest/762/problem/C",
+      "round": "Educational Codeforces Round 17",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "ddb06b39c12222386f59fa79779543327ba33b52bf6107b61b7afe9b93832a28"
+    },
+    {
+      "id": "792B",
+      "official_problem_url": "https://codeforces.com/contest/792/problem/B",
+      "round": "Educational Codeforces Round 18",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "d93406f3103ea823fdc784fd3ff7727c4063519c0f8e030195ff0e6e2926b2bf"
+    },
+    {
+      "id": "792C",
+      "official_problem_url": "https://codeforces.com/contest/792/problem/C",
+      "round": "Educational Codeforces Round 18",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "d42e357001c76c67e17f5412a311fafa58f18caceee33cbba4a4f0ddfeb276ea"
+    },
+    {
+      "id": "792D",
+      "official_problem_url": "https://codeforces.com/contest/792/problem/D",
+      "round": "Educational Codeforces Round 18",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "f394b1af7a49802951fc3e24f8e880e85eb5ea8ba58a8d0eb6cde5bdd5542fd1"
+    },
+    {
+      "id": "797A",
+      "official_problem_url": "https://codeforces.com/contest/797/problem/A",
+      "round": "Educational Codeforces Round 19",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "93a46e8d5aa0d1085b1d080882aaa8d5a777c5c60f6dac5d22f6bce8503d40e0"
+    },
+    {
+      "id": "797B",
+      "official_problem_url": "https://codeforces.com/contest/797/problem/B",
+      "round": "Educational Codeforces Round 19",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "d69db23375298e983a227a410b62c7d6fd650330e5443b32ac017718190bce7a"
+    },
+    {
+      "id": "797C",
+      "official_problem_url": "https://codeforces.com/contest/797/problem/C",
+      "round": "Educational Codeforces Round 19",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "0a6954fea150a095a2a87ab224d9c1ec6074903850ebcf2ad232171f2c913bea"
+    },
+    {
+      "id": "797D",
+      "official_problem_url": "https://codeforces.com/contest/797/problem/D",
+      "round": "Educational Codeforces Round 19",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "304f63716fcc783d532ade3f4b3801a6741c955b404e515aa77fd135c97fc3e6"
+    },
+    {
+      "id": "797E",
+      "official_problem_url": "https://codeforces.com/contest/797/problem/E",
+      "round": "Educational Codeforces Round 19",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "be940f994d97881b8343dfa5d097cf771b861d40688c7d375a5dd36f49500fd2"
+    },
+    {
+      "id": "803A",
+      "official_problem_url": "https://codeforces.com/contest/803/problem/A",
+      "round": "Educational Codeforces Round 20",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "ed02bc3f0959f5811471cf4edf14fb0f771b938fd395dbf01bf4aafddfd50589"
+    },
+    {
+      "id": "803B",
+      "official_problem_url": "https://codeforces.com/contest/803/problem/B",
+      "round": "Educational Codeforces Round 20",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "147b15265b2d7fc4ee0e3821ddc0f0bde37d9e74d7b8e1db592f12babf23b91e"
+    },
+    {
+      "id": "803C",
+      "official_problem_url": "https://codeforces.com/contest/803/problem/C",
+      "round": "Educational Codeforces Round 20",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "a89bcaa2a25b543889b04d72cd9f025732d342a5b6d63daf895eeb7b6fa7b5d4"
+    },
+    {
+      "id": "803D",
+      "official_problem_url": "https://codeforces.com/contest/803/problem/D",
+      "round": "Educational Codeforces Round 20",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "9f6b86e8e3a97c0b41dbb8e6b38d8ce8bfe97849fb1c3f4fe716cb3c208d57dc"
+    },
+    {
+      "id": "803E",
+      "official_problem_url": "https://codeforces.com/contest/803/problem/E",
+      "round": "Educational Codeforces Round 20",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "6d51004ee3297ff3b1f89a672967af61a8cde142d36d2af26978ce629a63797a"
+    },
+    {
+      "id": "803F",
+      "official_problem_url": "https://codeforces.com/contest/803/problem/F",
+      "round": "Educational Codeforces Round 20",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "728c6d2c7d93af82bc84b74f19dd53475d674c4d40d463ac7d8df0cd0e7ee957"
+    },
+    {
+      "id": "808A",
+      "official_problem_url": "https://codeforces.com/contest/808/problem/A",
+      "round": "Educational Codeforces Round 21",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "87a92a329c25727255365ea0127fe601dcb8d05b16d85752e927003bbb60e315"
+    },
+    {
+      "id": "808C",
+      "official_problem_url": "https://codeforces.com/contest/808/problem/C",
+      "round": "Educational Codeforces Round 21",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "be05b6c2370bfdbe12b0aac8442e25bba544fc3e30687dba67acaebe4b8d7ecc"
+    },
+    {
+      "id": "808D",
+      "official_problem_url": "https://codeforces.com/contest/808/problem/D",
+      "round": "Educational Codeforces Round 21",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "260d0eb1be04973f7680c92eb8cb0532d4464f6f8c87e1aa8fae53ad82a9abdf"
+    },
+    {
+      "id": "813A",
+      "official_problem_url": "https://codeforces.com/contest/813/problem/A",
+      "round": "Educational Codeforces Round 22",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "b3e645c5c5e8b1d6dbba6775b4fd3ce927f7a9e55d0a6001a9755011754847b7"
+    },
+    {
+      "id": "813B",
+      "official_problem_url": "https://codeforces.com/contest/813/problem/B",
+      "round": "Educational Codeforces Round 22",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "b4c8fc24529df54ada3889803912577e3bb5b414ef54a17e0d89edc007167871"
+    },
+    {
+      "id": "813C",
+      "official_problem_url": "https://codeforces.com/contest/813/problem/C",
+      "round": "Educational Codeforces Round 22",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "11cdab67e17e18f769974d8f5a83af40fe19169aa24623fe0bbacbb4322c42e2"
+    },
+    {
+      "id": "817A",
+      "official_problem_url": "https://codeforces.com/contest/817/problem/A",
+      "round": "Educational Codeforces Round 23",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "cc6b3ec93fa9e7452ce3cbf9a0ec6caed2168acc9dcde75fa382abbc802ab65c"
+    },
+    {
+      "id": "817B",
+      "official_problem_url": "https://codeforces.com/contest/817/problem/B",
+      "round": "Educational Codeforces Round 23",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "e0487f6e9a02c1ab681ff8679d80205d6635ce53e97aa0a7685f0203c6b4cc37"
+    },
+    {
+      "id": "817C",
+      "official_problem_url": "https://codeforces.com/contest/817/problem/C",
+      "round": "Educational Codeforces Round 23",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "28b9670ca318002b69a85d5ae8c1f481af38dfe492b308c37abb7e9effe26dbc"
+    },
+    {
+      "id": "817D",
+      "official_problem_url": "https://codeforces.com/contest/817/problem/D",
+      "round": "Educational Codeforces Round 23",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "c411149516d746c27ea378b7fa7a678ef2520b7ee8120c7596d52495055840da"
+    },
+    {
+      "id": "817E",
+      "official_problem_url": "https://codeforces.com/contest/817/problem/E",
+      "round": "Educational Codeforces Round 23",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "75bdc853409e2c4bfa222ed8e6ccb774ad0fe7df30034bcfca9b376a829002c6"
+    },
+    {
+      "id": "818D",
+      "official_problem_url": "https://codeforces.com/contest/818/problem/D",
+      "round": "Educational Codeforces Round 24",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "0f1347faddb316ea3f8557a60c0fe9ba510fecf31571a4c0a8d37271fb4aa4a8"
+    },
+    {
+      "id": "818E",
+      "official_problem_url": "https://codeforces.com/contest/818/problem/E",
+      "round": "Educational Codeforces Round 24",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "c69d6fd8e2b69810b064453026a708dd215c4ae5508e09e30fe162c14df39c53"
+    },
+    {
+      "id": "825A",
+      "official_problem_url": "https://codeforces.com/contest/825/problem/A",
+      "round": "Educational Codeforces Round 25",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "1406522381974f875e7c98ec5ebbce05cc02ae28bdd56db25a85fb86da41a85e"
+    },
+    {
+      "id": "825B",
+      "official_problem_url": "https://codeforces.com/contest/825/problem/B",
+      "round": "Educational Codeforces Round 25",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "598404c83b5370fa34e6bb7e14a6527eb7aba7daa8230aca154eef92ce2b6979"
+    },
+    {
+      "id": "825C",
+      "official_problem_url": "https://codeforces.com/contest/825/problem/C",
+      "round": "Educational Codeforces Round 25",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "71024866e75490e2f3abe205291366625f88d5ca07640eec1aaf7525e1d92dff"
+    },
+    {
+      "id": "825D",
+      "official_problem_url": "https://codeforces.com/contest/825/problem/D",
+      "round": "Educational Codeforces Round 25",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "b32b099d223144728ff751096cfc815ccf14ae7807720274c781dcb94d1f346a"
+    },
+    {
+      "id": "825E",
+      "official_problem_url": "https://codeforces.com/contest/825/problem/E",
+      "round": "Educational Codeforces Round 25",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "b80ec41c63aadb4003816a3dd03412c6f4351f042dfbfc7701c3d4a510381924"
+    },
+    {
+      "id": "837A",
+      "official_problem_url": "https://codeforces.com/contest/837/problem/A",
+      "round": "Educational Codeforces Round 26",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "eb9cead3e86130978a8224cfd8c4947fc484a0439aaa9e7b85998ac6e7e3815f"
+    },
+    {
+      "id": "837B",
+      "official_problem_url": "https://codeforces.com/contest/837/problem/B",
+      "round": "Educational Codeforces Round 26",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "76bd0d5febfb689069e501d06dcccb5bd60a2b6f40e59818ceb38cb8f09f9e75"
+    },
+    {
+      "id": "837C",
+      "official_problem_url": "https://codeforces.com/contest/837/problem/C",
+      "round": "Educational Codeforces Round 26",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "1892faa897a8384bc45e89ac5644c7dc72a20f11af85e2963e5eee6202a38d12"
+    },
+    {
+      "id": "837D",
+      "official_problem_url": "https://codeforces.com/contest/837/problem/D",
+      "round": "Educational Codeforces Round 26",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "c56d430db001c4f0d9a82c7c6efe115c1420db124cc180e9812bbdd9e639bc6d"
+    },
+    {
+      "id": "845A",
+      "official_problem_url": "https://codeforces.com/contest/845/problem/A",
+      "round": "Educational Codeforces Round 27",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "55b1f0ea1ee4fcc1d622abccd02435850245c6f249bd4b4676e5ae6abe2759cc"
+    },
+    {
+      "id": "845B",
+      "official_problem_url": "https://codeforces.com/contest/845/problem/B",
+      "round": "Educational Codeforces Round 27",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "f92030dd6eeeffe12ba22beb3c7963d629c115d3b3ddc6f322f76b8edd3c2fee"
+    },
+    {
+      "id": "845C",
+      "official_problem_url": "https://codeforces.com/contest/845/problem/C",
+      "round": "Educational Codeforces Round 27",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "34f721a84eab68c7a1667e715405ac7504ff361f07511ad4faa631b861a90f60"
+    },
+    {
+      "id": "845D",
+      "official_problem_url": "https://codeforces.com/contest/845/problem/D",
+      "round": "Educational Codeforces Round 27",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "0afa6f36c08ff5fed477606d58a045c75b0ff5bd924ad9b36c80f6e55c2ef31e"
+    },
+    {
+      "id": "845G",
+      "official_problem_url": "https://codeforces.com/contest/845/problem/G",
+      "round": "Educational Codeforces Round 27",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "6daa0d2ea5a1166a8279a46f350e58387f26d3c3875a4b0eebd59844a05b34b8"
+    },
+    {
+      "id": "846A",
+      "official_problem_url": "https://codeforces.com/contest/846/problem/A",
+      "round": "Educational Codeforces Round 28",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "5d1cb8193552e69669da80c1df85ee9c0d1d224181a4a94915c22ed587af43cd"
+    },
+    {
+      "id": "846B",
+      "official_problem_url": "https://codeforces.com/contest/846/problem/B",
+      "round": "Educational Codeforces Round 28",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "7eec7a7e3d5c78db727a6a1ef25d95a2cf55069e9633b0725835f79f6913ddce"
+    },
+    {
+      "id": "846C",
+      "official_problem_url": "https://codeforces.com/contest/846/problem/C",
+      "round": "Educational Codeforces Round 28",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "423516d315699a0d494d1ad2133ec4341e15111dcef81516dac98f1473f8da7c"
+    },
+    {
+      "id": "846F",
+      "official_problem_url": "https://codeforces.com/contest/846/problem/F",
+      "round": "Educational Codeforces Round 28",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "2a17925dfd7dcc306e61ae72ef2f7aea53486560fe99daf67e8a5569b6f717d6"
+    },
+    {
+      "id": "863A",
+      "official_problem_url": "https://codeforces.com/contest/863/problem/A",
+      "round": "Educational Codeforces Round 29",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "4b319e1e66fb9380ce169f1ca1b8cc47149852e650e4d082609b03f78618d584"
+    },
+    {
+      "id": "863B",
+      "official_problem_url": "https://codeforces.com/contest/863/problem/B",
+      "round": "Educational Codeforces Round 29",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "87113727ac7016af839f68102595cfa3ae19d8dc79e6465ccad9d5eee502369e"
+    },
+    {
+      "id": "863C",
+      "official_problem_url": "https://codeforces.com/contest/863/problem/C",
+      "round": "Educational Codeforces Round 29",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "1baa965221f13ae6402470867b1a5d0d192ed9fa73a84660745afb8414b3376e"
+    },
+    {
+      "id": "863D",
+      "official_problem_url": "https://codeforces.com/contest/863/problem/D",
+      "round": "Educational Codeforces Round 29",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "9f04426071353a592f051bf848921abe5524897290cc8f7492df5aefc45b8934"
+    },
+    {
+      "id": "863E",
+      "official_problem_url": "https://codeforces.com/contest/863/problem/E",
+      "round": "Educational Codeforces Round 29",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "e21d47b224ac6ba852de70ef79cffc008ff4e1c1f7d1e2476ad70a004a47c2d1"
+    },
+    {
+      "id": "873A",
+      "official_problem_url": "https://codeforces.com/contest/873/problem/A",
+      "round": "Educational Codeforces Round 30",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "e07e490198664add282c18731552296fb5eb12efd351acb609a7e36fd2e399ae"
+    },
+    {
+      "id": "873B",
+      "official_problem_url": "https://codeforces.com/contest/873/problem/B",
+      "round": "Educational Codeforces Round 30",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "747284722da9dffa00ba502085d7c0df9c2d74d41f8442683be5e821634f349d"
+    },
+    {
+      "id": "873C",
+      "official_problem_url": "https://codeforces.com/contest/873/problem/C",
+      "round": "Educational Codeforces Round 30",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "5a7ad4ca32af42f8136b6eca165c42149f5eb95c7650956061a627597d559d61"
+    },
+    {
+      "id": "873D",
+      "official_problem_url": "https://codeforces.com/contest/873/problem/D",
+      "round": "Educational Codeforces Round 30",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "1b157e42e6626e1cc724bb628462c558ffe75dcd97059bc0beaea1548371e3a0"
+    },
+    {
+      "id": "884A",
+      "official_problem_url": "https://codeforces.com/contest/884/problem/A",
+      "round": "Educational Codeforces Round 31",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "1baf5fada8633b8d694d6d9186df791a5aaaf3b6a26772e1b09badb2d6ba003f"
+    },
+    {
+      "id": "884B",
+      "official_problem_url": "https://codeforces.com/contest/884/problem/B",
+      "round": "Educational Codeforces Round 31",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "fbc92b02f56e80bc070b164b1f53317eb84782707018e34e6533f55f8cd82081"
+    },
+    {
+      "id": "884C",
+      "official_problem_url": "https://codeforces.com/contest/884/problem/C",
+      "round": "Educational Codeforces Round 31",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "ed727cc5cedab73237031bdee851763293810f59d51afca376799f25b001ad56"
+    },
+    {
+      "id": "884D",
+      "official_problem_url": "https://codeforces.com/contest/884/problem/D",
+      "round": "Educational Codeforces Round 31",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "220a84208f2dd901ae5e7bac9eafc11daac1a672fe9119586a22aa9359b25782"
+    },
+    {
+      "id": "888B",
+      "official_problem_url": "https://codeforces.com/contest/888/problem/B",
+      "round": "Educational Codeforces Round 32",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "03d421adc6f05f05772d081dbc09038b06f9aafff57b941291d15d9573ed3c90"
+    },
+    {
+      "id": "888D",
+      "official_problem_url": "https://codeforces.com/contest/888/problem/D",
+      "round": "Educational Codeforces Round 32",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "1ce60c50044caaa05ff4c5f0544b80e83dbed18b019462ee1a78024d98489d9e"
+    },
+    {
+      "id": "888E",
+      "official_problem_url": "https://codeforces.com/contest/888/problem/E",
+      "round": "Educational Codeforces Round 32",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "a16225e7053997c8e5784c7c482994f5680e29bd78f8d9d193aa49a340415831"
+    },
+    {
+      "id": "888G",
+      "official_problem_url": "https://codeforces.com/contest/888/problem/G",
+      "round": "Educational Codeforces Round 32",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "f3d5e7d6b3235bffe165e4e966ca7aa2f736cf8cf27fca832f0bdbf54132620e"
+    },
+    {
+      "id": "893A",
+      "official_problem_url": "https://codeforces.com/contest/893/problem/A",
+      "round": "Educational Codeforces Round 33 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "253e852d649256d83efc6344dc26c5781c4b88aa11426877c09708c516c6aedd"
+    },
+    {
+      "id": "893B",
+      "official_problem_url": "https://codeforces.com/contest/893/problem/B",
+      "round": "Educational Codeforces Round 33 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "1524c9f5178d49e295d503d4d77b88a6c79a162a9bf8955e23abe771d9246f3a"
+    },
+    {
+      "id": "893D",
+      "official_problem_url": "https://codeforces.com/contest/893/problem/D",
+      "round": "Educational Codeforces Round 33 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "8576b9287cb3731c741c227320d996787af99b5466b0b4d6f47114b48b322f56"
+    },
+    {
+      "id": "903A",
+      "official_problem_url": "https://codeforces.com/contest/903/problem/A",
+      "round": "Educational Codeforces Round 34 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "821ed4d74e976e70ab15553d65939475b713878d623b87ecc89f2cf3ccecb77d"
+    },
+    {
+      "id": "990C",
+      "official_problem_url": "https://codeforces.com/contest/990/problem/C",
+      "round": "Educational Codeforces Round 45 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "186b8c712c15fe9036dde9c1728c4d8ceb0ff16ca7f911d00127fc984ce7bcf5"
+    },
+    {
+      "id": "911A",
+      "official_problem_url": "https://codeforces.com/contest/911/problem/A",
+      "round": "Educational Codeforces Round 35 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "5246637555eee1daece25a997a3b0ce1644f4c8cf1751e5323f49936102ee326"
+    },
+    {
+      "id": "911B",
+      "official_problem_url": "https://codeforces.com/contest/911/problem/B",
+      "round": "Educational Codeforces Round 35 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "463979c30d33366347efda6c48f51906e55b0c97285729c16e3f24a6924d275d"
+    },
+    {
+      "id": "911C",
+      "official_problem_url": "https://codeforces.com/contest/911/problem/C",
+      "round": "Educational Codeforces Round 35 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "c6f55fc4fe71807fa899f9e8343436d7eb4d1bb4978a32dc6933e572bf74dbac"
+    },
+    {
+      "id": "911D",
+      "official_problem_url": "https://codeforces.com/contest/911/problem/D",
+      "round": "Educational Codeforces Round 35 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "c65d49864fa000438f84143a5e7a540c2a335acda195d95f5fcb44a225eb4d4d"
+    },
+    {
+      "id": "915A",
+      "official_problem_url": "https://codeforces.com/contest/915/problem/A",
+      "round": "Educational Codeforces Round 36 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "69a6741399aea03ab744d029270a5c3c383f56686711e14743ce89f08d4f5353"
+    },
+    {
+      "id": "915B",
+      "official_problem_url": "https://codeforces.com/contest/915/problem/B",
+      "round": "Educational Codeforces Round 36 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "3f92fe5ada72d4dfec578c9b2a5915cb519d6d067acfa17de83b2d03d21f5bd9"
+    },
+    {
+      "id": "915C",
+      "official_problem_url": "https://codeforces.com/contest/915/problem/C",
+      "round": "Educational Codeforces Round 36 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "2cdb033644bf52355a084cc6307725892673c8ab95e1ae2ac58b24618bc1025f"
+    },
+    {
+      "id": "915D",
+      "official_problem_url": "https://codeforces.com/contest/915/problem/D",
+      "round": "Educational Codeforces Round 36 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "d2fd84ca22cecba22c3e382fa8b04ab189d4cf9ff9a649397ee538eac15fa325"
+    },
+    {
+      "id": "920A",
+      "official_problem_url": "https://codeforces.com/contest/920/problem/A",
+      "round": "Educational Codeforces Round 37 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "7fe1b0ad2f1222d3baddc5d84154e009ab0f8158581c9e1ef9712b9aedd21c2e"
+    },
+    {
+      "id": "920B",
+      "official_problem_url": "https://codeforces.com/contest/920/problem/B",
+      "round": "Educational Codeforces Round 37 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "6f88ca72bd88328d7e1dd34b64cc0641d76b8dde06f64a679241a598da2c5404"
+    },
+    {
+      "id": "920C",
+      "official_problem_url": "https://codeforces.com/contest/920/problem/C",
+      "round": "Educational Codeforces Round 37 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "d99a4e42b9bf819ac9d2a75c48f318c1ae6aadc95910ae501197ce1e4bf99345"
+    },
+    {
+      "id": "920E",
+      "official_problem_url": "https://codeforces.com/contest/920/problem/E",
+      "round": "Educational Codeforces Round 37 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "78e05f38679e838d1dfb5feed60181033ed9e9fd563f5ca05d96608ec2067061"
+    },
+    {
+      "id": "938A",
+      "official_problem_url": "https://codeforces.com/contest/938/problem/A",
+      "round": "Educational Codeforces Round 38 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "34f82869ad71b5b0844f94e9c3bf9bea2a0997699dbe00a0692a8cd8a4185884"
+    },
+    {
+      "id": "938B",
+      "official_problem_url": "https://codeforces.com/contest/938/problem/B",
+      "round": "Educational Codeforces Round 38 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "96fd0271c28f0788b7bcbf4c739cdce6e8a75e2d9cfc50bff1ba21ad72e699c5"
+    },
+    {
+      "id": "938C",
+      "official_problem_url": "https://codeforces.com/contest/938/problem/C",
+      "round": "Educational Codeforces Round 38 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "b521eb6cc36094f16c92304aae25f0e21187523d57f876a44d8da4d6d0bb8e9f"
+    },
+    {
+      "id": "938D",
+      "official_problem_url": "https://codeforces.com/contest/938/problem/D",
+      "round": "Educational Codeforces Round 38 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "ac55c635e61c9f5a862f1ca8a14dd92af54a643cbaa48ca3b309746431f266e3"
+    },
+    {
+      "id": "946A",
+      "official_problem_url": "https://codeforces.com/contest/946/problem/A",
+      "round": "Educational Codeforces Round 39 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "88ac4f6a662824c23941048200f9797c404bf1fce3b9d739e61d4728c921e9fb"
+    },
+    {
+      "id": "946B",
+      "official_problem_url": "https://codeforces.com/contest/946/problem/B",
+      "round": "Educational Codeforces Round 39 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "d33879cb7a59384adfcb96e203c7501d9b20fdee2175662ebbe8e372f5f9f509"
+    },
+    {
+      "id": "946C",
+      "official_problem_url": "https://codeforces.com/contest/946/problem/C",
+      "round": "Educational Codeforces Round 39 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "8581f8343b3a923cea7724d37be6ce39bb888454d3e8986a333827894a1f7de6"
+    },
+    {
+      "id": "946D",
+      "official_problem_url": "https://codeforces.com/contest/946/problem/D",
+      "round": "Educational Codeforces Round 39 (Rated for Div. 2)",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "38ac839f211de2ed150a12c63f393a30d3ad63c24045115ddc878d11dc3ca96a"
+    },
+    {
+      "id": "954A",
+      "official_problem_url": "https://codeforces.com/contest/954/problem/A",
+      "round": "Educational Codeforces Round 40 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "706adcd4b601693a670e269d5e407dfd45e3e652d9667b551544530158ce438d"
+    },
+    {
+      "id": "954B",
+      "official_problem_url": "https://codeforces.com/contest/954/problem/B",
+      "round": "Educational Codeforces Round 40 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "90341ff5a1ce04755ec6f749f7bb203d9af84fa2376048b4337ea06185622640"
+    },
+    {
+      "id": "954C",
+      "official_problem_url": "https://codeforces.com/contest/954/problem/C",
+      "round": "Educational Codeforces Round 40 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "c410d085861f064f539b29ae6e756628a14c50c4c5dfb4a2b5c26d0119eacbdd"
+    },
+    {
+      "id": "954D",
+      "official_problem_url": "https://codeforces.com/contest/954/problem/D",
+      "round": "Educational Codeforces Round 40 (Rated for Div. 2)",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "7fd0822d73fc471d4c3bce22db9291bdde09c1ebd046f455c6d3420ed64f1d03"
+    },
+    {
+      "id": "954G",
+      "official_problem_url": "https://codeforces.com/contest/954/problem/G",
+      "round": "Educational Codeforces Round 40 (Rated for Div. 2)",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "e08c87b9f6c56b685cbd1ba7c1914fce7435edd1b61f97203e282bab2c1f7f04"
+    },
+    {
+      "id": "961A",
+      "official_problem_url": "https://codeforces.com/contest/961/problem/A",
+      "round": "Educational Codeforces Round 41 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "f692277c84639784f3bb1aae5c79de3773ca2038e1a28c65cebfc019c67dfec6"
+    },
+    {
+      "id": "961D",
+      "official_problem_url": "https://codeforces.com/contest/961/problem/D",
+      "round": "Educational Codeforces Round 41 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "ee49dd3bcd6d5b4cdd53c791a5666546c40c31cb592ff7952764de4b516dd3df"
+    },
+    {
+      "id": "961E",
+      "official_problem_url": "https://codeforces.com/contest/961/problem/E",
+      "round": "Educational Codeforces Round 41 (Rated for Div. 2)",
+      "mode": "困难",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "86685031d99e9f37b592f586b8880a629a770e60be223a60d9239520f10e589b"
+    },
+    {
+      "id": "962A",
+      "official_problem_url": "https://codeforces.com/contest/962/problem/A",
+      "round": "Educational Codeforces Round 42 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "72f86f033a6e29beb0529964807bc1fb61db2139463d0d3759b213029f8a3a1a"
+    },
+    {
+      "id": "962B",
+      "official_problem_url": "https://codeforces.com/contest/962/problem/B",
+      "round": "Educational Codeforces Round 42 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "660664be1377e6aa6d24dbbd8bbf75038f4c3f5652b7d57e6109c12c7744d1eb"
+    },
+    {
+      "id": "962C",
+      "official_problem_url": "https://codeforces.com/contest/962/problem/C",
+      "round": "Educational Codeforces Round 42 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "06a5d2b500b4d6c2bccb445d1fc30ec84fc6fea6b1b017db388efe2c0927b9ef"
+    },
+    {
+      "id": "962D",
+      "official_problem_url": "https://codeforces.com/contest/962/problem/D",
+      "round": "Educational Codeforces Round 42 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "0f82bde43b573b7c0bbcfa6388f12a7a17c41e75d050d714776d2af23c8b4a48"
+    },
+    {
+      "id": "976A",
+      "official_problem_url": "https://codeforces.com/contest/976/problem/A",
+      "round": "Educational Codeforces Round 43 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "c153e0e3b126916f346ea226cc052f46c4c5561777a75ebd69cf8d8bd96de642"
+    },
+    {
+      "id": "976B",
+      "official_problem_url": "https://codeforces.com/contest/976/problem/B",
+      "round": "Educational Codeforces Round 43 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "426a765a18514f1def2430b896a07e126d94db912f3dbb437f9a7c451dcecdd9"
+    },
+    {
+      "id": "976C",
+      "official_problem_url": "https://codeforces.com/contest/976/problem/C",
+      "round": "Educational Codeforces Round 43 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "d5a46c98eeca61b820da09f51020178e0592fe486cf017264cabd560a6343f74"
+    },
+    {
+      "id": "985A",
+      "official_problem_url": "https://codeforces.com/contest/985/problem/A",
+      "round": "Educational Codeforces Round 44 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "d60dd0053316d33980cbf269c94b044cc1f9c5da145bbdca596cba3d6344a82e"
+    },
+    {
+      "id": "985B",
+      "official_problem_url": "https://codeforces.com/contest/985/problem/B",
+      "round": "Educational Codeforces Round 44 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "773e9075db56ba6f3a80cfa6964aa8f26733cb840dac62a0ac7cf84bc89fe3ab"
+    },
+    {
+      "id": "985C",
+      "official_problem_url": "https://codeforces.com/contest/985/problem/C",
+      "round": "Educational Codeforces Round 44 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "9c341e3d9386f0f7abe60117ad92c24407f34b9dd45ab4c1b12a8be3b0ccbfec"
+    },
+    {
+      "id": "990A",
+      "official_problem_url": "https://codeforces.com/contest/990/problem/A",
+      "round": "Educational Codeforces Round 45 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "f683cf47aafdf9f74b8b0c9e2252f91d7166febe2c0e4f3c23ce4a5f28c36dda"
+    },
+    {
+      "id": "990B",
+      "official_problem_url": "https://codeforces.com/contest/990/problem/B",
+      "round": "Educational Codeforces Round 45 (Rated for Div. 2)",
+      "mode": "普通",
+      "origin": "added_in_v1.1.0",
+      "card_sha256": "7f763764debbc26154191554d8e97dcb436f71e4c4d3a70aaa5deed40aa25061"
+    }
+  ]
+}
