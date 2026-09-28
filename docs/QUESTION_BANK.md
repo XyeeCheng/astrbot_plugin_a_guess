@@ -67,12 +67,12 @@
 | [628C · 指定字符串距离](https://codeforces.com/contest/628/problem/C) | 普通 | 1300 | 贪心；或：构造 |
 | [628D · 指定偶数位的倍数](https://codeforces.com/contest/628/problem/D) | 困难 | 2200 | 数位DP + 模运算；或：动态规划 + 模运算 |
 | [632A · 卖苹果倒推](https://codeforces.com/contest/632/problem/A) | 普通 | 1200 | 逆向模拟；或：模拟 |
-| [632B · 翻转一端的归属](https://codeforces.com/contest/632/problem/B) | 普通 | 1400 | 前缀和；或：枚举 |
+| [632B · 翻转一端的归属](https://codeforces.com/contest/632/problem/B) | 普通 | 1400 | 前缀和；或：枚举；或：动态规划；或：模拟 |
 | [632C · 最小拼接字符串](https://codeforces.com/contest/632/problem/C) | 普通 | 1700 | 排序；或：贪心 |
 | [632D · 限制最小公倍数的子序列](https://codeforces.com/contest/632/problem/D) | 困难 | 2100 | 计数 + 约数筛 |
 | [652A · 毛毛虫爬树](https://codeforces.com/contest/652/problem/A) | 普通 | 1400 | 公式推导；或：模拟 |
 | [652C · 不含敌对数对的子段](https://codeforces.com/contest/652/problem/C) | 普通 | 1800 | 双指针；或：滑动窗口；或：动态规划 |
-| [652D · 包含的线段数](https://codeforces.com/contest/652/problem/D) | 困难 | 1800 | 排序 + 树状数组；或：排序 + 线段树 |
+| [652D · 包含的线段数](https://codeforces.com/contest/652/problem/D) | 困难 | 1800 | 排序 + 树状数组；或：排序 + 线段树；或：扫描线 + 树状数组；或：扫描线 + 线段树；或：排序 + 有序集合；或：扫描线 + 有序集合；或：排序 + 归并排序；或：排序 + 分治 |
 | [660B · 公交下车顺序](https://codeforces.com/contest/660/problem/B) | 普通 | 1000 | 模拟 |
 | [660C · 最多翻k个零](https://codeforces.com/contest/660/problem/C) | 普通 | 1600 | 滑动窗口；或：双指针 |
 | [660D · 平行四边形计数](https://codeforces.com/contest/660/problem/D) | 困难 | 1900 | 计算几何 + 计数 |
@@ -150,7 +150,7 @@
 | [873A · 加速完成家务](https://codeforces.com/contest/873/problem/A) | 普通 | 800 | 贪心 |
 | [873B · 最长平衡01子串](https://codeforces.com/contest/873/problem/B) | 普通 | 1500 | 前缀和；或：计数 |
 | [873C · 每列顶部窗口得分](https://codeforces.com/contest/873/problem/C) | 普通 | 1600 | 前缀和；或：滑动窗口；或：枚举 |
-| [873D · 控制归并调用次数](https://codeforces.com/contest/873/problem/D) | 普通 | 1800 | 分治；或：构造 |
+| [873D · 控制归并调用次数](https://codeforces.com/contest/873/problem/D) | 普通 | 1800 | 分治；或：构造；或：贪心 |
 | [884A · 空闲时间读书](https://codeforces.com/contest/884/problem/A) | 普通 | 800 | 模拟；或：前缀和 |
 | [884B · 唯一的一维数织](https://codeforces.com/contest/884/problem/B) | 普通 | 1100 | 公式推导；或：计数 |
 | [884C · 合并地铁环](https://codeforces.com/contest/884/problem/C) | 普通 | 1500 | 连通分量；或：深度优先搜索；或：贪心 |
@@ -164,7 +164,7 @@
 | [893D · 最少银行存款次数](https://codeforces.com/contest/893/problem/D) | 普通 | 1900 | 贪心 |
 | [903A · 三块与七块套餐](https://codeforces.com/contest/903/problem/A) | 普通 | 900 | 枚举；或：动态规划 |
 | [990C · 拼接成合法括号的数对](https://codeforces.com/contest/990/problem/C) | 普通 | 1500 | 计数；或：栈；或：前缀和 + 计数 |
-| [911A · 最近的两个最小值](https://codeforces.com/contest/911/problem/A) | 普通 | 1100 | 最近出现位置；或：模拟 |
+| [911A · 最近的两个最小值](https://codeforces.com/contest/911/problem/A) | 普通 | 1100 | 最近出现位置；或：模拟；或：贪心；或：双指针 |
 | [911B · 两种蛋糕分盘](https://codeforces.com/contest/911/problem/B) | 普通 | 1200 | 枚举；或：二分答案 |
 | [911C · 三串灯覆盖所有时刻](https://codeforces.com/contest/911/problem/C) | 普通 | 1400 | 分类讨论；或：公式推导 |
 | [911D · 区间反转后的逆序奇偶](https://codeforces.com/contest/911/problem/D) | 普通 | 1800 | 奇偶分析 |
@@ -191,7 +191,7 @@
 | [954G · 城墙最低防御最大化](https://codeforces.com/contest/954/problem/G) | 困难 | 2000 | 二分答案 + 差分；或：二分答案 + 贪心 |
 | [961A · 方块消行总分](https://codeforces.com/contest/961/problem/A) | 普通 | 900 | 计数；或：模拟 |
 | [961D · 两条直线覆盖点集](https://codeforces.com/contest/961/problem/D) | 普通 | 2000 | 计算几何；或：枚举 |
-| [961E · 交叉季集数对](https://codeforces.com/contest/961/problem/E) | 困难 | 1900 | 排序 + 树状数组；或：排序 + 线段树 |
+| [961E · 交叉季集数对](https://codeforces.com/contest/961/problem/E) | 困难 | 1900 | 排序 + 树状数组；或：排序 + 线段树；或：扫描线 + 树状数组；或：扫描线 + 线段树 |
 | [962A · 完成一半训练的日子](https://codeforces.com/contest/962/problem/A) | 普通 | 1300 | 前缀和；或：模拟 |
 | [962B · 交替安排两类学生](https://codeforces.com/contest/962/problem/B) | 普通 | 1300 | 贪心 |
 | [962C · 删数字成正平方数](https://codeforces.com/contest/962/problem/C) | 普通 | 1400 | 枚举；或：子集枚举 |

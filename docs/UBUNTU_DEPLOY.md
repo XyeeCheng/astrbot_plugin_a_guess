@@ -6,7 +6,7 @@
 
 1. 打开云端菲比对应的管理页，进入插件管理。
 2. 使用从仓库链接安装：`https://github.com/XyeeCheng/astrbot_plugin_a_guess`。
-3. 启用“菲比 a一把”。v1.1.0正常日志包含“已加载 200 道本地题卡”。
+3. 启用“菲比 a一把”。v1.1.1正常日志包含“已加载 200 道本地题卡”。
 4. 插件配置包含普通/困难时长、空闲超时、冷却和主动超时结算。无需填写模型或赛事密钥。
 
 如果原有 data 卷挂载到 `/opt/phoebe/data`，插件源码通常位于 `/opt/phoebe/data/plugins/astrbot_plugin_a_guess`。不要把插件装到另一个机器人的数据目录。
@@ -16,8 +16,8 @@
 先下载到临时目录，检查后再复制到菲比插件目录；目标存在时应备份并按更新处理，不能盲目覆盖。
 
 ```bash
-git clone --depth 1 --branch v1.1.0 https://github.com/XyeeCheng/astrbot_plugin_a_guess.git /tmp/astrbot_plugin_a_guess-v1.1.0
-cd /tmp/astrbot_plugin_a_guess-v1.1.0
+git clone --depth 1 --branch v1.1.1 https://github.com/XyeeCheng/astrbot_plugin_a_guess.git /tmp/astrbot_plugin_a_guess-v1.1.1
+cd /tmp/astrbot_plugin_a_guess-v1.1.1
 python3 -m unittest discover -s tests -v
 ```
 
@@ -42,7 +42,7 @@ python3 -m unittest discover -s tests -v
 
 ## 更新与回滚
 
-从v1.0.0升级到v1.1.0时，在菲比管理页更新并重载本插件。管理员可发送 `a题库状态`，应显示“普通150，困难50”。进行中的对局保留原题、次数与截止时间，新开局使用扩充后的题库。数据库格式没有变化。
+升级到v1.1.1时，在菲比管理页更新并重载本插件，核对版本号为v1.1.1。管理员可发送 `a题库状态`，应显示“普通150，困难50”。进行中的对局保留原题卡、次数与截止时间；新增扫描线、DP等答案只在新开局生效，可由发起人先 `a结束` 再 `a再来`。二分名称与去重规则重载后即生效。数据库格式没有变化。
 
 更新前停用该插件，备份插件源码目录及其插件数据目录。SQLite 备份应在停用后进行，或使用 SQLite backup API；不要只复制仍在写入的数据库主文件而漏掉 WAL。
 

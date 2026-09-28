@@ -2,6 +2,7 @@
 import difflib
 import re
 import unicodedata
+from dataclasses import dataclass
 
 ALIASES = {
     'dp': ('动态规划', 'dp', '动规', 'dynamic programming', '线性dp', '线性动态规划'),
@@ -24,8 +25,9 @@ ALIASES = {
     'sort': ('排序', 'sorting', 'sort'),
     'simulation': ('模拟', 'simulation', '字符串解析', '字符串模拟'),
     'construct': ('构造', '构造算法', 'constructive', '蛇形遍历'),
+    'binary': ('二分', '二分法', '二分算法'),
     'binary_answer': ('二分答案', 'binary search on answer', '答案二分'),
-    'binary_search': ('二分查找', 'binary search', 'upper bound', 'lower bound'),
+    'binary_search': ('二分查找', 'binary search', 'upper bound', 'lower bound', '折半查找', '二分搜索'),
     'trie01': ('01字典树', '01trie', '二进制字典树', 'binary trie', '0/1 trie'),
     'kmp': ('kmp', 'kmp自动机', '前缀函数自动机', '字符串匹配自动机'),
     'prefix2d': ('二维前缀和', '2d prefix sum', '二维区间和'),
@@ -35,7 +37,7 @@ ALIASES = {
     'divisor_sieve': ('约数筛', '因数筛', '约数个数预处理', '筛法求约数个数'),
     'fenwick': ('树状数组', 'bit', 'fenwick', 'fenwick tree'),
     'segment': ('线段树', 'segment tree', '线段树剪枝'),
-    'ordered_set': ('有序集合', '平衡树', 'ordered set', 'set'),
+    'ordered_set': ('有序集合', '平衡树', 'ordered set', 'set', '顺序统计树', '排名树', 'order statistic tree', 'pbds'),
     'inclusion': ('容斥', '容斥原理', 'inclusion exclusion', 'inclusion-exclusion'),
     'bridges': ('桥', '割边', 'tarjan求桥', '边双连通分量', '桥缩点', '求桥'),
     'diameter': ('树的直径', '树直径', 'tree diameter', '直径'),
@@ -54,7 +56,7 @@ ALIASES = {
     'lca': ('最近公共祖先', 'lca', '倍增lca'),
     'hld': ('树链剖分', '重链剖分', 'hld', 'heavy light decomposition'),
     'stack': ('栈', 'stack', '括号栈'),
-    'sweep': ('扫描线', 'sweep line', '事件扫描'),
+    'sweep': ('扫描线', 'sweep line', '事件扫描', 'scanline', 'scan line', '离线扫描'),
     'quotient_group': ('整除分块', '数论分块', '整除商分块', 'division blocking'),
     'euler': ('DFS序', 'dfn', 'dfs order', '子树展开', '欧拉序'),
     'modular': ('模运算', '取模', '余数分析', '整除性质', 'modular arithmetic'),
@@ -88,11 +90,48 @@ def normalize(text):
 
 
 LOOKUP = {normalize(alias): key for key, aliases in ALIASES.items() for alias in aliases}
-AMBIGUOUS = {'二分', '树', '搜索', '图论', '数据结构', '数学', '优化', 'trie', '字典树', 'tarjan'}
+AMBIGUOUS = {'树', '搜索', '图论', '数据结构', '数学', '优化', 'trie', '字典树', 'tarjan'}
+
+# This game accepts the binary-search family at either level of specificity.
+# Keep the original IDs for card explanations and existing database snapshots.
+# Never globally equate sweep/sort, BFS/DFS, or unrelated data structures.
+FAMILIES = {'binary_answer': 'binary', 'binary_search': 'binary'}
+
+
+def canonical(methods):
+    return frozenset(FAMILIES.get(k, k) for k in methods)
+
+
+def answer_key(methods):
+    """Same semantic key for judging and dedupe, independent of the hidden card."""
+    return '|'.join(sorted(canonical(methods)))
 
 
 def label(key):
     return ALIASES[key][0]
+
+
+def _token(part):
+    token = normalize(part)
+    if token in LOOKUP or token in AMBIGUOUS:
+        return token
+    # Only remove a wrapper if the remaining name is already known.
+    for suffix in ('算法', '方法', '法'):
+        if token.endswith(suffix):
+            stem = token[:-len(suffix)]
+            if stem in LOOKUP or stem in AMBIGUOUS:
+                return stem
+    return token
+
+
+def _split_natural(part):
+    """Recognize 和/与 only between names; 前缀和 stays a single algorithm."""
+    if _token(part) in LOOKUP:
+        return [part]
+    for i, ch in enumerate(part):
+        if ch in '和与' and _token(part[:i]) in LOOKUP and part[i+1:].strip():
+            return [part[:i], *_split_natural(part[i+1:])]
+    return [part]
 
 
 def parse(text):
@@ -106,11 +145,12 @@ def parse(text):
     # Do not split a canonical algorithm name such as 前缀和 or 组合数学.
     if normalize(text) in LOOKUP:
         parts = [text]
+    parts = [piece for part in parts for piece in _split_natural(part)]
     if len(parts) > 3 or any(not x for x in parts):
         return None, '每次提交 1—3 个核心方法，用 + 连接。'
     result = set()
     for part in parts:
-        token = normalize(part)
+        token = _token(part)
         if token in LOOKUP:
             result.add(LOOKUP[token])
             continue
@@ -130,12 +170,47 @@ def parse(text):
     return frozenset(result), ''
 
 
-def judge(card, answer):
-    allowed = set(card.get('optional', []))
+@dataclass(frozen=True)
+class Verdict:
+    status: str
+    matched: frozenset
+    total: int
+    extra: int
+
+    @property
+    def feedback(self):
+        if self.status == 'correct':
+            return '正确'
+        if self.status == 'wrong':
+            return '未命中已收录解法；若有其他思路可用 a申诉 提交说明'
+        names = ' + '.join(label(k) for k in sorted(self.matched))
+        text = f'命中 {len(self.matched)}/{self.total} 个核心方法（{names}）'
+        missing = self.total - len(self.matched)
+        if missing:
+            text += f'；组合尚未完整，还缺 {missing} 个，请用 + 一次提交完整组合'
+        if self.extra:
+            text += f'；另有 {self.extra} 个方法不属于这一套已收录解法'
+        return text
+
+
+def assess(card, answer):
+    answer = canonical(answer)
+    allowed = canonical(card.get('optional', []))
+    if card.get('mode') == '普通':
+        # Combining independently accepted single core methods is legitimate.
+        # Do not flatten composite solutions: that would remove required steps.
+        allowed |= canonical(s[0] for s in card['solutions'] if len(s) == 1)
+    candidates = []
     for solution in card['solutions']:
-        required = set(solution)
-        if required <= answer and answer <= required | allowed:
-            return 'correct'
-    if any(set(s) & answer for s in card['solutions']):
-        return 'partial'
-    return 'wrong'
+        required = canonical(solution)
+        matched = required & answer
+        extra = len(answer - required - allowed)
+        status = ('correct' if matched == required and not extra
+                  else 'partial' if matched else 'wrong')
+        candidates.append(Verdict(status, matched, len(required), extra))
+    return max(candidates, key=lambda v: (v.status == 'correct', len(v.matched),
+                                         -v.extra, -v.total))
+
+
+def judge(card, answer):
+    return assess(card, answer).status

@@ -10,7 +10,7 @@ from .aguess.core import Engine, command, reveal, split_message
 from .aguess.delivery import send_timeout
 
 
-@register('astrbot_plugin_a_guess', 'XyeeCheng', '菲比 a一把：十次机会猜算法，逐步揭示中文题意', '1.1.0')
+@register('astrbot_plugin_a_guess', 'XyeeCheng', '菲比 a一把：十次机会猜算法，逐步揭示中文题意', '1.1.1')
 class AGuess(Star):
     def __init__(self, context: Context, config: AstrBotConfig):
         super().__init__(context)

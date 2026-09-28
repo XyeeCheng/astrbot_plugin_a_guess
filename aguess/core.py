@@ -9,7 +9,7 @@ import uuid
 from contextlib import contextmanager
 from pathlib import Path
 
-from .matcher import label, parse, judge
+from .matcher import label, parse, assess, answer_key
 
 HELP = ('a一把：普通模式；a一把 困难：猜算法组合。\n'
         'a猜 算法 + 算法｜a提示｜a进度｜a结束｜a再来\n'
@@ -251,15 +251,17 @@ class Engine:
             answer, error = parse(arg)
             if error:
                 return [error]
-            key = '|'.join(sorted(answer))
-            if key in state['guessed']:
+            key = answer_key(answer)
+            # Normalize legacy keys on comparison as well; no database rewrite.
+            if key in {answer_key(old.split('|')) for old in state['guessed']}:
                 return ['这一套答案已经猜过了，本次不扣次数。']
             state['guessed'].append(key)
             state['attempts'] += 1
             state['cooldowns'][sender] = state['last_activity'] = now
-            result = judge(state['card'], answer)
+            verdict = assess(state['card'], answer)
+            result = verdict.status
             visible = ' + '.join(label(k) for k in sorted(answer))
-            feedback = {'correct': '正确', 'partial': '有方法适用，但组合尚未完整或含无关方法', 'wrong': '未命中已收录解法'}[result]
+            feedback = verdict.feedback
             state['records'].append(f"{state['attempts']}. {visible}：{feedback}")
             if result == 'correct':
                 return [self.finish(umo, state, 'win', 'event_reply')]

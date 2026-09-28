@@ -1,5 +1,5 @@
 {
-  "plugin_version": "1.1.0",
+  "plugin_version": "1.1.1",
   "review_date": "2026-09-28",
   "question_count": 200,
   "normal_count": 150,
@@ -18,7 +18,7 @@
     }
   },
   "review_scope": "Official Educational round metadata and official problem statements; independently written concise Chinese restatements, hints and accepted approaches. Does not claim exhaustive alternative solutions or Codeforces AC submissions.",
-  "questions_file_sha256": "d2eae3cf28097b53a73fec98ddc845d9141c32e914252e964ae3cf43bcde8501",
+  "questions_file_sha256": "01f2d906e17cc43dda4d0c78fd97f8fd644cfc405c332d8f50f7b963c43196c6",
   "cards": [
     {
       "id": "961B",
@@ -394,7 +394,7 @@
       "round": "Educational Codeforces Round 4",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "1315391af6ecb6610d34166fb848e1071dd4d5a06e808573aff724a67dbb2208"
+      "card_sha256": "53307dce58dcbe48295ca01ab1b1b4419e9f001d0b6576a80eb6a8ce8e460327"
     },
     {
       "id": "616A",
@@ -530,7 +530,7 @@
       "round": "Educational Codeforces Round 9",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "b6b9da7c0c380ffdbf83e381ddbc6d98b669a4d74423f7375f8fdec1bb53a87a"
+      "card_sha256": "d626dbf0e5f4984c7a2fb14b52654d60927edbcc47023faf996b45e5e1684ae4"
     },
     {
       "id": "632C",
@@ -570,7 +570,7 @@
       "round": "Educational Codeforces Round 10",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "ba4eff430a8e3a66abe0f8354f788d79f7b450b53c3f15e060c88f07e241fc8b"
+      "card_sha256": "6e62a96df92ff99e98cc2ba8ce49fab6e2429f9146427b7f6f290cb27afe4cad"
     },
     {
       "id": "660B",
@@ -1194,7 +1194,7 @@
       "round": "Educational Codeforces Round 30",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "1b157e42e6626e1cc724bb628462c558ffe75dcd97059bc0beaea1548371e3a0"
+      "card_sha256": "088a8edb9341555abf737791f83ad67b88a01ee3a9697189e4b35cf764aed87e"
     },
     {
       "id": "884A",
@@ -1306,7 +1306,7 @@
       "round": "Educational Codeforces Round 35 (Rated for Div. 2)",
       "mode": "普通",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "5246637555eee1daece25a997a3b0ce1644f4c8cf1751e5323f49936102ee326"
+      "card_sha256": "bb8ff51a32be42bf90a3527704f08440f0af9ea28ce6a1ec8f8fe613c4c9f3ef"
     },
     {
       "id": "911B",
@@ -1522,7 +1522,7 @@
       "round": "Educational Codeforces Round 41 (Rated for Div. 2)",
       "mode": "困难",
       "origin": "added_in_v1.1.0",
-      "card_sha256": "86685031d99e9f37b592f586b8880a629a770e60be223a60d9239520f10e589b"
+      "card_sha256": "bb2f9a2eb9df035e2285608bd6c5de2f6a83acd03337eec4a15f9917cd2f7125"
     },
     {
       "id": "962A",
@@ -1620,5 +1620,17 @@
       "origin": "added_in_v1.1.0",
       "card_sha256": "7f763764debbc26154191554d8e97dcb436f71e4c4d3a70aaa5deed40aa25061"
     }
-  ]
+  ],
+  "matching_revision": {
+    "version": "1.1.1",
+    "changed_cards": [
+      "652D",
+      "632B",
+      "873D",
+      "911A",
+      "961E",
+      "612D"
+    ],
+    "scope": "Reviewed alternative methods and helpers from gameplay feedback; original metadata snapshot retained. See MATCHING.md for reasoning and regression coverage."
+  }
 }

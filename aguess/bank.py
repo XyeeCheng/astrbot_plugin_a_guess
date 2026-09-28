@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-from .matcher import ALIASES
+from .matcher import ALIASES, canonical
 
 
 def load_bank(path=None):
@@ -24,6 +24,8 @@ def load_bank(path=None):
                 raise ValueError(f'Hard solution must be a combination: {pid}')
             if not set(solution) <= ALIASES.keys():
                 raise ValueError(f'Unknown algorithm: {pid}')
+            if len(canonical(solution)) != len(solution):
+                raise ValueError(f'Repeated algorithm family in solution: {pid}')
         if not set(card.get('optional', [])) <= ALIASES.keys():
             raise ValueError(f'Unknown optional algorithm: {pid}')
         for field in ('statement_zh', 'explanation', 'complexity', 'example', 'source', 'round'):
